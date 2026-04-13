@@ -1,4 +1,5 @@
 import './App.css'
+import { ComparisonSection } from './components/ComparisonSection'
 import { FeatureSplitSection } from './components/FeatureSplitSection'
 import { HowItWorksSection } from './components/HowItWorksSection'
 import { Hero } from './components/Hero'
@@ -9,6 +10,7 @@ import { ProductProofSection } from './components/ProductProofSection'
 import { WebinarHighlightSection } from './components/WebinarHighlightSection'
 import {
   actions,
+  comparisonSection,
   featureSplitSection,
   heroCopy,
   howItWorksSection,
@@ -31,6 +33,7 @@ export default function App() {
         <FeatureSplitSection anchor={featureSplitSection.anchor} items={featureSplitSection.items} />
         <WebinarHighlightSection content={webinarHighlightSection} />
         <HowItWorksSection content={howItWorksSection} />
+        <ComparisonSection content={comparisonSection} />
       </div>
     </div>
   )

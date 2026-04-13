@@ -205,3 +205,38 @@ export const howItWorksSection = {
   ],
 }
 
+export const comparisonSection = {
+  heading: 'Not "AI does your analysis." A workspace for analysis you can defend.',
+  othersColumn: {
+    label: 'Others',
+  },
+  qinsightsColumn: {
+    label: 'QInsights',
+    logo: {
+      src: 'https://framerusercontent.com/images/Q9rz4yZMCZVjxacKp2KQIWkUmU.png?scale-down-to=512&width=688&height=105',
+      alt: 'QInsights logo',
+    },
+    icon: {
+      src: 'https://framerusercontent.com/images/xV1amte0eNVJ3Sv3tGWy5lZE.png?width=466&height=580',
+      alt: 'Crown icon for QInsights column',
+    },
+  },
+  rows: [
+    {
+      others: 'Black-box "themes in minutes"',
+      qinsights: 'Every insight linked to underlying quotations',
+    },
+    {
+      others: 'Shallow summaries with no clear evidence',
+      qinsights: 'Researcher-led, AI-assisted workflow',
+    },
+    {
+      others: 'Steep learning curves and feature overload',
+      qinsights: 'Clear, question-driven steps instead of feature maze',
+    },
+    {
+      others: 'Leave you guessing how insights were produced',
+      qinsights: 'Built for publishable, defensible qualitative work',
+    },
+  ],
+}
