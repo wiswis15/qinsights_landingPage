@@ -276,6 +276,38 @@ export const testimonialSpotlightSection = {
     affiliation: 'UNICAMP, Universidade Estadual de Campinas, Brazil',
     quote: '"QInsights was able to identify the same themes that took me months to create in a fraction of the time. It\'s a clear, effective, and efficient tool. I\'m genuinely impressed by how much detail it preserves, and its range of features makes it easy to carry out thoughtful and critical analysis."',
   },
+  theme: {
+    headingColor: '#111111',
+    bodyColor: '#111111',
+    roleColor: '#1f6fa7',
+    cardBackground: '#eef6ff',
+    portraitBackground: 'linear-gradient(180deg, #d8e9ff 0%, #edf6ff 100%)',
+  },
+}
+
+export const samanthaSpotlightSection = {
+  headingLine1: 'An Assistant That Thinks Qualitatively,',
+  headingLine2: 'So You Can Think Creatively',
+  body: 'Empower your team with tools that make qualitative work more engaging.',
+  layout: 'inline-card',
+  productImage: {
+    src: 'https://framerusercontent.com/images/jjjbb0P27OdMdtLeZBwTAgpBrwk.png?width=1544&height=2365',
+    alt: 'QInsights workflow illustration supporting creative qualitative work',
+  },
+  testimonial: {
+    photo: 'https://framerusercontent.com/images/yjcjZwqJqlqLZeyXcyu2KopXayE.jpeg?width=350&height=350',
+    name: 'Prof. Samantha Hurst',
+    role: 'Professor',
+    affiliation: 'Public Health, UC San Diego, USA',
+    quote: `"It's like having a personal research assistant that not only understands the complexities of qualitative research but also allows me to focus more attention on the creative and intuitive aspects of my work."`,
+  },
+  theme: {
+    headingColor: '#111111',
+    bodyColor: '#111111',
+    roleColor: '#4f63d8',
+    cardBackground: '#eef1ff',
+    portraitBackground: 'linear-gradient(180deg, #dde4ff 0%, #eef1ff 100%)',
+  },
 }
 
 export const designedForResearchersSection = {

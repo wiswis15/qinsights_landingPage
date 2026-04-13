@@ -31,6 +31,7 @@ import {
   painPointsSection,
   privacySecuritySection,
   productProof,
+  samanthaSpotlightSection,
   testimonialsSection,
   testimonialSpotlightSection,
   trustLogos,
@@ -53,6 +54,7 @@ export default function App() {
         <DesignedForResearchersSection content={designedForResearchersSection} />
         <TestimonialsSection content={testimonialsSection} />
         <TestimonialSpotlightSection content={testimonialSpotlightSection} />
+        <TestimonialSpotlightSection content={samanthaSpotlightSection} />
         <PrivacySecuritySection content={privacySecuritySection} />
         <CallToActionSection content={callToActionSection} />
         <NewsletterSection content={newsletterSection} />

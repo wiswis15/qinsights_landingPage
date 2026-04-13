@@ -2573,6 +2573,11 @@
 }
 
 .testimonial-spotlight {
+  --spotlight-heading-color: #111111;
+  --spotlight-body-color: #111111;
+  --spotlight-role-color: #1f6fa7;
+  --spotlight-card-background: #eef6ff;
+  --spotlight-portrait-background: linear-gradient(180deg, #d8e9ff 0%, #edf6ff 100%);
   padding: 0 0 144px;
 }
 
@@ -2586,6 +2591,9 @@
 
 .testimonial-spotlight__intro-column {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .testimonial-spotlight__media-column {
@@ -2602,7 +2610,7 @@
 
 .testimonial-spotlight__heading {
   margin: 0;
-  color: #111111;
+  color: var(--spotlight-heading-color);
   font-family: 'Source Serif 4', serif;
   font-size: 48px;
   font-weight: 500;
@@ -2619,7 +2627,7 @@
 .testimonial-spotlight__body {
   margin: 0;
   max-width: 520px;
-  color: #111111;
+  color: var(--spotlight-body-color);
   font-family: 'Urbanist', sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -2648,7 +2656,7 @@
   gap: 24px;
   padding: 32px;
   max-width: 560px;
-  background: #eef6ff;
+  background: var(--spotlight-card-background);
   border-radius: 8px;
   box-shadow:
     0 0.6px 0.6px -1.25px rgba(0, 0, 0, 0.06),
@@ -2656,6 +2664,11 @@
     0 10px 10px -3.75px rgba(0, 0, 0, 0.02);
   opacity: 0;
   animation: hero-rise 620ms 120ms ease-out forwards;
+}
+
+.testimonial-spotlight__card--inline {
+  max-width: 420px;
+  margin-top: 8px;
 }
 
 .testimonial-spotlight__profile {
@@ -2670,7 +2683,7 @@
   height: 100px;
   border-radius: 8px;
   overflow: hidden;
-  background: linear-gradient(180deg, #d8e9ff 0%, #edf6ff 100%);
+  background: var(--spotlight-portrait-background);
 }
 
 .testimonial-spotlight__portrait {
@@ -2699,7 +2712,7 @@
 .testimonial-spotlight__role,
 .testimonial-spotlight__affiliation {
   margin: 6px 0 0;
-  color: #1f6fa7;
+  color: var(--spotlight-role-color);
   font-family: 'Urbanist', sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -3092,6 +3105,10 @@
   .testimonial-spotlight__card {
     padding: 24px;
     max-width: none;
+  }
+
+  .testimonial-spotlight__card--inline {
+    margin-top: 0;
   }
 
   .testimonial-spotlight__profile {
