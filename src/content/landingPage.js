@@ -77,7 +77,7 @@ export const painPointsSection = {
   items: [
     {
       title: 'Too many transcripts, not enough time',
-      body: 'Hours lost re-reading interviews, open-ended responses, and notes — just to remember what is where.',
+      body: 'Hours lost re-reading interviews, open-ended responses, and notes \u2014 just to remember what is where.',
     },
     {
       title: 'Tools that make you feel incompetent',
@@ -90,6 +90,51 @@ export const painPointsSection = {
     {
       title: 'Hidden fear: "Is my analysis defensible?"',
       body: 'Behind the scenes, you worry: What if someone asks how I got from data to these conclusions? Will my trail hold up?',
+    },
+  ],
+}
+
+export const featureSplitSection = {
+  anchor: {
+    image: {
+      src: 'https://framerusercontent.com/images/TnR6ZRNhHzqCHLVqnh52RgtyzT0.png?width=2560&height=2560',
+      alt: 'Abstract data-inspired background illustration',
+    },
+    title: 'QInsights is built for rigor, traceability, and control.',
+    body: 'Not "themes in minutes". Not black-box AI. Just a workflow that lets you produce qualitative insights you can explain \u2014 and stand behind.',
+  },
+  items: [
+    {
+      title: 'Evidence-first insights',
+      body: 'Every theme, pattern, and answer links back to the exact underlying quotes. You always see where an insight comes from \u2014 ready for thesis defence, peer review, or stakeholder scrutiny.',
+      icon: {
+        src: 'https://framerusercontent.com/images/PWho8Hg2phiiWmn1kCdyuynb4o.png?width=48&height=48',
+        alt: 'Evidence-first insights icon',
+      },
+    },
+    {
+      title: 'Researcher-in-control, AI-assisted',
+      body: 'You ask the questions and interpret the results. AI helps organise, retrieve, and surface candidate patterns. Decisions stay in your hands.',
+      icon: {
+        src: 'https://framerusercontent.com/images/Lx867CzVcVypOpeVO0cv8dkJaU.png?width=48&height=48',
+        alt: 'Researcher-in-control icon',
+      },
+    },
+    {
+      title: 'A guided workflow, not a feature maze',
+      body: 'No more tool-hopping or guessing the "right" process. QInsights gives you a clear, question-driven workflow for moving from raw text to defensible findings.',
+      icon: {
+        src: 'https://framerusercontent.com/images/FtGQhh3X5AVxvlZ3SoGJXDiXNo0.png?width=48&height=48',
+        alt: 'Guided workflow icon',
+      },
+    },
+    {
+      title: 'Low anxiety, high rigor',
+      body: 'Stop choosing between heavy tools and superficial AI. Get a structured analysis environment that respects your methods and your time.',
+      icon: {
+        src: 'https://framerusercontent.com/images/Mmb65zIuyZGuKFHEpgfaRB1TqR4.png?width=48&height=48',
+        alt: 'Low anxiety high rigor icon',
+      },
     },
   ],
 }
