@@ -240,3 +240,23 @@ export const comparisonSection = {
     },
   ],
 }
+
+export const designedForResearchersSection = {
+  heading: 'Designed for Researchers Under Real Pressure',
+  subtitle: 'Whether you\'re in academia, consulting, marketing, or evaluation, QInsights supports qualitative work where rigor and deadlines both matter.',
+  useCases: [
+    {
+      heading: 'Academic researchers',
+      description: 'For grant-funded research teams, professors, postdocs, and PhD researchers needing a transparent analysis trail for high-impact papers, peer-reviewed publications and dissertations.',
+    },
+    {
+      heading: 'Evaluation & Policy teams',
+      description: 'NGOs and public sector teams working with interviews, focus groups, and open-ended surveys.',
+    },
+    {
+      heading: 'Consulting and Marketing',
+      description: 'Mixed-methods teams who must deliver insights quickly while keeping qualitative work credible and explainable.',
+    },
+  ],
+  closingStatement: 'If you\'re juggling complex software tutorials, overgrown spreadsheets, and ChatGPT exports, QInsights gives you a calmer, more defensible way forward.',
+}

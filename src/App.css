@@ -1185,6 +1185,142 @@
   }
 }
 
+.designed-for-researchers {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 120px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.designed-for-researchers__heading {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #111111;
+  font-family: 'Source Serif 4', serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  opacity: 0;
+  animation: designed-slide-in 620ms ease-out forwards;
+}
+
+.designed-for-researchers__subtitle {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #111111;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.designed-for-researchers__use-cases {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.designed-for-researchers__use-case {
+  display: flex;
+  flex-direction: column;
+}
+
+.designed-for-researchers__use-case-content {
+  background-color: #fafbff;
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.designed-for-researchers__use-case-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(38, 97, 233, 0.08);
+}
+
+.designed-for-researchers__use-case-heading {
+  margin: 0;
+  color: #111111;
+  font-family: 'Source Serif 4', serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  opacity: 0;
+  animation: designed-slide-in 620ms ease-out forwards;
+}
+
+.designed-for-researchers__use-case:nth-child(1) .designed-for-researchers__use-case-heading {
+  animation-delay: 120ms;
+}
+
+.designed-for-researchers__use-case:nth-child(2) .designed-for-researchers__use-case-heading {
+  animation-delay: 240ms;
+}
+
+.designed-for-researchers__use-case:nth-child(3) .designed-for-researchers__use-case-heading {
+  animation-delay: 360ms;
+}
+
+.designed-for-researchers__use-case-description {
+  margin: 0;
+  color: #111111;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.designed-for-researchers__closing-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fafbff;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.designed-for-researchers__closing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(38, 97, 233, 0.08);
+}
+
+.designed-for-researchers__closing {
+  margin: 0;
+  color: #111111;
+  font-family: 'Source Serif 4', serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  opacity: 0;
+  animation: designed-slide-in 620ms ease-out forwards;
+  animation-delay: 480ms;
+}
+
+@keyframes designed-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 1199px) {
   .navbar {
     gap: 20px;
@@ -1297,6 +1433,39 @@
 
   .comparison__cell-text {
     font-size: 14px;
+  }
+
+  .designed-for-researchers {
+    padding: 96px 32px;
+  }
+
+  .designed-for-researchers__heading {
+    font-size: 40px;
+  }
+
+  .designed-for-researchers__subtitle {
+    font-size: 18px;
+  }
+
+  .designed-for-researchers__use-case-heading {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .designed-for-researchers__use-case-description {
+    font-size: 17px;
+  }
+
+  .designed-for-researchers__closing {
+    font-size: 22px;
+  }
+
+  .designed-for-researchers__use-case-content {
+    padding: 28px;
+  }
+
+  .designed-for-researchers__closing-card {
+    padding: 28px;
   }
 }
 
@@ -1708,6 +1877,47 @@
 
   .comparison__cell-text {
     font-size: 14px;
+  }
+
+  .designed-for-researchers {
+    padding: 72px 24px;
+  }
+
+  .designed-for-researchers__heading {
+    font-size: 28px;
+  }
+
+  .designed-for-researchers__subtitle {
+    font-size: 17px;
+  }
+
+  .designed-for-researchers__use-cases {
+    gap: 20px;
+  }
+
+  .designed-for-researchers__use-case {
+    gap: 10px;
+  }
+
+  .designed-for-researchers__use-case-heading {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .designed-for-researchers__use-case-description {
+    font-size: 16px;
+  }
+
+  .designed-for-researchers__closing {
+    font-size: 20px;
+  }
+
+  .designed-for-researchers__use-case-content {
+    padding: 24px;
+  }
+
+  .designed-for-researchers__closing-card {
+    padding: 24px;
   }
 }
 

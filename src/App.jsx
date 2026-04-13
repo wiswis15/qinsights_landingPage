@@ -1,5 +1,6 @@
 import './App.css'
 import { ComparisonSection } from './components/ComparisonSection'
+import { DesignedForResearchersSection } from './components/DesignedForResearchersSection'
 import { FeatureSplitSection } from './components/FeatureSplitSection'
 import { HowItWorksSection } from './components/HowItWorksSection'
 import { Hero } from './components/Hero'
@@ -11,6 +12,7 @@ import { WebinarHighlightSection } from './components/WebinarHighlightSection'
 import {
   actions,
   comparisonSection,
+  designedForResearchersSection,
   featureSplitSection,
   heroCopy,
   howItWorksSection,
@@ -34,6 +36,7 @@ export default function App() {
         <WebinarHighlightSection content={webinarHighlightSection} />
         <HowItWorksSection content={howItWorksSection} />
         <ComparisonSection content={comparisonSection} />
+        <DesignedForResearchersSection content={designedForResearchersSection} />
       </div>
     </div>
   )
