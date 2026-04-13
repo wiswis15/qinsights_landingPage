@@ -261,6 +261,23 @@ export const testimonialsSection = {
   ],
 }
 
+export const testimonialSpotlightSection = {
+  headingLine1: 'Spend Less Time on Process,',
+  headingLine2: 'More Time on Insight',
+  body: 'Cut through the noise - move from raw data to clear patterns faster, without losing depth.',
+  productImage: {
+    src: 'https://framerusercontent.com/images/rSU2xqqjrpdowXmPpkgVw8nbwM.png?width=1683&height=921',
+    alt: 'QInsights interface showing streamlined qualitative analysis workflow',
+  },
+  testimonial: {
+    photo: 'https://framerusercontent.com/images/2kXkiXLVDiAMfKZEJoyTU9YBQfo.png?width=751&height=824',
+    name: 'Miguel Alejandro Saquimux Contreras',
+    role: 'PhD Candidate Health Sciences',
+    affiliation: 'UNICAMP, Universidade Estadual de Campinas, Brazil',
+    quote: '"QInsights was able to identify the same themes that took me months to create in a fraction of the time. It\'s a clear, effective, and efficient tool. I\'m genuinely impressed by how much detail it preserves, and its range of features makes it easy to carry out thoughtful and critical analysis."',
+  },
+}
+
 export const designedForResearchersSection = {
   heading: 'Designed for Researchers Under Real Pressure',
   subtitle: 'Whether you\'re in academia, consulting, marketing, or evaluation, QInsights supports qualitative work where rigor and deadlines both matter.',

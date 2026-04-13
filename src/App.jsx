@@ -14,6 +14,7 @@ import { PainPointsSection } from './components/PainPointsSection'
 import { PrivacySecuritySection } from './components/PrivacySecuritySection'
 import { ProductProofSection } from './components/ProductProofSection'
 import { TestimonialsSection } from './components/TestimonialsSection'
+import { TestimonialSpotlightSection } from './components/TestimonialSpotlightSection'
 import { WebinarHighlightSection } from './components/WebinarHighlightSection'
 import {
   actions,
@@ -31,6 +32,7 @@ import {
   privacySecuritySection,
   productProof,
   testimonialsSection,
+  testimonialSpotlightSection,
   trustLogos,
   webinarHighlightSection,
 } from './content/landingPage'
@@ -50,6 +52,7 @@ export default function App() {
         <ComparisonSection content={comparisonSection} />
         <DesignedForResearchersSection content={designedForResearchersSection} />
         <TestimonialsSection content={testimonialsSection} />
+        <TestimonialSpotlightSection content={testimonialSpotlightSection} />
         <PrivacySecuritySection content={privacySecuritySection} />
         <CallToActionSection content={callToActionSection} />
         <NewsletterSection content={newsletterSection} />

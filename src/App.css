@@ -2572,6 +2572,162 @@
   }
 }
 
+.testimonial-spotlight {
+  padding: 0 0 144px;
+}
+
+.testimonial-spotlight__intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.5fr) minmax(0, 0.5fr);
+  gap: 48px;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.testimonial-spotlight__intro-column {
+  min-width: 0;
+}
+
+.testimonial-spotlight__media-column {
+  min-width: 0;
+  opacity: 0;
+  animation: hero-rise 680ms 180ms ease-out forwards;
+}
+
+.testimonial-spotlight__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.testimonial-spotlight__heading {
+  margin: 0;
+  color: #111111;
+  font-family: 'Source Serif 4', serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  opacity: 0;
+  animation: comparison-slide-in 620ms ease-out forwards;
+}
+
+.testimonial-spotlight__heading-line {
+  display: block;
+}
+
+.testimonial-spotlight__body {
+  margin: 0;
+  max-width: 520px;
+  color: #111111;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  opacity: 0;
+  animation: hero-rise 620ms 100ms ease-out forwards;
+}
+
+.testimonial-spotlight__product-frame {
+  opacity: 0;
+  animation: hero-rise 680ms 220ms ease-out forwards;
+}
+
+.testimonial-spotlight__product-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.testimonial-spotlight__card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  max-width: 560px;
+  background: #eef6ff;
+  border-radius: 8px;
+  box-shadow:
+    0 0.6px 0.6px -1.25px rgba(0, 0, 0, 0.06),
+    0 2.3px 2.3px -2.5px rgba(0, 0, 0, 0.05),
+    0 10px 10px -3.75px rgba(0, 0, 0, 0.02);
+  opacity: 0;
+  animation: hero-rise 620ms 120ms ease-out forwards;
+}
+
+.testimonial-spotlight__profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.testimonial-spotlight__portrait-wrap {
+  flex: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #d8e9ff 0%, #edf6ff 100%);
+}
+
+.testimonial-spotlight__portrait {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.testimonial-spotlight__identity {
+  min-width: 0;
+  padding-top: 2px;
+}
+
+.testimonial-spotlight__name {
+  margin: 0;
+  color: #111111;
+  font-family: 'Source Serif 4', serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+.testimonial-spotlight__role,
+.testimonial-spotlight__affiliation {
+  margin: 6px 0 0;
+  color: #1f6fa7;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.testimonial-spotlight__affiliation {
+  color: #5f6780;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.testimonial-spotlight__quote {
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial-spotlight__quote p {
+  margin: 0;
+  color: #111111;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
 .faq-section {
   padding: 0 0 144px;
 }
@@ -2915,6 +3071,50 @@
 }
 
 @media (max-width: 900px) {
+  .testimonial-spotlight {
+    padding: 0 0 104px;
+  }
+
+  .testimonial-spotlight__intro-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .testimonial-spotlight__heading {
+    font-size: 34px;
+  }
+
+  .testimonial-spotlight__body {
+    font-size: 18px;
+  }
+
+  .testimonial-spotlight__card {
+    padding: 24px;
+    max-width: none;
+  }
+
+  .testimonial-spotlight__profile {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .testimonial-spotlight__identity {
+    padding-top: 2px;
+  }
+
+  .testimonial-spotlight__name {
+    font-size: 18px;
+  }
+
+  .testimonial-spotlight__quote {
+    padding: 0;
+  }
+
+  .testimonial-spotlight__quote p {
+    font-size: 17px;
+  }
+
   .site-footer {
     padding-top: 120px;
   }
@@ -2950,6 +3150,16 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .testimonial-spotlight__heading,
+  .testimonial-spotlight__body,
+  .testimonial-spotlight__product-frame,
+  .testimonial-spotlight__card {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    transform: none;
+  }
+
   .site-footer__brand,
   .site-footer__column,
   .site-footer__bottom {
