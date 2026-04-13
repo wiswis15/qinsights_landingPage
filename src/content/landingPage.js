@@ -64,3 +64,32 @@ export const productProof = {
   },
   statement: 'Used by researchers at leading universities, evaluation institutes, and market research teams.',
 }
+
+export const painPointsSection = {
+  image: {
+    src: 'https://framerusercontent.com/images/cX33epAnsyboUzXsaIYpqgy9bn8.png?width=847&height=847',
+    alt: 'Blue circular illustration used to introduce the pain points section',
+  },
+  intro: {
+    title: "Qualitative analysis shouldn't feel like drowning.",
+    body: `Yet most researchers are stuck between heavy software, messy spreadsheets, and AI tools that spit out "themes" they can't defend.`,
+  },
+  items: [
+    {
+      title: 'Too many transcripts, not enough time',
+      body: 'Hours lost re-reading interviews, open-ended responses, and notes — just to remember what is where.',
+    },
+    {
+      title: 'Tools that make you feel incompetent',
+      body: "Traditional QDAS tools feel overwhelming. Excel breaks at scale. You're juggling exports, tabs, and colour codes instead of thinking.",
+    },
+    {
+      title: "AI that you can't trust",
+      body: `Generic AI claims to "do your analysis", but delivers shallow summaries with no clear link back to evidence. You can't put that in front of a supervisor or stakeholder.`,
+    },
+    {
+      title: 'Hidden fear: "Is my analysis defensible?"',
+      body: 'Behind the scenes, you worry: What if someone asks how I got from data to these conclusions? Will my trail hold up?',
+    },
+  ],
+}
