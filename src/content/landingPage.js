@@ -241,6 +241,26 @@ export const comparisonSection = {
   ],
 }
 
+export const testimonialsSection = {
+  heading: 'What Our Customers Say',
+  subheading: 'Higher-Quality',
+  subheadingLine2: 'Thinking',
+  body: 'Brainstorm angles, test hypotheses, and pull counter-examples in real-time—strengthening your conclusions through AI collaboration.',
+  appScreenshot: {
+    src: 'https://framerusercontent.com/images/KZx6u0DP38JnvSrISFD3UuF7g.png?scale-down-to=1024&width=2082&height=2390',
+    alt: 'Q-Insights app interface showing a research conversation',
+  },
+  testimonials: [
+    {
+      name: 'Pamela Rothpletz-Puglia',
+      role: 'Ed.D., RDN, Professor of Qualitative and Mixed Methods Research',
+      affiliation: 'Rutgers School of Health Professions, USA',
+      quote: '"I think of it like a thought partner... it advanced my depth of thinking because I can have a conversation, talk through what I am thinking."',
+      photo: 'https://framerusercontent.com/images/9UZZl2l1sDnV9565lciwPV9GOQ.jpg?width=185&height=272',
+    },
+  ],
+}
+
 export const designedForResearchersSection = {
   heading: 'Designed for Researchers Under Real Pressure',
   subtitle: 'Whether you\'re in academia, consulting, marketing, or evaluation, QInsights supports qualitative work where rigor and deadlines both matter.',

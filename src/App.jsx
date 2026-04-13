@@ -8,6 +8,7 @@ import { LogoTicker } from './components/LogoTicker'
 import { Navbar } from './components/Navbar'
 import { PainPointsSection } from './components/PainPointsSection'
 import { ProductProofSection } from './components/ProductProofSection'
+import { TestimonialsSection } from './components/TestimonialsSection'
 import { WebinarHighlightSection } from './components/WebinarHighlightSection'
 import {
   actions,
@@ -19,6 +20,7 @@ import {
   navLinks,
   painPointsSection,
   productProof,
+  testimonialsSection,
   trustLogos,
   webinarHighlightSection,
 } from './content/landingPage'
@@ -37,6 +39,7 @@ export default function App() {
         <HowItWorksSection content={howItWorksSection} />
         <ComparisonSection content={comparisonSection} />
         <DesignedForResearchersSection content={designedForResearchersSection} />
+        <TestimonialsSection content={testimonialsSection} />
       </div>
     </div>
   )
