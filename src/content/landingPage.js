@@ -152,3 +152,56 @@ export const webinarHighlightSection = {
     alt: 'Live webinar promotional artwork for Q-Insights',
   },
 }
+
+export const howItWorksSection = {
+  intro: {
+    eyebrow: 'How It Works:',
+    title: 'Smarter Qualitative Research in 3 Steps',
+    titleMobile: 'Smarter Qualitative Research in',
+    mobileHighlight: '3 Steps',
+    qMarkOuter: {
+      src: 'https://framerusercontent.com/images/fRZlNruMasf5O4EjBLzRuCaeaI.png?width=270&height=270',
+      alt: 'QInsights mark background',
+    },
+    qMarkInner: {
+      src: 'https://framerusercontent.com/images/ALBTu75Nk6YYgWZzRPxO8bnb5U.png?width=74&height=130',
+      alt: 'QInsights mark symbol',
+    },
+    backdrop: {
+      src: 'https://framerusercontent.com/images/vPyGZof9pOCaRba4uUm44tjIBHk.png?width=3022&height=3022',
+      alt: 'Soft abstract backdrop for the how it works section',
+    },
+  },
+  steps: [
+    {
+      number: '1',
+      title: 'Upload your material',
+      body: 'Bring your transcripts, open-ended survey data, notes or audio files.',
+      image: {
+        src: 'https://framerusercontent.com/images/FLoXUdGokI7THiKH67ILVDxpUUs.png?width=1880&height=1812',
+        alt: 'Step one preview showing data exploration',
+      },
+    },
+    {
+      number: '2',
+      title: 'Explore and question your data',
+      mobileTitle: 'Choose your analysis style',
+      body: 'Ask targeted questions, compare groups, surface patterns \u2014 and always see the supporting quotes behind each answer.',
+      image: {
+        src: 'https://framerusercontent.com/images/Ky4zZoOHeDwGbl8yg6vpV3hAk.png?width=1880&height=1812',
+        alt: 'Step two preview showing material upload',
+      },
+    },
+    {
+      number: '3',
+      title: 'Build a trail you can defend',
+      mobileTitle: 'Synthesize and share with confidence',
+      body: 'Organise themes, evidence, and interpretations in one place. Export what you need for your thesis, report, slide deck, or stakeholder presentation \u2014 with your analysis trail intact.',
+      image: {
+        src: 'https://framerusercontent.com/images/AZ0vcFpnavDyhpo3FBJsAJPt6mM.png?width=1880&height=1812',
+        alt: 'Step three preview showing defensible analysis trail',
+      },
+    },
+  ],
+}
+

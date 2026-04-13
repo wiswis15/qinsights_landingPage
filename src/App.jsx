@@ -1,12 +1,23 @@
 import './App.css'
 import { FeatureSplitSection } from './components/FeatureSplitSection'
+import { HowItWorksSection } from './components/HowItWorksSection'
 import { Hero } from './components/Hero'
 import { LogoTicker } from './components/LogoTicker'
 import { Navbar } from './components/Navbar'
 import { PainPointsSection } from './components/PainPointsSection'
 import { ProductProofSection } from './components/ProductProofSection'
 import { WebinarHighlightSection } from './components/WebinarHighlightSection'
-import { actions, featureSplitSection, heroCopy, navLinks, painPointsSection, productProof, trustLogos, webinarHighlightSection } from './content/landingPage'
+import {
+  actions,
+  featureSplitSection,
+  heroCopy,
+  howItWorksSection,
+  navLinks,
+  painPointsSection,
+  productProof,
+  trustLogos,
+  webinarHighlightSection,
+} from './content/landingPage'
 
 export default function App() {
   return (
@@ -19,6 +30,7 @@ export default function App() {
         <PainPointsSection image={painPointsSection.image} intro={painPointsSection.intro} items={painPointsSection.items} />
         <FeatureSplitSection anchor={featureSplitSection.anchor} items={featureSplitSection.items} />
         <WebinarHighlightSection content={webinarHighlightSection} />
+        <HowItWorksSection content={howItWorksSection} />
       </div>
     </div>
   )
