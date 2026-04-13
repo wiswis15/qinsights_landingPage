@@ -28,6 +28,7 @@ import {
   howItWorksSection,
   navLinks,
   newsletterSection,
+  onboardingSpotlightSection,
   painPointsSection,
   privacySecuritySection,
   productProof,
@@ -55,6 +56,7 @@ export default function App() {
         <TestimonialsSection content={testimonialsSection} />
         <TestimonialSpotlightSection content={testimonialSpotlightSection} />
         <TestimonialSpotlightSection content={samanthaSpotlightSection} />
+        <TestimonialSpotlightSection content={onboardingSpotlightSection} />
         <PrivacySecuritySection content={privacySecuritySection} />
         <CallToActionSection content={callToActionSection} />
         <NewsletterSection content={newsletterSection} />

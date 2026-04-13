@@ -10,9 +10,11 @@ export function TestimonialSpotlightSection({ content }) {
       }
     : undefined
   const inlineCard = layout === 'inline-card'
+  const stackedMediaCard = layout === 'stacked-media-card'
+  const centeredCard = theme?.cardAlign === 'center'
   const card = (
-    <article className={`testimonial-spotlight__card${inlineCard ? ' testimonial-spotlight__card--inline' : ''}`}>
-      <div className="testimonial-spotlight__profile">
+    <article className={`testimonial-spotlight__card${inlineCard ? ' testimonial-spotlight__card--inline' : ''}${centeredCard ? ' testimonial-spotlight__card--centered' : ''}`}>
+      <div className={`testimonial-spotlight__profile${centeredCard ? ' testimonial-spotlight__profile--centered' : ''}`}>
         <div className="testimonial-spotlight__portrait-wrap">
           <img
             className="testimonial-spotlight__portrait"
@@ -23,14 +25,14 @@ export function TestimonialSpotlightSection({ content }) {
           />
         </div>
 
-        <div className="testimonial-spotlight__identity">
+        <div className={`testimonial-spotlight__identity${centeredCard ? ' testimonial-spotlight__identity--centered' : ''}`}>
           <h3 className="testimonial-spotlight__name">{testimonial.name}</h3>
           <p className="testimonial-spotlight__role">{testimonial.role}</p>
           <p className="testimonial-spotlight__affiliation">{testimonial.affiliation}</p>
         </div>
       </div>
 
-      <blockquote className="testimonial-spotlight__quote">
+      <blockquote className={`testimonial-spotlight__quote${centeredCard ? ' testimonial-spotlight__quote--centered' : ''}`}>
         <p>{testimonial.quote}</p>
       </blockquote>
     </article>
@@ -38,7 +40,7 @@ export function TestimonialSpotlightSection({ content }) {
 
   return (
     <section className="testimonial-spotlight" style={sectionStyle}>
-      <div className="testimonial-spotlight__intro-layout">
+      <div className={`testimonial-spotlight__intro-layout${stackedMediaCard ? ' testimonial-spotlight__intro-layout--stacked-media-card' : ''}`}>
         <div className="testimonial-spotlight__intro-column">
           <div className="testimonial-spotlight__intro">
             <h2 className="testimonial-spotlight__heading">
@@ -49,6 +51,18 @@ export function TestimonialSpotlightSection({ content }) {
           </div>
 
           {inlineCard ? card : null}
+          {stackedMediaCard ? (
+            <div className="testimonial-spotlight__product-frame testimonial-spotlight__product-frame--stacked">
+              <img
+                className="testimonial-spotlight__product-image"
+                src={productImage.src}
+                alt={productImage.alt}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          ) : null}
+          {stackedMediaCard ? card : null}
         </div>
 
         <div className="testimonial-spotlight__media-column">
@@ -64,7 +78,7 @@ export function TestimonialSpotlightSection({ content }) {
         </div>
       </div>
 
-      {inlineCard ? null : card}
+      {inlineCard || stackedMediaCard ? null : card}
     </section>
   )
 }

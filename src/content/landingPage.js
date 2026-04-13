@@ -310,6 +310,32 @@ export const samanthaSpotlightSection = {
   },
 }
 
+export const onboardingSpotlightSection = {
+  headingLine1: 'Up & Running',
+  headingLine2: 'in an Afternoon',
+  body: 'No months-long training. If you’ve used an AI assistant before, you’re already halfway there. New to AI? Toggle Guided Analysis for step-by-step help - from smart starter questions to defensible synthesis.',
+  layout: 'stacked-media-card',
+  productImage: {
+    src: 'https://framerusercontent.com/images/WAADaMQ17axm0QczmVO6Tvm9wSY.png?width=4420&height=923',
+    alt: 'QInsights onboarding workflow illustration showing guided analysis and setup flow',
+  },
+  testimonial: {
+    photo: 'https://framerusercontent.com/images/q3Ij4s5TRo9hyEXWxielmVo.jpeg?width=800&height=800',
+    name: 'Dr. Elisabeth Brackerdaponte',
+    role: 'Doctor',
+    affiliation: 'Cornelsen Verlag GmbH, Germany',
+    quote: '"QInsights supports us with impressive quality in analyzing qualitative data, saving us a great deal of time. It’s developed with strong user focus and offers excellent customer service."',
+  },
+  theme: {
+    headingColor: '#111111',
+    bodyColor: '#111111',
+    roleColor: '#2f7aa8',
+    cardBackground: '#eef8ff',
+    portraitBackground: 'linear-gradient(180deg, #d8efff 0%, #eef8ff 100%)',
+    cardAlign: 'center',
+  },
+}
+
 export const designedForResearchersSection = {
   heading: 'Designed for Researchers Under Real Pressure',
   subtitle: 'Whether you\'re in academia, consulting, marketing, or evaluation, QInsights supports qualitative work where rigor and deadlines both matter.',
