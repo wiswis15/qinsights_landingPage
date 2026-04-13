@@ -56,3 +56,11 @@ export const trustLogos = [
   { name: 'Trusted organization 10', src: logo10, width: 159, alt: 'Trusted organization logo 10' },
   { name: 'Trusted organization 11', src: logo11, width: 148, alt: 'Trusted organization logo 11' },
 ]
+
+export const productProof = {
+  image: {
+    src: 'https://framerusercontent.com/images/E3g07IGU9BA2wx8ArJpk21aVm8.png?width=1344&height=389',
+    alt: 'Q-Insights interface preview displayed on a desktop screen',
+  },
+  statement: 'Used by researchers at leading universities, evaluation institutes, and market research teams.',
+}

@@ -2,7 +2,8 @@ import './App.css'
 import { Hero } from './components/Hero'
 import { LogoTicker } from './components/LogoTicker'
 import { Navbar } from './components/Navbar'
-import { actions, heroCopy, navLinks, trustLogos } from './content/landingPage'
+import { ProductProofSection } from './components/ProductProofSection'
+import { actions, heroCopy, navLinks, productProof, trustLogos } from './content/landingPage'
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Navbar links={navLinks} actions={actions} />
         <Hero copy={heroCopy} cta={actions.cta} />
         <LogoTicker title="Analysis you can trust." logos={trustLogos} />
+        <ProductProofSection image={productProof.image} statement={productProof.statement} />
       </div>
     </div>
   )
