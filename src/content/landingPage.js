@@ -138,3 +138,17 @@ export const featureSplitSection = {
     },
   ],
 }
+
+export const webinarHighlightSection = {
+  eyebrow: 'Insights On-Demand:',
+  title: 'Our Webinar Series',
+  body: 'Stay ahead of the curve with our collection of live and on-demand webinars. Learn best practices, discover industry trends, and gain actionable insights directly from our experts. Access the knowledge you need, whenever you need it.',
+  cta: {
+    label: 'Explore All Webinars',
+    href: 'https://www.qinsights.info/webinars',
+  },
+  image: {
+    src: 'https://framerusercontent.com/images/8R8HbaFJm9qxLyQRqebr8zYDcpA.png?width=600&height=604',
+    alt: 'Live webinar promotional artwork for Q-Insights',
+  },
+}
