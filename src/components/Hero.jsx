@@ -1,3 +1,5 @@
+import { DemoVideo } from './DemoVideo'
+
 const metrics = ['AI-Powered Qualitative Analysis', 'Traceable Workflows', 'Researcher-Controlled Output']
 
 export function Hero({ copy, cta }) {
@@ -19,6 +21,8 @@ export function Hero({ copy, cta }) {
             <span className="button__arrow" aria-hidden="true">{'\u2192'}</span>
           </a>
         </div>
+
+        <DemoVideo className="hero__demo" src={copy.demoVideo.src} title={copy.demoVideo.title} />
 
         <ul className="hero__meta" aria-label="Product qualities">
           {metrics.map((metric) => (

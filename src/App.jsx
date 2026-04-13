@@ -29,6 +29,10 @@ const actions = {
 const heroCopy = {
   title: 'Stop drowning in transcripts. Get defensible insights with AI-assisted control.',
   body: 'QInsights is a qualitative analysis workspace for overloaded researchers who need traceable, transparent insights \u2014 not black-box AI guesses. AI helps with the volume. You stay in charge of the thinking.',
+  demoVideo: {
+    src: 'https://framerusercontent.com/assets/O0noLfORFsZg7rr4p4DmFe0fX3A.mp4',
+    title: 'Q-Insights product demo',
+  },
 }
 
 export default function App() {
