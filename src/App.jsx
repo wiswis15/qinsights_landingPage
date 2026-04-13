@@ -1,4 +1,5 @@
 import './App.css'
+import { CallToActionSection } from './components/CallToActionSection'
 import { ComparisonSection } from './components/ComparisonSection'
 import { DesignedForResearchersSection } from './components/DesignedForResearchersSection'
 import { FeatureSplitSection } from './components/FeatureSplitSection'
@@ -13,6 +14,7 @@ import { TestimonialsSection } from './components/TestimonialsSection'
 import { WebinarHighlightSection } from './components/WebinarHighlightSection'
 import {
   actions,
+  callToActionSection,
   comparisonSection,
   designedForResearchersSection,
   featureSplitSection,
@@ -43,6 +45,7 @@ export default function App() {
         <DesignedForResearchersSection content={designedForResearchersSection} />
         <TestimonialsSection content={testimonialsSection} />
         <PrivacySecuritySection content={privacySecuritySection} />
+        <CallToActionSection content={callToActionSection} />
       </div>
     </div>
   )

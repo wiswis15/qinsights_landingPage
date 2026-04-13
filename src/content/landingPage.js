@@ -311,3 +311,21 @@ export const privacySecuritySection = {
     },
   ],
 }
+
+export const callToActionSection = {
+  heading: 'Try QInsights with a real project.',
+  body: 'Bring one set of transcripts or open-ended responses into QInsights and see what it feels like to analyse with clarity instead of chaos.',
+  actions: [
+    {
+      label: 'Book a Live Walkthrough',
+      href: 'https://qinsights.vercel.app/register',
+      variant: 'secondary',
+    },
+    {
+      label: 'Start Free',
+      href: 'https://qinsights.vercel.app/register',
+      variant: 'primary',
+    },
+  ],
+  footnote: 'No credit card required. Ideal for academic as well as professional research, market analysis, evaluations, and collaborative teams.',
+}
