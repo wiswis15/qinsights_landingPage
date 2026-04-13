@@ -2,6 +2,7 @@ import './App.css'
 import { CallToActionSection } from './components/CallToActionSection'
 import { ComparisonSection } from './components/ComparisonSection'
 import { DesignedForResearchersSection } from './components/DesignedForResearchersSection'
+import { Footer } from './components/Footer'
 import { FaqSection } from './components/FaqSection'
 import { FeatureSplitSection } from './components/FeatureSplitSection'
 import { HowItWorksSection } from './components/HowItWorksSection'
@@ -19,6 +20,7 @@ import {
   callToActionSection,
   comparisonSection,
   designedForResearchersSection,
+  footerContent,
   faqSection,
   featureSplitSection,
   heroCopy,
@@ -52,6 +54,7 @@ export default function App() {
         <CallToActionSection content={callToActionSection} />
         <NewsletterSection content={newsletterSection} />
         <FaqSection content={faqSection} />
+        <Footer content={footerContent} />
       </div>
     </div>
   )

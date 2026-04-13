@@ -480,3 +480,50 @@ export const faqSection = {
     },
   ],
 }
+
+export const footerContent = {
+  brand: {
+    logo: {
+      src: 'https://framerusercontent.com/images/Q9rz4yZMCZVjxacKp2KQIWkUmU.png?width=688&height=105',
+      alt: 'QInsights logo',
+    },
+    tagline: 'Your Thinking Partner for Qualitative Research',
+  },
+  pagesHeading: 'Pages',
+  pages: [
+    { label: 'Home', href: '/' },
+    { label: 'Pricing', href: '/pricing' },
+    { label: 'About Us', href: '/team' },
+    { label: 'Contact Us', href: '/contact' },
+    { label: 'Blog', href: '/blog' },
+  ],
+  contactHeading: 'Find us on',
+  socialLinks: [
+    {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/company/qinsights-ai/?viewAsMember=true',
+      icon: 'linkedin',
+    },
+    {
+      label: 'YouTube',
+      href: 'https://youtube.com/playlist?list=PLSgHlhN1_M_N470aYDJeqxHYS8aR8ykPv&si=zoCsBgtHzS3tWv1t',
+      icon: 'youtube',
+    },
+  ],
+  contacts: [
+    {
+      label: 'hello@qinsights.ai',
+      href: 'mailto:hello@qinsights.ai',
+    },
+    {
+      label: 'support@qinsights.ai',
+      href: 'mailto:support@qinsights.ai',
+    },
+  ],
+  metaLabel: 'AI-Powered Qualitative Analysis',
+  metaLinks: [
+    { label: 'Privacy policy', href: '/privacy' },
+    { label: 'Terms & conditions', href: '/terms' },
+    { label: 'Customer information', href: '/customer-information' },
+  ],
+}
