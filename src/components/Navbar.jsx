@@ -1,6 +1,11 @@
 import { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 const logoSrc = 'https://framerusercontent.com/images/Q9rz4yZMCZVjxacKp2KQIWkUmU.png?width=688&height=105'
+
+function isInternalLink(href) {
+  return href.startsWith('/')
+}
 
 export function Navbar({ links, actions }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -8,9 +13,9 @@ export function Navbar({ links, actions }) {
   return (
     <header className="site-header">
       <nav className="navbar" aria-label="Primary">
-        <a className="navbar__brand" href="/" aria-label="Q Insights home">
+        <Link className="navbar__brand" to="/" aria-label="Q Insights home">
           <img className="navbar__logo" src={logoSrc} alt="Q Insights" />
-        </a>
+        </Link>
 
         <button
           className="navbar__toggle"
@@ -28,12 +33,20 @@ export function Navbar({ links, actions }) {
           <ul className="navbar__links">
             {links.map((link) => (
               <li key={`${link.label}-${link.href}`}>
-                <a
-                  className={`navbar__link${link.active ? ' navbar__link--active' : ''}`}
-                  href={link.href}
-                >
-                  {link.label}
-                </a>
+                {isInternalLink(link.href) ? (
+                  <NavLink
+                    className={({ isActive }) => `navbar__link${isActive ? ' navbar__link--active' : ''}`}
+                    end={link.href === '/'}
+                    to={link.href}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </NavLink>
+                ) : (
+                  <a className="navbar__link" href={link.href} onClick={() => setIsOpen(false)}>
+                    {link.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>

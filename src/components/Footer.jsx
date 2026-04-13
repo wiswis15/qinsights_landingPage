@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function LinkedInIcon() {
   return (
     <svg viewBox="0 0 48 48" aria-hidden="true">
@@ -32,18 +34,22 @@ function SocialIcon({ icon }) {
   return <YouTubeIcon />
 }
 
+function isInternalLink(href) {
+  return href.startsWith('/')
+}
+
 export function Footer({ content }) {
   return (
     <footer className="site-footer">
       <div className="site-footer__top">
         <div className="site-footer__brand">
-          <a className="site-footer__brand-link" href="/" aria-label="QInsights home">
+          <Link className="site-footer__brand-link" to="/" aria-label="QInsights home">
             <img
               className="site-footer__logo"
               src={content.brand.logo.src}
               alt={content.brand.logo.alt}
             />
-          </a>
+          </Link>
           <p className="site-footer__tagline">{content.brand.tagline}</p>
         </div>
 
@@ -52,9 +58,15 @@ export function Footer({ content }) {
           <ul className="site-footer__links">
             {content.pages.map((page) => (
               <li key={`${page.label}-${page.href}`}>
-                <a className="site-footer__link" href={page.href}>
-                  {page.label}
-                </a>
+                {isInternalLink(page.href) ? (
+                  <Link className="site-footer__link" to={page.href}>
+                    {page.label}
+                  </Link>
+                ) : (
+                  <a className="site-footer__link" href={page.href}>
+                    {page.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -97,9 +109,15 @@ export function Footer({ content }) {
         <ul className="site-footer__meta-links">
           {content.metaLinks.map((link) => (
             <li key={`${link.label}-${link.href}`}>
-              <a className="site-footer__meta-link" href={link.href}>
-                {link.label}
-              </a>
+              {isInternalLink(link.href) ? (
+                <Link className="site-footer__meta-link" to={link.href}>
+                  {link.label}
+                </Link>
+              ) : (
+                <a className="site-footer__meta-link" href={link.href}>
+                  {link.label}
+                </a>
+              )}
             </li>
           ))}
         </ul>

@@ -11,7 +11,7 @@ import logo10 from '../assets/logo-ticker/logo-10.png'
 import logo11 from '../assets/logo-ticker/logo-11.png'
 
 export const navLinks = [
-  { label: 'Home', href: '/', active: true },
+  { label: 'Home', href: '/' },
   { label: 'Pricing', href: '/pricing' },
   { label: 'About Us', href: '/team' },
   { label: 'Contact Us', href: '/contact' },

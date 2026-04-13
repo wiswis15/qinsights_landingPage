@@ -8,6 +8,25 @@
   margin: 0 auto;
 }
 
+.mock-page {
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 0;
+}
+
+.mock-page__title {
+  margin: 0;
+  color: #111111;
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(40px, 7vw, 72px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
 .site-header {
   padding-top: 24px;
 }
