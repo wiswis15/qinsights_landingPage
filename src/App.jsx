@@ -7,6 +7,7 @@ import { Hero } from './components/Hero'
 import { LogoTicker } from './components/LogoTicker'
 import { Navbar } from './components/Navbar'
 import { PainPointsSection } from './components/PainPointsSection'
+import { PrivacySecuritySection } from './components/PrivacySecuritySection'
 import { ProductProofSection } from './components/ProductProofSection'
 import { TestimonialsSection } from './components/TestimonialsSection'
 import { WebinarHighlightSection } from './components/WebinarHighlightSection'
@@ -19,6 +20,7 @@ import {
   howItWorksSection,
   navLinks,
   painPointsSection,
+  privacySecuritySection,
   productProof,
   testimonialsSection,
   trustLogos,
@@ -40,6 +42,7 @@ export default function App() {
         <ComparisonSection content={comparisonSection} />
         <DesignedForResearchersSection content={designedForResearchersSection} />
         <TestimonialsSection content={testimonialsSection} />
+        <PrivacySecuritySection content={privacySecuritySection} />
       </div>
     </div>
   )

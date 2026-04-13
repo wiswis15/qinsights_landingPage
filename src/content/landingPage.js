@@ -280,3 +280,34 @@ export const designedForResearchersSection = {
   ],
   closingStatement: 'If you\'re juggling complex software tutorials, overgrown spreadsheets, and ChatGPT exports, QInsights gives you a calmer, more defensible way forward.',
 }
+
+export const privacySecuritySection = {
+  heading: "Your participants' words are sensitive. We treat them that way.",
+  subtitle: 'QInsights is built for qualitative work where confidentiality and ethics matter.',
+  cards: [
+    {
+      title: 'GDPR-aligned',
+      body: 'Data handling designed with European privacy standards in mind. You stay in control of what is uploaded and deleted.',
+      image: {
+        src: 'https://framerusercontent.com/images/qmOcIC89rzyPI7DZsMgDfgqSkwo.png?width=940&height=940',
+        alt: 'Illustration representing GDPR-aligned data handling',
+      },
+    },
+    {
+      title: 'No training on your data',
+      body: 'Your project data is never used to train generic models. It stays your project, your context, your responsibility.',
+      image: {
+        src: 'https://framerusercontent.com/images/UH9uH5H4kemXFFVtsRhzq8NHOlU.png?width=3024&height=3116',
+        alt: 'Illustration representing isolated project data',
+      },
+    },
+    {
+      title: 'Encryption by default',
+      body: 'Data is encrypted in transit and at rest, so you can focus on analysis knowing that the basics are covered.',
+      image: {
+        src: 'https://framerusercontent.com/images/fFehu4dGSkCKxrxAlA4EJFTxw.jpg?width=503&height=503',
+        alt: 'Illustration representing default encryption',
+      },
+    },
+  ],
+}
