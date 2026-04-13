@@ -329,3 +329,15 @@ export const callToActionSection = {
   ],
   footnote: 'No credit card required. Ideal for academic as well as professional research, market analysis, evaluations, and collaborative teams.',
 }
+
+export const newsletterSection = {
+  heading: 'Subscribe to our Newsletter',
+  image: {
+    src: 'https://framerusercontent.com/images/6fhM7K34PqKkBdrg9LVTEU5aI4.png?width=1288&height=1074',
+    alt: 'Newsletter section illustration promoting QInsights updates',
+  },
+  cta: {
+    label: 'Subscribe',
+    href: '#',
+  },
+}

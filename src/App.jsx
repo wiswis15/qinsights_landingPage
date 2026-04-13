@@ -7,6 +7,7 @@ import { HowItWorksSection } from './components/HowItWorksSection'
 import { Hero } from './components/Hero'
 import { LogoTicker } from './components/LogoTicker'
 import { Navbar } from './components/Navbar'
+import { NewsletterSection } from './components/NewsletterSection'
 import { PainPointsSection } from './components/PainPointsSection'
 import { PrivacySecuritySection } from './components/PrivacySecuritySection'
 import { ProductProofSection } from './components/ProductProofSection'
@@ -21,6 +22,7 @@ import {
   heroCopy,
   howItWorksSection,
   navLinks,
+  newsletterSection,
   painPointsSection,
   privacySecuritySection,
   productProof,
@@ -46,6 +48,7 @@ export default function App() {
         <TestimonialsSection content={testimonialsSection} />
         <PrivacySecuritySection content={privacySecuritySection} />
         <CallToActionSection content={callToActionSection} />
+        <NewsletterSection content={newsletterSection} />
       </div>
     </div>
   )
