@@ -341,3 +341,142 @@ export const newsletterSection = {
     href: '#',
   },
 }
+
+export const faqSection = {
+  heading: 'Frequently Asked Questions',
+  items: [
+    {
+      question: 'What languages can I analyse?',
+      answer: [
+        {
+          type: 'paragraph',
+          text: 'QInsights supports most commonly spoken languages. For example, if you upload a document in Spanish, the system will recognize the language and provide a summary in Spanish. If you then ask a question in English, the answer will be provided in English, while any quoted text from the source remains in the original language.',
+        },
+        {
+          type: 'paragraph',
+          text: "Tip: To view the QInsights interface in your preferred language, adjust your browser's language settings. Our interface will follow your browser preferences.",
+        },
+      ],
+    },
+    {
+      question: 'How can I get support if I have a question or problem?',
+      answer: [
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'text', text: 'You can contact our support team by emailing ' },
+            { type: 'link', text: 'support@qinsights.ai', href: 'mailto:support@qinsights.ai' },
+            { type: 'text', text: '.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          text: "When you register, you'll also receive a series of onboarding emails with helpful information, including a link to our user guide and video tutorials to guide you through your first steps with QInsights.",
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'link', text: 'English Tutorials', href: 'https://youtube.com/playlist?list=PLSgHlhN1_M_N470aYDJeqxHYS8aR8ykPv&si=zoCsBgtHzS3tWv1t', external: true },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'link', text: 'Spanish Tutorials', href: 'https://youtube.com/playlist?list=PLSgHlhN1_M_N470aYDJeqxHYS8aR8ykPv&si=zoCsBgtHzS3tWv1t', external: true },
+          ],
+        },
+      ],
+    },
+    {
+      question: 'What types of data can I analyse with QInsights?',
+      answer: [
+        {
+          type: 'paragraph',
+          text: 'You can upload and analyse a wide range of unstructured text formats, including:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Interview and focus group transcripts (DOCX, TXT, PDF)',
+            'Open-ended survey responses (Excel)',
+            'Reports, articles, and documents',
+            'Audio files (MP3, M4A) — these are automatically transcribed for analysis',
+          ],
+        },
+      ],
+    },
+    {
+      question: 'Does QInsights generate citations or references to my data?',
+      answer: [
+        {
+          type: 'paragraph',
+          text: 'Yes. When QInsights provides themes or answers, it includes supporting quotes or segments from your uploaded documents. This lets you verify and trace where insights come from—ensuring transparency and trustworthiness.',
+        },
+      ],
+    },
+    {
+      question: 'Can I use QInsights for team projects?',
+      answer: [
+        {
+          type: 'paragraph',
+          text: 'Yes. QInsights supports team collaboration. You can share projects with team members who also have a QInsights account, making it easy to collaborate on data analysis within your research group, organization, or consultancy team.',
+        },
+      ],
+    },
+    {
+      question: 'Can we use QInsights within our own company / organisation network?',
+      answer: [
+        {
+          type: 'paragraph',
+          text: 'Yes, this is possible. We offer on-premise or private deployment solutions at an additional cost. Please contact us to discuss your needs:',
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'link', text: 'support@qinsights.ai', href: 'mailto:support@qinsights.ai' },
+          ],
+        },
+      ],
+    },
+    {
+      question: 'Data Security & Compliances',
+      answer: [
+        {
+          type: 'paragraph',
+          text: 'All your content is stored securely on servers located in Europe. We comply with numerous international privacy standards and regulations, including GDPR, ISO/IEC 27701, ISO/IEC 27018, EU SCCs, HIPAA, HITRUST, FERPA, Japan My Number Act, Canada PIPEDA, Spain LOPD, and Argentina PDPA.',
+        },
+        {
+          type: 'paragraph',
+          text: 'All data is encrypted both in transit and at rest using state-of-the-art encryption and key management practices.',
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'text', text: 'For more details, please visit our ' },
+            { type: 'link', text: 'privacy page', href: '/privacy' },
+            { type: 'text', text: '. If you require specific documentation for ethics committees or data protection officers, contact us at ' },
+            { type: 'link', text: 'support@qinsights.ai', href: 'mailto:support@qinsights.ai' },
+            { type: 'text', text: '.' },
+          ],
+        },
+      ],
+    },
+    {
+      question: 'Is my data shared with any third parties?',
+      answer: [
+        {
+          type: 'paragraph',
+          text: 'No. QInsights places the highest priority on the privacy and security of your data. Your data is never used for training purposes and is not shared beyond what is necessary for processing. You retain full ownership of your content at all times.',
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'text', text: 'See our ' },
+            { type: 'link', text: 'privacy page', href: '/privacy' },
+            { type: 'text', text: '.' },
+          ],
+        },
+      ],
+    },
+  ],
+}
