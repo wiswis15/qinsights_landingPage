@@ -52,6 +52,40 @@ export const teamHero = {
   },
 }
 
+export const teamStorySection = {
+  title: 'Why We Built QInsights',
+  blocks: [
+    {
+      type: 'paragraph',
+      text: 'At QInsights, we’re not just building software — we’re building a new way of thinking about qualitative research in the age of AI. QInsights was born out of her desire to empower researchers — not replace them — by combining cutting-edge AI with the kind of insight that only humans can provide.',
+    },
+    {
+      type: 'subheading',
+      text: 'Built on an Ethical Compass',
+    },
+    {
+      type: 'paragraph',
+      text: 'We don’t believe in black-box AI. Our approach is transparent, responsible, and designed to elevate—not automate—your thinking. We stand for ethical co-intelligence where you stay in control of your analysis.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Our work is grounded in qualitative research traditions, not just AI trends. We translate complex analytic processes into intuitive, research-driven workflows—so you don’t need to be a methods expert to produce meaningful results.',
+    },
+    {
+      type: 'paragraph',
+      segments: [
+        { type: 'text', text: 'QInsights isn’t just a tool; it’s part of a movement. Through ' },
+        { type: 'link', text: 'workshops, articles, and our podcast', href: 'https://qeludra.com/', external: true },
+        { type: 'text', text: ', we’re shaping the future of AI-powered qualitative research and sharing that journey with a global community.' },
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'We believe in showing up as we are: reflective, curious, and open to learning. QInsights continues to evolve through honest dialogue with our users. We listen, we adapt, and we grow—with you.',
+    },
+  ],
+}
+
 export const trustLogos = [
   { name: 'Trusted organization 1', src: logo1, width: 253, alt: 'Trusted organization logo 1' },
   { name: 'Trusted organization 2', src: logo2, width: 137, alt: 'Trusted organization logo 2' },

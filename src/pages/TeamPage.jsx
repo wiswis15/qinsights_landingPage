@@ -1,6 +1,12 @@
+import { TeamStorySection } from '../components/TeamStorySection'
 import { TeamHero } from '../components/TeamHero'
-import { teamHero } from '../content/landingPage'
+import { teamHero, teamStorySection } from '../content/landingPage'
 
 export function TeamPage() {
-  return <TeamHero content={teamHero} />
+  return (
+    <>
+      <TeamHero content={teamHero} />
+      <TeamStorySection content={teamStorySection} />
+    </>
+  )
 }
