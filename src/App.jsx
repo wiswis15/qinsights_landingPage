@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar'
 import { Outlet, Route, Routes } from 'react-router-dom'
 import { actions, footerContent, navLinks } from './content/landingPage'
 import { HomePage } from './pages/HomePage'
+import { ContactPage } from './pages/ContactPage'
 import { MockPage } from './pages/MockPage'
 import { TeamPage } from './pages/TeamPage'
 import { PricingPage } from './pages/PricingPage'
@@ -27,7 +28,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/team" element={<TeamPage />} />
-        <Route path="/contact" element={<MockPage name="Contact" />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/blog" element={<MockPage name="Blog" />} />
         <Route path="/privacy" element={<MockPage name="Privacy" />} />
         <Route path="/terms" element={<MockPage name="Terms" />} />

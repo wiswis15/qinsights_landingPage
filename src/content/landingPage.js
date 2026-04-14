@@ -63,6 +63,15 @@ export const pricingHero = {
   },
 }
 
+export const contactHero = {
+  title: 'Reach out to our Team',
+  subtitle: 'Research That Matters Deserves a Plan That Fits',
+  backdrop: {
+    src: 'https://framerusercontent.com/images/4FsUg1TkQOlM1JhWkNaLldmwI.png?width=1920&height=671',
+    alt: '',
+  },
+}
+
 export const freeTrialSection = {
   title: 'Free Trial Available',
   subtitle: '1 Million Tokens',
