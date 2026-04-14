@@ -862,6 +862,20 @@ export const pricingComparisonSection = {
   ],
 }
 
+export const pricingContactCtaSection = {
+  eyebrow: 'Not sure which plan fits?',
+  headline: 'Let’s talk,',
+  body: 'We’ll help you find the right setup for your project.',
+  image: {
+    src: 'https://framerusercontent.com/images/NJJlcNBPbqDtVWmVWLkF4DdDE.png?scale-down-to=512&width=743&height=542',
+    alt: 'Illustration for discussing the right QInsights setup',
+  },
+  action: {
+    label: 'Discuss your use case',
+    href: 'https://app.simplymeet.me',
+  },
+}
+
 export const whyChooseQInsightsSection = {
   eyebrow: 'Why Choose QInsights?',
   subtitle: 'Purpose-Built for Qualitative Research – Powered by Human-AI Collaboration',
