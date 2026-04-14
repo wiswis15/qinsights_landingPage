@@ -86,6 +86,34 @@ export const teamStorySection = {
   ],
 }
 
+export const teamProfilesSection = {
+  profiles: [
+    {
+      name: 'Dr Susanne Friese (co-founder)',
+      role: 'CEO and domain expert',
+      image: {
+        src: 'https://framerusercontent.com/images/4lzjuMn0AioIHdTg7xzpdXuBurY.jpg?scale-down-to=512&width=2560&height=2056',
+        alt: 'Portrait of Dr Susanne Friese',
+      },
+      paragraphs: [
+        '30+ years of experience in qualitative research and qualitative computing.',
+        'Keynote speaker and thought leader in AI for Qualitative Researcher',
+      ],
+    },
+    {
+      name: 'Wissem Golli (co-founder)',
+      role: 'CTO',
+      image: {
+        src: 'https://framerusercontent.com/images/O0MJqmRZMFqVIasmlwI6fGLtnso.png?scale-down-to=512&width=2048&height=1664',
+        alt: 'Portrait of Wissem Golli',
+      },
+      paragraphs: [
+        'With 12 years in software development and 3 years focused on AI and LLM, our technical co-founder excels at turning ideas into reality and building the right team to make it happen.',
+      ],
+    },
+  ],
+}
+
 export const trustLogos = [
   { name: 'Trusted organization 1', src: logo1, width: 253, alt: 'Trusted organization logo 1' },
   { name: 'Trusted organization 2', src: logo2, width: 137, alt: 'Trusted organization logo 2' },

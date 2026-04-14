@@ -1081,6 +1081,97 @@
   text-decoration: underline;
 }
 
+.team-profiles {
+  padding: 0 0 144px;
+}
+
+.team-profiles__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  width: 100%;
+}
+
+.team-profiles__item {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  min-width: 0;
+}
+
+.team-profiles__media {
+  width: 100%;
+  aspect-ratio: 1.24514;
+  overflow: hidden;
+}
+
+.team-profiles__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.team-profiles__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+.team-profiles__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.team-profiles__name {
+  margin: 0;
+  color: #111111;
+  font-family: 'Source Serif 4', serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: left;
+  opacity: 0;
+  animation: webinar-slide-in 620ms 80ms ease-out forwards;
+}
+
+.team-profiles__role {
+  margin: 0;
+  color: #111111;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-align: left;
+  opacity: 0;
+  animation: webinar-slide-in 620ms 140ms ease-out forwards;
+}
+
+.team-profiles__body {
+  opacity: 0;
+  animation: webinar-slide-in 620ms 200ms ease-out forwards;
+}
+
+.team-profiles__body p {
+  margin: 0;
+  color: #111111;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.team-profiles__body p + p {
+  margin-top: 12px;
+}
+
 @keyframes hero-fade {
   from {
     opacity: 0;
@@ -3311,6 +3402,30 @@
     font-size: 18px;
   }
 
+  .team-profiles {
+    padding: 0 0 104px;
+  }
+
+  .team-profiles__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-profiles__item {
+    gap: 28px;
+  }
+
+  .team-profiles__name {
+    font-size: 28px;
+  }
+
+  .team-profiles__role {
+    font-size: 22px;
+  }
+
+  .team-profiles__body p {
+    font-size: 18px;
+  }
+
   .testimonial-spotlight {
     padding: 0 0 104px;
   }
@@ -3404,6 +3519,15 @@
 
   .team-story__title,
   .team-story__body {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    transform: none;
+  }
+
+  .team-profiles__name,
+  .team-profiles__role,
+  .team-profiles__body {
     animation-duration: 0.01ms;
     animation-iteration-count: 1;
     opacity: 1;
