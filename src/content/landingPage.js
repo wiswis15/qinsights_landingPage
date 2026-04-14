@@ -73,7 +73,6 @@ export const contactHero = {
 }
 
 export const contactPricingFormSection = {
-  action: '/api/request-pricing',
   fields: {
     name: {
       label: 'Name',
@@ -95,6 +94,7 @@ export const contactPricingFormSection = {
   },
   submitLabel: 'Request Pricing',
   successMessage: 'Thank you. Your request has been sent to the QInsights team.',
+  validationMessage: 'Please review the highlighted fields and try again.',
   errorMessage: 'We could not send your request right now. Please try again later.',
 }
 

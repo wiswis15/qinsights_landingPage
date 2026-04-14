@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { sendContactRequest, validateContactPayload } from '../lib/contactRequest'
 
 const initialFormState = {
   name: '',
@@ -10,33 +11,35 @@ const initialFormState = {
 
 export function ContactPricingFormSection({ content }) {
   const [formData, setFormData] = useState(initialFormState)
+  const [fieldErrors, setFieldErrors] = useState({})
   const [status, setStatus] = useState({ type: 'idle', message: '' })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   function handleChange(event) {
     const { name, value } = event.target
     setFormData((current) => ({ ...current, [name]: value }))
+    setFieldErrors((current) => {
+      if (!current[name]) return current
+      return { ...current, [name]: '' }
+    })
   }
 
   async function handleSubmit(event) {
     event.preventDefault()
+    const validation = validateContactPayload(formData)
+
+    if (!validation.isValid) {
+      setFieldErrors(validation.errors)
+      setStatus({ type: 'error', message: content.validationMessage || content.errorMessage })
+      return
+    }
+
     setIsSubmitting(true)
     setStatus({ type: 'idle', message: '' })
+    setFieldErrors({})
 
     try {
-      const response = await fetch(content.action, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
-
-      const result = await response.json()
-
-      if (!response.ok) {
-        throw new Error(result.error || content.errorMessage)
-      }
+      await sendContactRequest(formData)
 
       setFormData(initialFormState)
       setStatus({ type: 'success', message: content.successMessage })
@@ -68,8 +71,15 @@ export function ContactPricingFormSection({ content }) {
               onChange={handleChange}
               autoComplete="name"
               placeholder={content.fields.name.placeholder}
+              aria-invalid={Boolean(fieldErrors.name)}
+              aria-describedby={fieldErrors.name ? 'contact-form-name-error' : undefined}
               required
             />
+            {fieldErrors.name && (
+              <span className="contact-pricing-form__error" id="contact-form-name-error">
+                {fieldErrors.name}
+              </span>
+            )}
           </label>
 
           <label className="contact-pricing-form__field">
@@ -82,8 +92,15 @@ export function ContactPricingFormSection({ content }) {
               onChange={handleChange}
               autoComplete="email"
               placeholder={content.fields.email.placeholder}
+              aria-invalid={Boolean(fieldErrors.email)}
+              aria-describedby={fieldErrors.email ? 'contact-form-email-error' : undefined}
               required
             />
+            {fieldErrors.email && (
+              <span className="contact-pricing-form__error" id="contact-form-email-error">
+                {fieldErrors.email}
+              </span>
+            )}
           </label>
 
           <label className="contact-pricing-form__field">
@@ -96,8 +113,15 @@ export function ContactPricingFormSection({ content }) {
               onChange={handleChange}
               autoComplete="organization"
               placeholder={content.fields.organization.placeholder}
+              aria-invalid={Boolean(fieldErrors.organization)}
+              aria-describedby={fieldErrors.organization ? 'contact-form-organization-error' : undefined}
               required
             />
+            {fieldErrors.organization && (
+              <span className="contact-pricing-form__error" id="contact-form-organization-error">
+                {fieldErrors.organization}
+              </span>
+            )}
           </label>
 
           <label className="contact-pricing-form__field">
@@ -109,8 +133,15 @@ export function ContactPricingFormSection({ content }) {
               onChange={handleChange}
               rows={6}
               placeholder={content.fields.licensingNeeds.placeholder}
+              aria-invalid={Boolean(fieldErrors.licensingNeeds)}
+              aria-describedby={fieldErrors.licensingNeeds ? 'contact-form-licensing-error' : undefined}
               required
             />
+            {fieldErrors.licensingNeeds && (
+              <span className="contact-pricing-form__error" id="contact-form-licensing-error">
+                {fieldErrors.licensingNeeds}
+              </span>
+            )}
           </label>
 
           <div className="contact-pricing-form__honeypot" aria-hidden="true">

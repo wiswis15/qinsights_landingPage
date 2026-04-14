@@ -4402,6 +4402,20 @@
   box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.03);
 }
 
+.contact-pricing-form__input[aria-invalid='true'],
+.contact-pricing-form__textarea[aria-invalid='true'] {
+  border-color: #d34b4b;
+  box-shadow: 0 0 0 2px rgba(211, 75, 75, 0.12);
+}
+
+.contact-pricing-form__error {
+  margin-top: 8px;
+  color: #a12a2a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 .contact-pricing-form__footer {
   display: flex;
   flex-direction: column;
