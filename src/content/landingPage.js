@@ -76,6 +76,90 @@ export const freeTrialSection = {
   }
 }
 
+export const pricingSection = {
+  cycles: [
+    { id: '6mo', label: '6 Months' },
+    { id: '12mo', label: '12 Months' }
+  ],
+  plans: [
+    {
+      id: 'educational',
+      name: 'Educational',
+      requirement: 'University Email Required',
+      prices: {
+        '6mo': 49,
+        '12mo': 86
+      },
+      features: {
+        '6mo': [
+          '500,000 Tokens',
+          'Standard AI Analysis',
+          'Export to Word/PDF',
+          'Community Support'
+        ],
+        '12mo': [
+          '1,000,000 Tokens',
+          'Standard AI Analysis',
+          'Export to Word/PDF',
+          'Community Support'
+        ]
+      },
+      buttonLabel: 'Start your Free Trial',
+      buttonHref: 'https://app.qinsights.ai/signup'
+    },
+    {
+      id: 'nonprofit',
+      name: 'Non-Profit',
+      requirement: 'Verification Required',
+      prices: {
+        '6mo': 79,
+        '12mo': 139
+      },
+      features: {
+        '6mo': [
+          '500,000 Tokens',
+          'Advanced AI Analysis',
+          'Export to Word/PDF',
+          'Email Support'
+        ],
+        '12mo': [
+          '1,000,000 Tokens',
+          'Advanced AI Analysis',
+          'Export to Word/PDF',
+          'Email Support'
+        ]
+      },
+      buttonLabel: 'Start your Free Trial',
+      buttonHref: 'https://app.qinsights.ai/signup'
+    },
+    {
+      id: 'business',
+      name: 'Regular Business',
+      requirement: 'For commercial use',
+      prices: {
+        '6mo': 99,
+        '12mo': 174
+      },
+      features: {
+        '6mo': [
+          '500,000 Tokens',
+          'Unlimited Projects',
+          'Advanced AI Analysis',
+          'Priority Support'
+        ],
+        '12mo': [
+          '1,000,000 Tokens',
+          'Unlimited Projects',
+          'Advanced AI Analysis',
+          'Priority Support'
+        ]
+      },
+      buttonLabel: 'Start your Free Trial',
+      buttonHref: 'https://app.qinsights.ai/signup'
+    }
+  ]
+}
+
 export const teamStorySection = {
   title: 'Why We Built QInsights',
   blocks: [
