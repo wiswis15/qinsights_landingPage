@@ -6,6 +6,7 @@ import { actions, footerContent, navLinks } from './content/landingPage'
 import { HomePage } from './pages/HomePage'
 import { MockPage } from './pages/MockPage'
 import { TeamPage } from './pages/TeamPage'
+import { PricingPage } from './pages/PricingPage'
 
 function SiteLayout() {
   return (
@@ -24,7 +25,7 @@ export default function App() {
     <Routes>
       <Route element={<SiteLayout />}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/pricing" element={<MockPage name="Pricing" />} />
+        <Route path="/pricing" element={<PricingPage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/contact" element={<MockPage name="Contact" />} />
         <Route path="/blog" element={<MockPage name="Blog" />} />

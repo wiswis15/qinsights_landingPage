@@ -52,6 +52,15 @@ export const teamHero = {
   },
 }
 
+export const pricingHero = {
+  title: 'QInsights Licensing Options',
+  subtitle: 'Research That Matters Deserves a Plan That Fits',
+  backdrop: {
+    src: 'https://framerusercontent.com/images/4FsUg1TkQOlM1JhWkNaLldmwI.png?width=1920&height=671',
+    alt: '',
+  },
+}
+
 export const teamStorySection = {
   title: 'Why We Built QInsights',
   blocks: [
