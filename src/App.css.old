@@ -4020,7 +4020,7 @@
 }
 
 .larger-scale-plans__card--highlight {
-  background-color: #f5f3ff; /* pale lavender/blue */
+  background-color: #f3f5fc;
   border: 1px solid transparent;
 }
 
@@ -4077,7 +4077,6 @@
 .larger-scale-plans__check {
   flex-shrink: 0;
   margin-top: 2px;
-  color: #7c3aed; /* purple */
 }
 
 .larger-scale-plans__cta {
@@ -4086,12 +4085,12 @@
   justify-content: center;
   padding: 12px 24px;
   font-family: "Urbanist", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   color: #111111;
   background-color: #ffffff;
-  border: 1px solid rgba(17, 17, 17, 0.15);
-  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
   text-decoration: none;
   transition: all 0.2s ease;
   margin-top: 8px;
@@ -4100,7 +4099,5 @@
 
 .larger-scale-plans__cta:hover {
   background-color: #f9f9f9;
-  border-color: rgba(17, 17, 17, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-color: #111111;
 }
-

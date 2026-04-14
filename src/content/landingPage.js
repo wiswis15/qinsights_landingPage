@@ -9,6 +9,8 @@ import logo8 from '../assets/logo-ticker/logo-8.png'
 import logo9 from '../assets/logo-ticker/logo-9.png'
 import logo10 from '../assets/logo-ticker/logo-10.png'
 import logo11 from '../assets/logo-ticker/logo-11.png'
+import teamIcon from '../assets/team.svg'
+import enterpriseIcon from '../assets/enterprise.svg'
 
 export const navLinks = [
   { label: 'Home', href: '/' },
@@ -781,3 +783,36 @@ export const footerContent = {
     { label: 'Customer information', href: '/customer-information' },
   ],
 }
+
+export const largerScalePlansSection = {
+  title: 'Larger-Scale Plans',
+  plans: [
+    {
+      title: 'Team License',
+      icon: teamIcon,
+      targetAudience: 'For small research teams (3–10 users).',
+      features: [
+        'Shared token pool',
+        'Flexible user management',
+        'Bundled discount'
+      ],
+      ctaLabel: 'Contact us →',
+      ctaUrl: '/contact',
+      style: 'light'
+    },
+    {
+      title: 'Enterprise Solutions',
+      icon: enterpriseIcon,
+      targetAudience: 'For large organizations or university-wide deployments.',
+      features: [
+        'Custom license models',
+        'On-premise options',
+        'Highest-level security compliance'
+      ],
+      ctaLabel: 'Contact us →',
+      ctaUrl: '/contact',
+      style: 'highlight'
+    }
+  ]
+}
+
