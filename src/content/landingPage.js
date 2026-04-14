@@ -61,6 +61,21 @@ export const pricingHero = {
   },
 }
 
+export const freeTrialSection = {
+  title: 'Free Trial Available',
+  subtitle: '1 Million Tokens',
+  features: [
+    '1 Million Tokens or 1 month — whichever comes first',
+    'Upload 3–4 documents to test all features',
+    'Upgrade anytime within the app',
+  ],
+  cta: {
+    label: 'Start Free Trial',
+    href: 'https://app.qinsights.ai/signup',
+    subtext: 'No credit card required',
+  }
+}
+
 export const teamStorySection = {
   title: 'Why We Built QInsights',
   blocks: [
