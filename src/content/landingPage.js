@@ -72,6 +72,32 @@ export const contactHero = {
   },
 }
 
+export const contactPricingFormSection = {
+  action: '/api/request-pricing',
+  fields: {
+    name: {
+      label: 'Name',
+      placeholder: 'Jane Smith',
+    },
+    email: {
+      label: 'Email',
+      placeholder: 'jane@organization.com',
+    },
+    organization: {
+      label: 'Organization / Institution',
+      placeholder: 'Your organization / Institution',
+    },
+    licensingNeeds: {
+      label: 'Tell us about your licensing needs',
+      placeholder:
+        'Please let us know if you’re an individual researcher, part of a team, or representing an educational or business organization. You can also share what kind of data you typically analyze (e.g., interviews, focus groups, survey responses, etc.).',
+    },
+  },
+  submitLabel: 'Request Pricing',
+  successMessage: 'Thank you. Your request has been sent to the QInsights team.',
+  errorMessage: 'We could not send your request right now. Please try again later.',
+}
+
 export const freeTrialSection = {
   title: 'Free Trial Available',
   subtitle: '1 Million Tokens',

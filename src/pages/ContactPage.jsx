@@ -1,6 +1,12 @@
 import { PageHero } from '../components/PageHero'
-import { contactHero } from '../content/landingPage'
+import { ContactPricingFormSection } from '../components/ContactPricingFormSection'
+import { contactHero, contactPricingFormSection } from '../content/landingPage'
 
 export function ContactPage() {
-  return <PageHero content={contactHero} />
+  return (
+    <>
+      <PageHero content={contactHero} />
+      <ContactPricingFormSection content={contactPricingFormSection} />
+    </>
+  )
 }
