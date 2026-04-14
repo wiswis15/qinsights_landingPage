@@ -3980,14 +3980,29 @@
   gap: 48px;
 }
 
+.larger-scale-plans__header-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
 .larger-scale-plans__title {
   font-family: "Source Serif 4", serif;
   font-size: 40px;
   font-weight: 500;
   color: #111111;
-  text-align: center;
   margin: 0;
   line-height: 1.2;
+}
+
+.larger-scale-plans__subtitle {
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  color: #666666;
+  margin: 0;
+  max-width: 600px;
 }
 
 .larger-scale-plans__grid {

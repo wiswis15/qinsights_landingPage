@@ -786,6 +786,7 @@ export const footerContent = {
 
 export const largerScalePlansSection = {
   title: 'Larger-Scale Plans',
+  subtitle: 'Scalable licensing for research groups and institutions.',
   plans: [
     {
       title: 'Team License',

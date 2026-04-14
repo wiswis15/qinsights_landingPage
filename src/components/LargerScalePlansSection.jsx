@@ -2,9 +2,14 @@ export function LargerScalePlansSection({ content }) {
   return (
     <section className="larger-scale-plans" aria-labelledby="larger-scale-plans-title">
       <div className="larger-scale-plans__inner">
-        <h2 id="larger-scale-plans-title" className="larger-scale-plans__title">
-          {content.title}
-        </h2>
+        <div className="larger-scale-plans__header-group">
+          <h2 id="larger-scale-plans-title" className="larger-scale-plans__title">
+            {content.title}
+          </h2>
+          {content.subtitle && (
+            <p className="larger-scale-plans__subtitle">{content.subtitle}</p>
+          )}
+        </div>
         
         <div className="larger-scale-plans__grid">
           {content.plans.map((plan, index) => (
