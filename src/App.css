@@ -29,10 +29,13 @@
 
 .site-header {
   padding-top: 24px;
+  position: relative;
+  z-index: 20;
 }
 
 .navbar {
   position: relative;
+  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
