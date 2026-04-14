@@ -936,6 +936,85 @@
   background: rgba(210, 220, 255, 0.8);
 }
 
+.team-hero {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  overflow: hidden;
+  margin-top: -108px;
+  padding: 168px 0 32px;
+}
+
+.team-hero__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 144px 64px;
+}
+
+.team-hero__backdrop {
+  position: absolute;
+  top: -320px;
+  left: -8vw;
+  right: -8vw;
+  z-index: 0;
+  aspect-ratio: 1920 / 671;
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+.team-hero__backdrop-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, #000 22%, #000 78%, rgba(0, 0, 0, 0.88) 100%);
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, #000 22%, #000 78%, rgba(0, 0, 0, 0.88) 100%);
+}
+
+.team-hero__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: min(100%, 1072px);
+  padding: 48px 0;
+  text-align: center;
+}
+
+.team-hero__title {
+  width: 100%;
+  margin: 0;
+  color: #111111;
+  font-family: 'Source Serif 4', serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+  opacity: 0;
+  animation: hero-rise 560ms 80ms ease-out forwards;
+}
+
+.team-hero__subtitle {
+  width: 100%;
+  margin: 0;
+  color: #2661e9;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+  opacity: 0;
+  animation: hero-rise 560ms 160ms ease-out forwards;
+}
+
 @keyframes hero-fade {
   from {
     opacity: 0;
@@ -3129,6 +3208,30 @@
 }
 
 @media (max-width: 900px) {
+  .team-hero {
+    margin-top: -96px;
+    padding: 152px 0 16px;
+  }
+
+  .team-hero__inner {
+    padding: 144px 24px;
+  }
+
+  .team-hero__backdrop {
+    top: 36%;
+    left: -18vw;
+    right: -18vw;
+    transform: translateY(-50%);
+  }
+
+  .team-hero__title {
+    font-size: 40px;
+  }
+
+  .team-hero__subtitle {
+    font-size: 18px;
+  }
+
   .testimonial-spotlight {
     padding: 0 0 104px;
   }
@@ -3212,6 +3315,14 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .team-hero__title,
+  .team-hero__subtitle {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    transform: none;
+  }
+
   .testimonial-spotlight__heading,
   .testimonial-spotlight__body,
   .testimonial-spotlight__product-frame,

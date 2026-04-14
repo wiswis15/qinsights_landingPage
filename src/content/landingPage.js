@@ -43,6 +43,15 @@ export const heroCopy = {
   },
 }
 
+export const teamHero = {
+  title: 'Meet the Minds Behind QInsights',
+  subtitle: 'Experts in Qualitative Research. Pioneers in AI.',
+  backdrop: {
+    src: 'https://framerusercontent.com/images/4FsUg1TkQOlM1JhWkNaLldmwI.png?width=1920&height=671',
+    alt: '',
+  },
+}
+
 export const trustLogos = [
   { name: 'Trusted organization 1', src: logo1, width: 253, alt: 'Trusted organization logo 1' },
   { name: 'Trusted organization 2', src: logo2, width: 137, alt: 'Trusted organization logo 2' },
