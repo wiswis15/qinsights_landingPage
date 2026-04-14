@@ -861,3 +861,18 @@ export const pricingComparisonSection = {
     },
   ],
 }
+
+export const whyChooseQInsightsSection = {
+  eyebrow: 'Why Choose QInsights?',
+  subtitle: 'Purpose-Built for Qualitative Research – Powered by Human-AI Collaboration',
+  points: [
+    'No hallucinations – all results based strictly on your uploaded data',
+    'Transparent referencing – no black box answers',
+    'Segment data by variables, filter by metadata',
+    'GDPR-compliant, secure environment',
+    'Designed by experts with 30+ years in digital qualitative analysis',
+    'Not a one-click AI solution. QInsights keeps you in control.',
+  ],
+  closing:
+    'QInsights harnesses the reach of Large Language Models through true human-AI collaboration. By combining the breadth of AI with your contextual expertise, QInsights delivers high-quality insights that drive real impact.',
+}

@@ -4,7 +4,8 @@ import { ComparisonSection } from '../components/ComparisonSection'
 import { FreeTrialSection } from '../components/FreeTrialSection'
 import { PricingSection } from '../components/PricingSection'
 import { LargerScalePlansSection } from '../components/LargerScalePlansSection'
-import { pricingHero, trustLogos, freeTrialSection, pricingSection, largerScalePlansSection, gettingStartedSection, pricingComparisonSection } from '../content/landingPage'
+import { WhyChooseQInsightsSection } from '../components/WhyChooseQInsightsSection'
+import { pricingHero, trustLogos, freeTrialSection, pricingSection, largerScalePlansSection, gettingStartedSection, pricingComparisonSection, whyChooseQInsightsSection } from '../content/landingPage'
 
 export function PricingPage() {
   return (
@@ -15,6 +16,7 @@ export function PricingPage() {
       <PricingSection content={pricingSection} />
       <LargerScalePlansSection content={largerScalePlansSection} gettingStarted={gettingStartedSection} />
       <ComparisonSection content={pricingComparisonSection} />
+      <WhyChooseQInsightsSection content={whyChooseQInsightsSection} />
     </>
   )
 }
