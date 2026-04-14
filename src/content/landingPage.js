@@ -817,3 +817,12 @@ export const largerScalePlansSection = {
   ]
 }
 
+export const gettingStartedSection = {
+  title: 'Getting started',
+  body: [
+    "Select the plan that fits your work and start with a free trial — 1 million tokens or 1 month, whichever comes first. When you're ready to upgrade, you can do so directly in the app under Settings → Billing."
+  ],
+  note: "*Educational pricing is applied automatically when you sign up with a university email address (.edu, .ac.uk, and equivalent institutional domains). If you register with a personal email (Gmail, Hotmail, etc.), you will be offered the standard price. Switching email addresses after sign-up is not possible, so make sure to use your institutional email from the start."
+}
+
+
