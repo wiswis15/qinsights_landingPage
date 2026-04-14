@@ -826,3 +826,38 @@ export const gettingStartedSection = {
 }
 
 
+export const pricingComparisonSection = {
+  heading: '"Coding" vs. "Conversational Analysis"',
+  othersColumn: {
+    label: 'Traditional Software',
+  },
+  qinsightsColumn: {
+    label: 'Conversational Analysis',
+    logo: {
+      src: 'https://framerusercontent.com/images/Q9rz4yZMCZVjxacKp2KQIWkUmU.png?scale-down-to=512&width=688&height=105',
+      alt: 'QInsights logo',
+    },
+    icon: {
+      src: 'https://framerusercontent.com/images/xV1amte0eNVJ3Sv3tGWy5lZE.png?width=466&height=580',
+      alt: 'Crown icon for QInsights column',
+    },
+  },
+  rows: [
+    {
+      others: 'Manual Coding: You spend weeks tagging segments.',
+      qinsights: 'Data Dialogue: You ask the data questions; it answers.',
+    },
+    {
+      others: 'Static Hierarchies: Rigid codebooks that break easily.',
+      qinsights: 'Fluid Themes: Patterns emerge organically from the AI.',
+    },
+    {
+      others: 'Steep Learning Curve: Takes days to learn the UI.',
+      qinsights: 'Intuitive Chat: If you can text, you can analyze.',
+    },
+    {
+      others: 'Slow Iteration: Hard to change course mid-study.',
+      qinsights: 'Instant Pivot: Update your inquiry focus whenever necessary.',
+    },
+  ],
+}
