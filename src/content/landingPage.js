@@ -114,6 +114,9 @@ export const freeTrialSection = {
 }
 
 export const pricingSection = {
+  currencySymbol: '€',
+  periodSuffix: '',
+  saveLabel: 'Save 12%',
   cycles: [
     { id: '6mo', label: '6 Months' },
     { id: '12mo', label: '12 Months' }
@@ -121,24 +124,27 @@ export const pricingSection = {
   plans: [
     {
       id: 'educational',
-      name: 'Educational',
-      requirement: 'University Email Required',
+      name: 'Educational*',
       prices: {
-        '6mo': 49,
-        '12mo': 86
+        '6mo': 279,
+        '12mo': 489
+      },
+      descriptions: {
+        '6mo': 'For academic research projects.',
+        '12mo': 'For academic research projects.'
+      },
+      bodies: {
+        '6mo': 'Enough capacity for 1-2 full studies per year. Ideal for research projects, dissertations or longitudinal research.',
+        '12mo': 'Enough capacity for 1-2 full studies per year. Ideal for research projects, dissertations or longitudinal research.'
       },
       features: {
         '6mo': [
-          '500,000 Tokens',
-          'Standard AI Analysis',
-          'Export to Word/PDF',
-          'Community Support'
+          '12.5 Million Tokens',
+          'Office Hours Support'
         ],
         '12mo': [
-          '1,000,000 Tokens',
-          'Standard AI Analysis',
-          'Export to Word/PDF',
-          'Community Support'
+          '25 Million Tokens',
+          'Office Hours Support'
         ]
       },
       buttonLabel: 'Start your Free Trial',
@@ -147,23 +153,26 @@ export const pricingSection = {
     {
       id: 'nonprofit',
       name: 'Non-Profit',
-      requirement: 'Verification Required',
       prices: {
-        '6mo': 79,
-        '12mo': 139
+        '6mo': 510,
+        '12mo': 899
+      },
+      descriptions: {
+        '6mo': 'Built for impact-driven work.',
+        '12mo': 'Built for impact-driven work.'
+      },
+      bodies: {
+        '6mo': 'Supports evaluation cycles, participatory research, and grant-funded projects.',
+        '12mo': 'Supports evaluation cycles, participatory research, and grant-funded projects.'
       },
       features: {
         '6mo': [
-          '500,000 Tokens',
-          'Advanced AI Analysis',
-          'Export to Word/PDF',
-          'Email Support'
+          '20 Million Tokens',
+          'Office Hours Support'
         ],
         '12mo': [
-          '1,000,000 Tokens',
-          'Advanced AI Analysis',
-          'Export to Word/PDF',
-          'Email Support'
+          '40 Million Tokens',
+          'Office Hours Support'
         ]
       },
       buttonLabel: 'Start your Free Trial',
@@ -172,22 +181,25 @@ export const pricingSection = {
     {
       id: 'business',
       name: 'Regular Business',
-      requirement: 'For commercial use',
       prices: {
-        '6mo': 99,
-        '12mo': 174
+        '6mo': 799,
+        '12mo': 1399
+      },
+      descriptions: {
+        '6mo': 'Built for continuous insight.',
+        '12mo': 'Built for continuous insight.'
+      },
+      bodies: {
+        '6mo': "For professional researchers and independent consultants. You work to client deadlines or internal timelines - and analysis can't be the bottleneck.",
+        '12mo': "For professional researchers and independent consultants. You work to client deadlines or internal timelines - and analysis can't be the bottleneck."
       },
       features: {
         '6mo': [
-          '500,000 Tokens',
-          'Unlimited Projects',
-          'Advanced AI Analysis',
+          '37.5 Million Tokens',
           'Priority Support'
         ],
         '12mo': [
-          '1,000,000 Tokens',
-          'Unlimited Projects',
-          'Advanced AI Analysis',
+          '75 Million Tokens',
           'Priority Support'
         ]
       },

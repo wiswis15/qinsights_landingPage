@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 export function PricingSection({ content }) {
   const [activeCycle, setActiveCycle] = useState(content.cycles[0].id); // Default to 6mo
+  const currencySymbol = content.currencySymbol ?? '$';
+  const periodSuffix = content.periodSuffix ?? '/ mo';
 
   return (
     <section className="pricing-section" aria-labelledby="pricing-heading">
@@ -28,6 +30,10 @@ export function PricingSection({ content }) {
           {content.plans.map((plan, index) => {
             const currentPrice = plan.prices[activeCycle];
             const currentFeatures = plan.features[activeCycle];
+            const currentDescription =
+              typeof plan.descriptions === 'object' ? plan.descriptions?.[activeCycle] ?? plan.description : plan.description;
+            const currentBody =
+              typeof plan.bodies === 'object' ? plan.bodies?.[activeCycle] ?? plan.body : plan.body;
             
             return (
               <div 
@@ -42,19 +48,22 @@ export function PricingSection({ content }) {
                   )}
                   
                   <div className="pricing-card__price-layout">
-                    <span className="pricing-card__currency">$</span>
+                    <span className="pricing-card__currency">{currencySymbol}</span>
                     <span key={currentPrice} className="pricing-card__amount">{currentPrice}</span>
-                    <span className="pricing-card__period">/ mo</span>
+                    {periodSuffix ? <span className="pricing-card__period">{periodSuffix}</span> : null}
                   </div>
 
                   {/* Save 12% Badge only on 12 months */}
                   <div className="pricing-card__badge-wrapper">
                     {activeCycle === '12mo' ? (
-                      <span className="pricing-card__save-badge">Save 12%</span>
+                      <span className="pricing-card__save-badge">{content.saveLabel ?? 'Save 12%'}</span>
                     ) : (
                       <span className="pricing-card__save-spacer" aria-hidden="true"></span>
                     )}
                   </div>
+
+                  {currentDescription ? <p className="pricing-card__desc">{currentDescription}</p> : null}
+                  {currentBody ? <p className="pricing-card__body">{currentBody}</p> : null}
                 </div>
 
                 <ul className="pricing-card__features">
