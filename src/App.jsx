@@ -8,6 +8,8 @@ import { ContactPage } from './pages/ContactPage'
 import { MockPage } from './pages/MockPage'
 import { TeamPage } from './pages/TeamPage'
 import { PricingPage } from './pages/PricingPage'
+import { BlogPage } from './pages/BlogPage'
+import { BlogArticlePage } from './pages/BlogArticlePage'
 
 function SiteLayout() {
   return (
@@ -29,10 +31,11 @@ export default function App() {
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/blog" element={<MockPage name="Blog" />} />
+        <Route path="/blog" element={<BlogPage />} />
         <Route path="/privacy" element={<MockPage name="Privacy" />} />
         <Route path="/terms" element={<MockPage name="Terms" />} />
         <Route path="/customer-information" element={<MockPage name="Customer Information" />} />
+        <Route path="/:slug" element={<BlogArticlePage />} />
       </Route>
     </Routes>
   )
