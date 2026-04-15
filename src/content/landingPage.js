@@ -9,6 +9,8 @@ import logo8 from '../assets/logo-ticker/logo-8.png'
 import logo9 from '../assets/logo-ticker/logo-9.png'
 import logo10 from '../assets/logo-ticker/logo-10.png'
 import logo11 from '../assets/logo-ticker/logo-11.png'
+import teamIcon from '../assets/team.svg'
+import enterpriseIcon from '../assets/enterprise.svg'
 
 export const navLinks = [
   { label: 'Home', href: '/' },
@@ -41,6 +43,220 @@ export const heroCopy = {
     src: 'https://framerusercontent.com/assets/O0noLfORFsZg7rr4p4DmFe0fX3A.mp4',
     title: 'Q-Insights product demo',
   },
+}
+
+export const teamHero = {
+  title: 'Meet the Minds Behind QInsights',
+  subtitle: 'Experts in Qualitative Research. Pioneers in AI.',
+  backdrop: {
+    src: 'https://framerusercontent.com/images/4FsUg1TkQOlM1JhWkNaLldmwI.png?width=1920&height=671',
+    alt: '',
+  },
+}
+
+export const pricingHero = {
+  title: 'QInsights Licensing Options',
+  subtitle: 'Research That Matters Deserves a Plan That Fits',
+  backdrop: {
+    src: 'https://framerusercontent.com/images/4FsUg1TkQOlM1JhWkNaLldmwI.png?width=1920&height=671',
+    alt: '',
+  },
+}
+
+export const contactHero = {
+  title: 'Reach out to our Team',
+  subtitle: 'Research That Matters Deserves a Plan That Fits',
+  backdrop: {
+    src: 'https://framerusercontent.com/images/4FsUg1TkQOlM1JhWkNaLldmwI.png?width=1920&height=671',
+    alt: '',
+  },
+}
+
+export const contactPricingFormSection = {
+  fields: {
+    name: {
+      label: 'Name',
+      placeholder: 'Jane Smith',
+    },
+    email: {
+      label: 'Email',
+      placeholder: 'jane@organization.com',
+    },
+    organization: {
+      label: 'Organization / Institution',
+      placeholder: 'Your organization / Institution',
+    },
+    licensingNeeds: {
+      label: 'Tell us about your licensing needs',
+      placeholder:
+        'Please let us know if you’re an individual researcher, part of a team, or representing an educational or business organization. You can also share what kind of data you typically analyze (e.g., interviews, focus groups, survey responses, etc.).',
+    },
+  },
+  submitLabel: 'Request Pricing',
+  successMessage: 'Thank you. Your request has been sent to the QInsights team.',
+  validationMessage: 'Please review the highlighted fields and try again.',
+  errorMessage: 'We could not send your request right now. Please try again later.',
+}
+
+export const freeTrialSection = {
+  title: 'Free Trial Available',
+  subtitle: '1 Million Tokens',
+  features: [
+    '1 Million Tokens or 1 month — whichever comes first',
+    'Upload 3–4 documents to test all features',
+    'Upgrade anytime within the app',
+  ],
+  cta: {
+    label: 'Start Free Trial',
+    href: 'https://app.qinsights.ai/signup',
+    subtext: 'No credit card required',
+  }
+}
+
+export const pricingSection = {
+  cycles: [
+    { id: '6mo', label: '6 Months' },
+    { id: '12mo', label: '12 Months' }
+  ],
+  plans: [
+    {
+      id: 'educational',
+      name: 'Educational',
+      requirement: 'University Email Required',
+      prices: {
+        '6mo': 49,
+        '12mo': 86
+      },
+      features: {
+        '6mo': [
+          '500,000 Tokens',
+          'Standard AI Analysis',
+          'Export to Word/PDF',
+          'Community Support'
+        ],
+        '12mo': [
+          '1,000,000 Tokens',
+          'Standard AI Analysis',
+          'Export to Word/PDF',
+          'Community Support'
+        ]
+      },
+      buttonLabel: 'Start your Free Trial',
+      buttonHref: 'https://app.qinsights.ai/signup'
+    },
+    {
+      id: 'nonprofit',
+      name: 'Non-Profit',
+      requirement: 'Verification Required',
+      prices: {
+        '6mo': 79,
+        '12mo': 139
+      },
+      features: {
+        '6mo': [
+          '500,000 Tokens',
+          'Advanced AI Analysis',
+          'Export to Word/PDF',
+          'Email Support'
+        ],
+        '12mo': [
+          '1,000,000 Tokens',
+          'Advanced AI Analysis',
+          'Export to Word/PDF',
+          'Email Support'
+        ]
+      },
+      buttonLabel: 'Start your Free Trial',
+      buttonHref: 'https://app.qinsights.ai/signup'
+    },
+    {
+      id: 'business',
+      name: 'Regular Business',
+      requirement: 'For commercial use',
+      prices: {
+        '6mo': 99,
+        '12mo': 174
+      },
+      features: {
+        '6mo': [
+          '500,000 Tokens',
+          'Unlimited Projects',
+          'Advanced AI Analysis',
+          'Priority Support'
+        ],
+        '12mo': [
+          '1,000,000 Tokens',
+          'Unlimited Projects',
+          'Advanced AI Analysis',
+          'Priority Support'
+        ]
+      },
+      buttonLabel: 'Start your Free Trial',
+      buttonHref: 'https://app.qinsights.ai/signup'
+    }
+  ]
+}
+
+export const teamStorySection = {
+  title: 'Why We Built QInsights',
+  blocks: [
+    {
+      type: 'paragraph',
+      text: 'At QInsights, we’re not just building software — we’re building a new way of thinking about qualitative research in the age of AI. QInsights was born out of her desire to empower researchers — not replace them — by combining cutting-edge AI with the kind of insight that only humans can provide.',
+    },
+    {
+      type: 'subheading',
+      text: 'Built on an Ethical Compass',
+    },
+    {
+      type: 'paragraph',
+      text: 'We don’t believe in black-box AI. Our approach is transparent, responsible, and designed to elevate—not automate—your thinking. We stand for ethical co-intelligence where you stay in control of your analysis.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Our work is grounded in qualitative research traditions, not just AI trends. We translate complex analytic processes into intuitive, research-driven workflows—so you don’t need to be a methods expert to produce meaningful results.',
+    },
+    {
+      type: 'paragraph',
+      segments: [
+        { type: 'text', text: 'QInsights isn’t just a tool; it’s part of a movement. Through ' },
+        { type: 'link', text: 'workshops, articles, and our podcast', href: 'https://qeludra.com/', external: true },
+        { type: 'text', text: ', we’re shaping the future of AI-powered qualitative research and sharing that journey with a global community.' },
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'We believe in showing up as we are: reflective, curious, and open to learning. QInsights continues to evolve through honest dialogue with our users. We listen, we adapt, and we grow—with you.',
+    },
+  ],
+}
+
+export const teamProfilesSection = {
+  profiles: [
+    {
+      name: 'Dr Susanne Friese (co-founder)',
+      role: 'CEO and domain expert',
+      image: {
+        src: 'https://framerusercontent.com/images/4lzjuMn0AioIHdTg7xzpdXuBurY.jpg?scale-down-to=512&width=2560&height=2056',
+        alt: 'Portrait of Dr Susanne Friese',
+      },
+      paragraphs: [
+        '30+ years of experience in qualitative research and qualitative computing.',
+        'Keynote speaker and thought leader in AI for Qualitative Researcher',
+      ],
+    },
+    {
+      name: 'Wissem Golli (co-founder)',
+      role: 'CTO',
+      image: {
+        src: 'https://framerusercontent.com/images/O0MJqmRZMFqVIasmlwI6fGLtnso.png?scale-down-to=512&width=2048&height=1664',
+        alt: 'Portrait of Wissem Golli',
+      },
+      paragraphs: [
+        'With 12 years in software development and 3 years focused on AI and LLM, our technical co-founder excels at turning ideas into reality and building the right team to make it happen.',
+      ],
+    },
+  ],
 }
 
 export const trustLogos = [
@@ -601,4 +817,111 @@ export const footerContent = {
     { label: 'Terms & conditions', href: '/terms' },
     { label: 'Customer information', href: '/customer-information' },
   ],
+}
+
+export const largerScalePlansSection = {
+  title: 'Larger-Scale Plans',
+  subtitle: 'Scalable licensing for research groups and institutions.',
+  plans: [
+    {
+      title: 'Team License',
+      icon: teamIcon,
+      targetAudience: 'For small research teams (3–10 users).',
+      features: [
+        'Shared token pool',
+        'Flexible user management',
+        'Bundled discount'
+      ],
+      ctaLabel: 'Contact us →',
+      ctaUrl: '/contact',
+      style: 'light'
+    },
+    {
+      title: 'Enterprise Solutions',
+      icon: enterpriseIcon,
+      targetAudience: 'For large organizations or university-wide deployments.',
+      features: [
+        'Custom license models',
+        'On-premise options',
+        'Highest-level security compliance'
+      ],
+      ctaLabel: 'Contact us →',
+      ctaUrl: '/contact',
+      style: 'highlight'
+    }
+  ]
+}
+
+export const gettingStartedSection = {
+  title: 'Getting started',
+  body: [
+    "Select the plan that fits your work and start with a free trial — 1 million tokens or 1 month, whichever comes first. When you're ready to upgrade, you can do so directly in the app under Settings → Billing."
+  ],
+  note: "*Educational pricing is applied automatically when you sign up with a university email address (.edu, .ac.uk, and equivalent institutional domains). If you register with a personal email (Gmail, Hotmail, etc.), you will be offered the standard price. Switching email addresses after sign-up is not possible, so make sure to use your institutional email from the start."
+}
+
+
+export const pricingComparisonSection = {
+  heading: '"Coding" vs. "Conversational Analysis"',
+  othersColumn: {
+    label: 'Traditional Software',
+  },
+  qinsightsColumn: {
+    label: 'Conversational Analysis',
+    logo: {
+      src: 'https://framerusercontent.com/images/Q9rz4yZMCZVjxacKp2KQIWkUmU.png?scale-down-to=512&width=688&height=105',
+      alt: 'QInsights logo',
+    },
+    icon: {
+      src: 'https://framerusercontent.com/images/xV1amte0eNVJ3Sv3tGWy5lZE.png?width=466&height=580',
+      alt: 'Crown icon for QInsights column',
+    },
+  },
+  rows: [
+    {
+      others: 'Manual Coding: You spend weeks tagging segments.',
+      qinsights: 'Data Dialogue: You ask the data questions; it answers.',
+    },
+    {
+      others: 'Static Hierarchies: Rigid codebooks that break easily.',
+      qinsights: 'Fluid Themes: Patterns emerge organically from the AI.',
+    },
+    {
+      others: 'Steep Learning Curve: Takes days to learn the UI.',
+      qinsights: 'Intuitive Chat: If you can text, you can analyze.',
+    },
+    {
+      others: 'Slow Iteration: Hard to change course mid-study.',
+      qinsights: 'Instant Pivot: Update your inquiry focus whenever necessary.',
+    },
+  ],
+}
+
+export const pricingContactCtaSection = {
+  eyebrow: 'Not sure which plan fits?',
+  headline: 'Let’s talk,',
+  body: 'We’ll help you find the right setup for your project.',
+  image: {
+    src: 'https://framerusercontent.com/images/NJJlcNBPbqDtVWmVWLkF4DdDE.png?scale-down-to=512&width=743&height=542',
+    alt: 'Illustration for discussing the right QInsights setup',
+  },
+  action: {
+    label: 'Discuss your use case',
+    href: 'https://app.simplymeet.me',
+  },
+}
+
+export const whyChooseQInsightsSection = {
+  eyebrow: 'Why Choose QInsights?',
+  subtitle: 'Purpose-Built for Qualitative Research – Powered by Human-AI Collaboration',
+  points: [
+    'No hallucinations – all results based strictly on your uploaded data',
+    'Transparent referencing – no black box answers',
+    'Segment data by variables, filter by metadata',
+    'GDPR-compliant, secure environment',
+    'Designed by experts with 30+ years in digital qualitative analysis',
+    'Not a one-click AI solution. QInsights keeps you in control.',
+  ],
+  closing:
+    'QInsights harnesses the reach of Large Language Models through true human-AI collaboration. By combining the breadth of AI with your contextual expertise, QInsights delivers high-quality insights that drive real impact.',
 }

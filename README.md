@@ -1,16 +1,54 @@
-# React + Vite
+# QInsights Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Run locally
 
-Currently, two official plugins are available:
+```bash
+pnpm install
+pnpm dev
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Contact form email delivery
 
-## React Compiler
+The `/contact` form now supports two delivery modes configured by env:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. `emailjs` (default): sends directly from the frontend.
+2. `api`: sends via the serverless endpoint in `api/request-pricing.js`.
 
-## Expanding the ESLint configuration
+Copy `.env.example` to `.env` and set values.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### EmailJS setup (frontend-only)
+
+Set:
+
+- `VITE_CONTACT_FORM_PROVIDER=emailjs`
+- `VITE_EMAILJS_SERVICE_ID`
+- `VITE_EMAILJS_TEMPLATE_ID`
+- `VITE_EMAILJS_PUBLIC_KEY`
+- `VITE_CONTACT_RECEIVER_EMAIL` (for example `support@qinsights.ai`)
+
+Your EmailJS template should accept these params:
+
+- `to_email`
+- `name`
+- `email`
+- `organization`
+- `licensing_needs`
+
+### API mode setup (optional)
+
+Set:
+
+- `VITE_CONTACT_FORM_PROVIDER=api`
+- `VITE_CONTACT_FORM_API_ENDPOINT=/api/request-pricing` (or your deployed API URL)
+
+For `api/request-pricing.js`, configure server env:
+
+- `RESEND_API_KEY`
+- `CONTACT_FORM_FROM`
+- `CONTACT_FORM_TO`
+
+## Build
+
+```bash
+pnpm build
+```
