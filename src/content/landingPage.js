@@ -24,7 +24,7 @@ export const navLinks = [
 export const actions = {
   demo: {
     label: 'Schedule Demo',
-    href: 'https://calendly.com/s-friese-qinsights/45min',
+    href: 'https://api.crm.stratto.ai/widget/booking/DIGE5EnzD9Wepr4uOEou',
   },
   login: {
     label: 'Login',
@@ -674,7 +674,16 @@ export const faqSection = {
         },
         {
           type: 'paragraph',
-          text: "When you register, you'll also receive a series of onboarding emails with helpful information, including a link to our user guide and video tutorials to guide you through your first steps with QInsights.",
+          segments: [
+            { type: 'text', text: "When you register, you'll also receive a series of onboarding emails with helpful information, including a link to our " },
+            {
+              type: 'link',
+              text: 'user guide',
+              href: 'https://assets.cdn.filesafe.space/cSNXRLMHTDfp9SGs4bDp/media/69de58983d447256447d61c7.pdf',
+              external: true,
+            },
+            { type: 'text', text: ' and video tutorials to guide you through your first steps with QInsights.' },
+          ],
         },
         {
           type: 'paragraph',
