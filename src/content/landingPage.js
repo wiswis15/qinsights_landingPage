@@ -24,7 +24,7 @@ export const navLinks = [
 export const actions = {
   demo: {
     label: 'Schedule Demo',
-    href: 'https://calendly.com/s-friese-qinsights/45min',
+    href: 'https://api.crm.stratto.ai/widget/booking/DIGE5EnzD9Wepr4uOEou',
   },
   login: {
     label: 'Login',
@@ -114,6 +114,9 @@ export const freeTrialSection = {
 }
 
 export const pricingSection = {
+  currencySymbol: '€',
+  periodSuffix: '',
+  saveLabel: 'Save 12%',
   cycles: [
     { id: '6mo', label: '6 Months' },
     { id: '12mo', label: '12 Months' }
@@ -121,24 +124,27 @@ export const pricingSection = {
   plans: [
     {
       id: 'educational',
-      name: 'Educational',
-      requirement: 'University Email Required',
+      name: 'Educational*',
       prices: {
-        '6mo': 49,
-        '12mo': 86
+        '6mo': 279,
+        '12mo': 489
+      },
+      descriptions: {
+        '6mo': 'For academic research projects.',
+        '12mo': 'For academic research projects.'
+      },
+      bodies: {
+        '6mo': 'Enough capacity for 1-2 full studies per year. Ideal for research projects, dissertations or longitudinal research.',
+        '12mo': 'Enough capacity for 1-2 full studies per year. Ideal for research projects, dissertations or longitudinal research.'
       },
       features: {
         '6mo': [
-          '500,000 Tokens',
-          'Standard AI Analysis',
-          'Export to Word/PDF',
-          'Community Support'
+          '12.5 Million Tokens',
+          'Office Hours Support'
         ],
         '12mo': [
-          '1,000,000 Tokens',
-          'Standard AI Analysis',
-          'Export to Word/PDF',
-          'Community Support'
+          '25 Million Tokens',
+          'Office Hours Support'
         ]
       },
       buttonLabel: 'Start your Free Trial',
@@ -147,23 +153,26 @@ export const pricingSection = {
     {
       id: 'nonprofit',
       name: 'Non-Profit',
-      requirement: 'Verification Required',
       prices: {
-        '6mo': 79,
-        '12mo': 139
+        '6mo': 510,
+        '12mo': 899
+      },
+      descriptions: {
+        '6mo': 'Built for impact-driven work.',
+        '12mo': 'Built for impact-driven work.'
+      },
+      bodies: {
+        '6mo': 'Supports evaluation cycles, participatory research, and grant-funded projects.',
+        '12mo': 'Supports evaluation cycles, participatory research, and grant-funded projects.'
       },
       features: {
         '6mo': [
-          '500,000 Tokens',
-          'Advanced AI Analysis',
-          'Export to Word/PDF',
-          'Email Support'
+          '20 Million Tokens',
+          'Office Hours Support'
         ],
         '12mo': [
-          '1,000,000 Tokens',
-          'Advanced AI Analysis',
-          'Export to Word/PDF',
-          'Email Support'
+          '40 Million Tokens',
+          'Office Hours Support'
         ]
       },
       buttonLabel: 'Start your Free Trial',
@@ -172,22 +181,25 @@ export const pricingSection = {
     {
       id: 'business',
       name: 'Regular Business',
-      requirement: 'For commercial use',
       prices: {
-        '6mo': 99,
-        '12mo': 174
+        '6mo': 799,
+        '12mo': 1399
+      },
+      descriptions: {
+        '6mo': 'Built for continuous insight.',
+        '12mo': 'Built for continuous insight.'
+      },
+      bodies: {
+        '6mo': "For professional researchers and independent consultants. You work to client deadlines or internal timelines - and analysis can't be the bottleneck.",
+        '12mo': "For professional researchers and independent consultants. You work to client deadlines or internal timelines - and analysis can't be the bottleneck."
       },
       features: {
         '6mo': [
-          '500,000 Tokens',
-          'Unlimited Projects',
-          'Advanced AI Analysis',
+          '37.5 Million Tokens',
           'Priority Support'
         ],
         '12mo': [
-          '1,000,000 Tokens',
-          'Unlimited Projects',
-          'Advanced AI Analysis',
+          '75 Million Tokens',
           'Priority Support'
         ]
       },
@@ -662,7 +674,16 @@ export const faqSection = {
         },
         {
           type: 'paragraph',
-          text: "When you register, you'll also receive a series of onboarding emails with helpful information, including a link to our user guide and video tutorials to guide you through your first steps with QInsights.",
+          segments: [
+            { type: 'text', text: "When you register, you'll also receive a series of onboarding emails with helpful information, including a link to our " },
+            {
+              type: 'link',
+              text: 'user guide',
+              href: 'https://assets.cdn.filesafe.space/cSNXRLMHTDfp9SGs4bDp/media/69de58983d447256447d61c7.pdf',
+              external: true,
+            },
+            { type: 'text', text: ' and video tutorials to guide you through your first steps with QInsights.' },
+          ],
         },
         {
           type: 'paragraph',
@@ -711,6 +732,73 @@ export const faqSection = {
         {
           type: 'paragraph',
           text: 'Yes. QInsights supports team collaboration. You can share projects with team members who also have a QInsights account, making it easy to collaborate on data analysis within your research group, organization, or consultancy team.',
+        },
+      ],
+    },
+    {
+      question: 'How does QInsights differ from NotebookLM?',
+      answer: [
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'NotebookLM:' },
+            { type: 'text', text: ' Is primarily an information retrieval and study tool. It is designed to help you synthesize facts, generate study guides, and find specific answers within a corpus of text. Its "intelligence" is geared toward summarizing what is there.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'QInsights:' },
+            { type: 'text', text: ' Is a qualitative analysis platform. It does not just retrieve information; it is built to help you find patterns, derive themes, and explore the "why" behind human dialogue.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'NotebookLM:' },
+            { type: 'text', text: ' Is methodology agnostic. It treats a research transcript the same way it treats a physics textbook or a legal brief. It has no inherent understanding of qualitative research rigor.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'QInsights:' },
+            { type: 'text', text: ' The system is tuned to act as a thinking partner for researchers.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'NotebookLM:' },
+            { type: 'text', text: ' Requires the user to provide all the work, for example "Summarize this" or "Compare Source A to Source B".' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'QInsights:' },
+            { type: 'text', text: ' Provides a guided environment. Because it knows it is a qualitative tool, it can proactively surface thematic patterns or suggest directions for analysis that are standard in qualitative research.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          text: 'While NotebookLM can technically see demographic information if you paste it into the transcripts, it lacks the specialized brain to handle it systematically for qualitative research.',
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'In QInsights,' },
+            { type: 'text', text: ' demographics are metadata, a separate layer of instructions that tells the AI how to slice and dice the data and distinguish between interviewer and respondent.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'NotebookLM' },
+            { type: 'text', text: ' is a workspace for building a final document, ' },
+            { type: 'strong', text: 'whereas QInsights' },
+            { type: 'text', text: ' is a repository for an ongoing research journey.' },
+          ],
         },
       ],
     },
