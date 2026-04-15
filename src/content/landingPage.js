@@ -736,6 +736,73 @@ export const faqSection = {
       ],
     },
     {
+      question: 'How does QInsights differ from NotebookLM?',
+      answer: [
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'NotebookLM:' },
+            { type: 'text', text: ' Is primarily an information retrieval and study tool. It is designed to help you synthesize facts, generate study guides, and find specific answers within a corpus of text. Its "intelligence" is geared toward summarizing what is there.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'QInsights:' },
+            { type: 'text', text: ' Is a qualitative analysis platform. It does not just retrieve information; it is built to help you find patterns, derive themes, and explore the "why" behind human dialogue.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'NotebookLM:' },
+            { type: 'text', text: ' Is methodology agnostic. It treats a research transcript the same way it treats a physics textbook or a legal brief. It has no inherent understanding of qualitative research rigor.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'QInsights:' },
+            { type: 'text', text: ' The system is tuned to act as a thinking partner for researchers.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'NotebookLM:' },
+            { type: 'text', text: ' Requires the user to provide all the work, for example "Summarize this" or "Compare Source A to Source B".' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'QInsights:' },
+            { type: 'text', text: ' Provides a guided environment. Because it knows it is a qualitative tool, it can proactively surface thematic patterns or suggest directions for analysis that are standard in qualitative research.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          text: 'While NotebookLM can technically see demographic information if you paste it into the transcripts, it lacks the specialized brain to handle it systematically for qualitative research.',
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'In QInsights,' },
+            { type: 'text', text: ' demographics are metadata, a separate layer of instructions that tells the AI how to slice and dice the data and distinguish between interviewer and respondent.' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          segments: [
+            { type: 'strong', text: 'NotebookLM' },
+            { type: 'text', text: ' is a workspace for building a final document, ' },
+            { type: 'strong', text: 'whereas QInsights' },
+            { type: 'text', text: ' is a repository for an ongoing research journey.' },
+          ],
+        },
+      ],
+    },
+    {
       question: 'Can we use QInsights within our own company / organisation network?',
       answer: [
         {

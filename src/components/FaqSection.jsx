@@ -16,6 +16,10 @@ function renderSegments(segments) {
       )
     }
 
+    if (segment.type === 'strong') {
+      return <strong key={`${segment.text}-${index}`}>{segment.text}</strong>
+    }
+
     return <span key={`${segment.text}-${index}`}>{segment.text}</span>
   })
 }
