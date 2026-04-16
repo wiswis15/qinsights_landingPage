@@ -431,13 +431,17 @@ export const howItWorksSection = {
       number: '3',
       title: 'Build a trail you can defend',
       mobileTitle: 'Synthesize and share with confidence',
-      body: 'Organise themes, evidence, and interpretations in one place. Export what you need for your thesis, report, slide deck, or stakeholder presentation \u2014 with your analysis trail intact.',
+      body: 'Organise themes, evidence, and interpretations in one place. Export what you need for your thesis, report, slide deck, or stakeholder presentation — with your analysis trail intact.',
       image: {
         src: 'https://framerusercontent.com/images/AZ0vcFpnavDyhpo3FBJsAJPt6mM.png?width=1880&height=1812',
         alt: 'Step three preview showing defensible analysis trail',
       },
     },
   ],
+  cta: {
+    label: 'Book a Demo',
+    href: 'https://api.crm.stratto.ai/widget/booking/DIGE5EnzD9Wepr4uOEou',
+  },
 }
 
 export const comparisonSection = {
