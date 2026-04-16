@@ -290,6 +290,10 @@ export const productProof = {
     alt: 'Q-Insights interface preview displayed on a desktop screen',
   },
   statement: 'Used by researchers at leading universities, evaluation institutes, and market research teams.',
+  cta: {
+    label: 'Book a Demo',
+    href: 'https://api.crm.stratto.ai/widget/booking/DIGE5EnzD9Wepr4uOEou',
+  },
 }
 
 export const painPointsSection = {

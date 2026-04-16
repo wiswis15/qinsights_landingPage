@@ -383,6 +383,7 @@
 
 .product-proof__body {
   padding: 24px 32px 34px;
+  text-align: center;
 }
 
 .product-proof__statement {
@@ -394,6 +395,31 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-align: center;
+}
+
+.product-proof__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 14px 28px;
+  border-radius: 0;
+  border: none;
+  background: #2661e9;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 14px 32px rgba(38, 97, 233, 0.18);
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.product-proof__cta:hover,
+.product-proof__cta:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(38, 97, 233, 0.25);
+  background: #1e54d4;
 }
 
 .pain-points {
