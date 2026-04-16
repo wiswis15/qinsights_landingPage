@@ -91,7 +91,7 @@ export const contactPricingFormSection = {
         'Please let us know if you’re an individual researcher, part of a team, or representing an educational or business organization. You can also share what kind of data you typically analyze (e.g., interviews, focus groups, survey responses, etc.).',
     },
   },
-  submitLabel: 'Request Pricing',
+  submitLabel: 'Send',
   successMessage: 'Thank you. Your request has been sent to the QInsights team.',
   validationMessage: 'Please review the highlighted fields and try again.',
   errorMessage: 'We could not send your request right now. Please try again later.',
