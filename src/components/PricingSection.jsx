@@ -78,7 +78,7 @@ export function PricingSection({ content }) {
                 </ul>
 
                 <div className="pricing-card__action">
-                  <a href={plan.buttonHref} className="button button--primary button--large pricing-card__button">
+                  <a href={plan.buttonHref} target="_blank" rel="noopener noreferrer" className="button button--primary button--large pricing-card__button">
                     <span>{plan.buttonLabel}</span>
                   </a>
                 </div>
