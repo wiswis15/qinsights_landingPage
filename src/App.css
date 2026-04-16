@@ -3579,6 +3579,10 @@
     gap: 20px;
   }
 
+  .site-footer__column--pages {
+    display: none;
+  }
+
   .site-footer__links {
     gap: 8px;
   }
