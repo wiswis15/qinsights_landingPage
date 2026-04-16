@@ -620,7 +620,7 @@ export const callToActionSection = {
   actions: [
     {
       label: 'Book a Live Walkthrough',
-      href: 'https://qinsights.vercel.app/register',
+      href: 'https://api.crm.stratto.ai/widget/booking/DIGE5EnzD9Wepr4uOEou',
       variant: 'secondary',
     },
     {
