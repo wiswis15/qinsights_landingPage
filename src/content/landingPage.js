@@ -1006,7 +1006,7 @@ export const pricingContactCtaSection = {
   },
   action: {
     label: 'Discuss your use case',
-    href: 'https://app.simplymeet.me',
+    href: 'https://api.crm.stratto.ai/widget/booking/DIGE5EnzD9Wepr4uOEou',
   },
 }
 
