@@ -308,7 +308,7 @@ export const painPointsSection = {
   items: [
     {
       title: 'Too many transcripts, not enough time',
-      body: 'Hours lost re-reading interviews, open-ended responses, and notes \u2014 just to remember what is where.',
+      body: 'Hours lost re-reading interviews, open-ended responses, and notes — just to remember what is where.',
     },
     {
       title: 'Tools that make you feel incompetent',
@@ -323,6 +323,10 @@ export const painPointsSection = {
       body: 'Behind the scenes, you worry: What if someone asks how I got from data to these conclusions? Will my trail hold up?',
     },
   ],
+  cta: {
+    label: 'Start Free Trial',
+    href: 'https://app.qinsights.ai/signup',
+  },
 }
 
 export const featureSplitSection = {

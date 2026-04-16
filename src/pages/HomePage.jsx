@@ -40,7 +40,7 @@ export function HomePage() {
       <Hero copy={heroCopy} cta={actions.cta} />
       <LogoTicker title="Analysis you can trust." logos={trustLogos} />
       <ProductProofSection image={productProof.image} statement={productProof.statement} cta={productProof.cta} />
-      <PainPointsSection image={painPointsSection.image} intro={painPointsSection.intro} items={painPointsSection.items} />
+      <PainPointsSection image={painPointsSection.image} intro={painPointsSection.intro} items={painPointsSection.items} cta={painPointsSection.cta} />
       <FeatureSplitSection anchor={featureSplitSection.anchor} items={featureSplitSection.items} />
       <WebinarHighlightSection content={webinarHighlightSection} />
       <HowItWorksSection content={howItWorksSection} />
