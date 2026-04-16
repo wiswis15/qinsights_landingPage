@@ -14,7 +14,6 @@ import enterpriseIcon from '../assets/enterprise.svg'
 
 export const navLinks = [
   { label: 'Home', href: '/' },
-  { label: 'Use Cases', href: '/' },
   { label: 'Pricing', href: '/pricing' },
   { label: 'Blog', href: '/blog' },
   { label: 'About Us', href: '/team' },
