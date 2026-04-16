@@ -230,9 +230,9 @@ export const teamStorySection = {
     {
       type: 'paragraph',
       segments: [
-        { type: 'text', text: 'QInsights isn’t just a tool; it’s part of a movement. Through ' },
-        { type: 'link', text: 'workshops, articles, and our podcast', href: 'https://qeludra.com/', external: true },
-        { type: 'text', text: ', we’re shaping the future of AI-powered qualitative research and sharing that journey with a global community.' },
+        { type: 'text', text: 'QInsights isn\'t just a tool; it\'s part of a movement. Through workshops, articles and our ' },
+        { type: 'link', text: 'podcast', href: 'https://ai-in-qualitative-research.com/', external: true },
+        { type: 'text', text: ' we\'re shaping the future of AI-powered qualitative research and sharing that journey with a global community.' },
       ],
     },
     {
