@@ -1,4 +1,8 @@
+import { Link } from 'react-router-dom'
+
 export function LargerScalePlansSection({ content, gettingStarted }) {
+  const isInternalLink = (url) => url.startsWith('/');
+
   return (
     <section className="larger-scale-plans" aria-labelledby="larger-scale-plans-title">
       <div className="larger-scale-plans__inner">
@@ -35,9 +39,15 @@ export function LargerScalePlansSection({ content, gettingStarted }) {
                   ))}
                 </ul>
                 
-                <a href={plan.ctaUrl} className="larger-scale-plans__cta">
-                  {plan.ctaLabel}
-                </a>
+                {isInternalLink(plan.ctaUrl) ? (
+                  <Link to={plan.ctaUrl} className="larger-scale-plans__cta">
+                    {plan.ctaLabel}
+                  </Link>
+                ) : (
+                  <a href={plan.ctaUrl} className="larger-scale-plans__cta">
+                    {plan.ctaLabel}
+                  </a>
+                )}
               </div>
             ))}
           </div>
