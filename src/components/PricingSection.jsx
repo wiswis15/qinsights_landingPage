@@ -27,7 +27,7 @@ export function PricingSection({ content }) {
         </div>
 
         <div className="pricing-section__grid">
-          {content.plans.map((plan, index) => {
+          {content.plans.map((plan) => {
             const currentPrice = plan.prices[activeCycle];
             const currentFeatures = plan.features[activeCycle];
             const currentDescription =
@@ -39,7 +39,6 @@ export function PricingSection({ content }) {
               <div 
                 key={plan.id} 
                 className="pricing-card"
-                style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="pricing-card__header">
                   <h3 className="pricing-card__title">{plan.name}</h3>
