@@ -1,3 +1,5 @@
+import nodemailer from 'nodemailer'
+
 function parseRecipients(value) {
   return (value || 'support@qinsights.ai')
     .split(',')
@@ -30,13 +32,23 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'All fields are required.' })
   }
 
-  const resendApiKey = process.env.RESEND_API_KEY
-  const from = process.env.CONTACT_FORM_FROM || 'QInsights Contact <no-reply@qinsights.ai>'
-  const to = parseRecipients(process.env.CONTACT_FORM_TO)
+  const host = process.env.EMAIL_HOST
+  const port = Number(process.env.EMAIL_PORT || 587)
+  const user = process.env.EMAIL_HOST_USER
+  const pass = process.env.EMAIL_HOST_PASSWORD
+  const from = process.env.DEFAULT_FROM_EMAIL || 'support@qinsights.ai'
+  const to = parseRecipients(process.env.SUPPORT_TEAM_EMAILS)
 
-  if (!resendApiKey) {
-    return res.status(500).json({ error: 'Email provider is not configured.' })
+  if (!host || !user || !pass) {
+    return res.status(500).json({ error: 'Email service is not configured.' })
   }
+
+  const transporter = nodemailer.createTransport({
+    host,
+    port,
+    secure: port === 465,
+    auth: { user, pass },
+  })
 
   const subject = `Pricing request from ${name}`
   const safeName = escapeHtml(name)
@@ -44,32 +56,22 @@ export default async function handler(req, res) {
   const safeOrganization = escapeHtml(organization)
   const safeLicensingNeeds = escapeHtml(licensingNeeds).replaceAll('\n', '<br />')
 
-  const payload = {
-    from,
-    to,
-    reply_to: email,
-    subject,
-    html: `
-      <h2>New pricing request</h2>
-      <p><strong>Name:</strong> ${safeName}</p>
-      <p><strong>Email:</strong> ${safeEmail}</p>
-      <p><strong>Organization/Institution:</strong> ${safeOrganization}</p>
-      <p><strong>Licensing needs:</strong><br />${safeLicensingNeeds}</p>
-    `,
-  }
-
-  const response = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${resendApiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(payload),
-  })
-
-  if (!response.ok) {
-    const errorText = await response.text()
-    return res.status(502).json({ error: `Email delivery failed: ${errorText}` })
+  try {
+    await transporter.sendMail({
+      from,
+      to: to.join(', '),
+      replyTo: email,
+      subject,
+      html: `
+        <h2>New pricing request</h2>
+        <p><strong>Name:</strong> ${safeName}</p>
+        <p><strong>Email:</strong> ${safeEmail}</p>
+        <p><strong>Organization/Institution:</strong> ${safeOrganization}</p>
+        <p><strong>Licensing needs:</strong><br />${safeLicensingNeeds}</p>
+      `,
+    })
+  } catch (err) {
+    return res.status(502).json({ error: `Email delivery failed: ${err.message}` })
   }
 
   return res.status(200).json({ ok: true })
