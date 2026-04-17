@@ -15,10 +15,9 @@ import enterpriseIcon from '../assets/enterprise.svg'
 export const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Pricing', href: '/pricing' },
+  { label: 'Blog', href: '/blog' },
   { label: 'About Us', href: '/team' },
   { label: 'Contact Us', href: '/contact' },
-  { label: 'Use Cases', href: '/' },
-  { label: 'Blog', href: '/blog' },
 ]
 
 export const actions = {
@@ -92,7 +91,7 @@ export const contactPricingFormSection = {
         'Please let us know if you’re an individual researcher, part of a team, or representing an educational or business organization. You can also share what kind of data you typically analyze (e.g., interviews, focus groups, survey responses, etc.).',
     },
   },
-  submitLabel: 'Request Pricing',
+  submitLabel: 'Send',
   successMessage: 'Thank you. Your request has been sent to the QInsights team.',
   validationMessage: 'Please review the highlighted fields and try again.',
   errorMessage: 'We could not send your request right now. Please try again later.',
@@ -231,9 +230,9 @@ export const teamStorySection = {
     {
       type: 'paragraph',
       segments: [
-        { type: 'text', text: 'QInsights isn’t just a tool; it’s part of a movement. Through ' },
-        { type: 'link', text: 'workshops, articles, and our podcast', href: 'https://qeludra.com/', external: true },
-        { type: 'text', text: ', we’re shaping the future of AI-powered qualitative research and sharing that journey with a global community.' },
+        { type: 'text', text: 'QInsights isn\'t just a tool; it\'s part of a movement. Through workshops, articles and our ' },
+        { type: 'link', text: 'podcast', href: 'https://ai-in-qualitative-research.com/', external: true },
+        { type: 'text', text: ' we\'re shaping the future of AI-powered qualitative research and sharing that journey with a global community.' },
       ],
     },
     {
@@ -291,6 +290,10 @@ export const productProof = {
     alt: 'Q-Insights interface preview displayed on a desktop screen',
   },
   statement: 'Used by researchers at leading universities, evaluation institutes, and market research teams.',
+  cta: {
+    label: 'Book a Demo',
+    href: 'https://api.crm.stratto.ai/widget/booking/DIGE5EnzD9Wepr4uOEou',
+  },
 }
 
 export const painPointsSection = {
@@ -305,7 +308,7 @@ export const painPointsSection = {
   items: [
     {
       title: 'Too many transcripts, not enough time',
-      body: 'Hours lost re-reading interviews, open-ended responses, and notes \u2014 just to remember what is where.',
+      body: 'Hours lost re-reading interviews, open-ended responses, and notes — just to remember what is where.',
     },
     {
       title: 'Tools that make you feel incompetent',
@@ -320,6 +323,10 @@ export const painPointsSection = {
       body: 'Behind the scenes, you worry: What if someone asks how I got from data to these conclusions? Will my trail hold up?',
     },
   ],
+  cta: {
+    label: 'Start Free Trial',
+    href: 'https://app.qinsights.ai/signup',
+  },
 }
 
 export const featureSplitSection = {
@@ -424,13 +431,17 @@ export const howItWorksSection = {
       number: '3',
       title: 'Build a trail you can defend',
       mobileTitle: 'Synthesize and share with confidence',
-      body: 'Organise themes, evidence, and interpretations in one place. Export what you need for your thesis, report, slide deck, or stakeholder presentation \u2014 with your analysis trail intact.',
+      body: 'Organise themes, evidence, and interpretations in one place. Export what you need for your thesis, report, slide deck, or stakeholder presentation — with your analysis trail intact.',
       image: {
         src: 'https://framerusercontent.com/images/AZ0vcFpnavDyhpo3FBJsAJPt6mM.png?width=1880&height=1812',
         alt: 'Step three preview showing defensible analysis trail',
       },
     },
   ],
+  cta: {
+    label: 'Book a Demo',
+    href: 'https://api.crm.stratto.ai/widget/booking/DIGE5EnzD9Wepr4uOEou',
+  },
 }
 
 export const comparisonSection = {
@@ -621,7 +632,7 @@ export const callToActionSection = {
   actions: [
     {
       label: 'Book a Live Walkthrough',
-      href: 'https://qinsights.vercel.app/register',
+      href: 'https://api.crm.stratto.ai/widget/booking/DIGE5EnzD9Wepr4uOEou',
       variant: 'secondary',
     },
     {
@@ -995,7 +1006,7 @@ export const pricingContactCtaSection = {
   },
   action: {
     label: 'Discuss your use case',
-    href: 'https://app.simplymeet.me',
+    href: 'https://api.crm.stratto.ai/widget/booking/DIGE5EnzD9Wepr4uOEou',
   },
 }
 

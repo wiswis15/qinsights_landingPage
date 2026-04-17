@@ -77,6 +77,14 @@ export function HowItWorksSection({ content }) {
           </article>
         ))}
       </div>
+
+      {content.cta && (
+        <div className="how-it-works__cta-wrap">
+          <a href={content.cta.href} className="how-it-works__cta">
+            {content.cta.label}
+          </a>
+        </div>
+      )}
     </section>
   )
 }

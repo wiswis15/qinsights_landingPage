@@ -1,4 +1,4 @@
-export function PainPointsSection({ image, intro, items }) {
+export function PainPointsSection({ image, intro, items, cta }) {
   return (
     <section className="pain-points" aria-labelledby="pain-points-title">
       <div className="pain-points__intro">
@@ -34,6 +34,14 @@ export function PainPointsSection({ image, intro, items }) {
           </article>
         ))}
       </div>
+
+      {cta && (
+        <div className="pain-points__cta-wrap">
+          <a href={cta.href} className="pain-points__cta">
+            {cta.label}
+          </a>
+        </div>
+      )}
     </section>
   )
 }
