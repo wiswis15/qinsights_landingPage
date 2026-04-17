@@ -9,8 +9,8 @@ import { freeTrialSection, pricingSection, largerScalePlansSection, gettingStart
 export function PricingPage() {
   return (
     <>
-      <FreeTrialSection content={freeTrialSection} />
       <PricingSection content={pricingSection} />
+      <FreeTrialSection content={freeTrialSection} />
       <LargerScalePlansSection content={largerScalePlansSection} gettingStarted={gettingStartedSection} />
       <ComparisonSection content={pricingComparisonSection} />
       <WhyChooseQInsightsSection content={whyChooseQInsightsSection} />
