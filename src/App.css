@@ -3654,7 +3654,7 @@
 }
 
 .free-trial__card {
-  background-color: #f8fafc;
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 62%, #eef5ff 84%, #dceaff 100%);
   border: 1px solid #e2e8f0;
   border-radius: 16px;
   padding: 48px;
