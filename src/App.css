@@ -3761,33 +3761,41 @@
 /* Category Tabs (Framer Pill Style) */
 .pricing-section__tabs {
   display: flex;
-  background-color: #f1f5f9;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, #ffffff 0%, #eaf2ff 52%, #cfe1ff 100%) border-box;
+  border: 2px solid transparent;
   padding: 6px;
-  border-radius: 999px;
+  border-radius: 0;
   gap: 4px;
+  box-shadow: 0 0 0 1px rgba(38, 97, 233, 0.08);
 }
 
 .pricing-section__tab {
   background: transparent;
-  border: none;
+  border: 1px solid transparent;
   font-family: 'Urbanist', sans-serif;
   font-size: 16px;
-  font-weight: 600;
-  color: #64748b;
+  font-weight: 700;
+  color: #475569;
   padding: 10px 24px;
-  border-radius: 999px;
+  border-radius: 0;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: none;
 }
 
 .pricing-section__tab:hover {
-  color: #0f172a;
+  color: #1e293b;
+  background-color: #f8fbff;
 }
 
 .pricing-section__tab--active {
-  background-color: #ffffff;
-  color: #2661e9;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, #ffffff 0%, #eaf2ff 52%, #cfe1ff 100%) border-box;
+  border-color: transparent;
+  color: #1d4ed8;
+  box-shadow: none;
 }
 
 /* Cycle Toggle */
@@ -3960,14 +3968,17 @@
 
 .pricing-section__tab {
   position: relative;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: none;
 }
 
 .pricing-section__tab--active {
-  background-color: #ffffff;
-  color: #2661e9;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-  transform: scale(1.02);
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, #ffffff 0%, #eaf2ff 52%, #cfe1ff 100%) border-box;
+  border-color: transparent;
+  color: #1d4ed8;
+  box-shadow: none;
+  transform: none;
 }
 
 .pricing-card {
