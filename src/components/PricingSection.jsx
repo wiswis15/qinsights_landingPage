@@ -4,6 +4,7 @@ export function PricingSection({ content }) {
   const [activeCycle, setActiveCycle] = useState(content.cycles[0].id); // Default to 6mo
   const currencySymbol = content.currencySymbol ?? '$';
   const periodSuffix = content.periodSuffix ?? '/ mo';
+  const visiblePlans = content.plans.filter((plan) => plan.prices?.[activeCycle] != null);
 
   return (
     <section className="pricing-section" aria-labelledby="pricing-heading">
@@ -26,14 +27,22 @@ export function PricingSection({ content }) {
           </div>
         </div>
 
-        <div className="pricing-section__grid">
-          {content.plans.map((plan) => {
+        <div
+          className={`pricing-section__grid ${visiblePlans.length === 1 ? 'pricing-section__grid--single' : ''}`}
+        >
+          {visiblePlans.map((plan) => {
             const currentPrice = plan.prices[activeCycle];
             const currentFeatures = plan.features[activeCycle];
             const currentDescription =
               typeof plan.descriptions === 'object' ? plan.descriptions?.[activeCycle] ?? plan.description : plan.description;
             const currentBody =
               typeof plan.bodies === 'object' ? plan.bodies?.[activeCycle] ?? plan.body : plan.body;
+            const currentButtonHref =
+              typeof plan.buttonHrefs === 'object' ? plan.buttonHrefs?.[activeCycle] ?? plan.buttonHref : plan.buttonHref;
+            const currentButtonLabel =
+              typeof plan.buttonLabels === 'object' ? plan.buttonLabels?.[activeCycle] ?? plan.buttonLabel : plan.buttonLabel;
+            const currentProductId =
+              typeof plan.productIds === 'object' ? plan.productIds?.[activeCycle] ?? plan.productId : plan.productId;
             
             return (
               <div 
@@ -77,8 +86,14 @@ export function PricingSection({ content }) {
                 </ul>
 
                 <div className="pricing-card__action">
-                  <a href={plan.buttonHref} target="_blank" rel="noopener noreferrer" className="button button--primary button--large pricing-card__button">
-                    <span>{plan.buttonLabel}</span>
+                  <a
+                    href={currentButtonHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button button--primary button--large pricing-card__button"
+                    data-product-id={currentProductId}
+                  >
+                    <span>{currentButtonLabel}</span>
                   </a>
                 </div>
               </div>

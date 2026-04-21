@@ -3831,9 +3831,22 @@
   margin: 0 auto;
 }
 
+.pricing-section__grid--single {
+  justify-items: center;
+}
+
+.pricing-section__grid--single .pricing-card {
+  width: 100%;
+  max-width: 388px;
+}
+
 @media (min-width: 810px) {
   .pricing-section__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-section__grid--single {
+    grid-template-columns: 1fr;
   }
 }
 

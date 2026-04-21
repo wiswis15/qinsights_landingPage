@@ -117,6 +117,7 @@ export const pricingSection = {
   periodSuffix: '',
   saveLabel: 'Save 12%',
   cycles: [
+    { id: '3mo', label: '3 Months' },
     { id: '6mo', label: '6 Months' },
     { id: '12mo', label: '12 Months' }
   ],
@@ -125,18 +126,26 @@ export const pricingSection = {
       id: 'educational',
       name: 'Educational*',
       prices: {
+        '3mo': '149',
         '6mo': 279,
         '12mo': 489
       },
       descriptions: {
+        '3mo': 'For academic research projects.',
         '6mo': 'For academic research projects.',
         '12mo': 'For academic research projects.'
       },
       bodies: {
+        '3mo': 'A lower-commitment education plan for smaller academic projects and shorter research cycles.',
         '6mo': 'Enough capacity for 1-2 full studies per year. Ideal for research projects, dissertations or longitudinal research.',
         '12mo': 'Enough capacity for 1-2 full studies per year. Ideal for research projects, dissertations or longitudinal research.'
       },
       features: {
+        '3mo': [
+          '7.5 Million Tokens',
+          '1 Seat',
+          'Office Hours Support'
+        ],
         '6mo': [
           '12.5 Million Tokens',
           'Office Hours Support'
@@ -145,6 +154,9 @@ export const pricingSection = {
           '25 Million Tokens',
           'Office Hours Support'
         ]
+      },
+      productIds: {
+        '3mo': 'pri_01kg29wz80eb971xmcz4vct2je'
       },
       buttonLabel: 'Start your Free Trial',
       buttonHref: 'https://app.qinsights.ai/signup'
