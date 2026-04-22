@@ -14,6 +14,7 @@ import enterpriseIcon from '../assets/enterprise.svg'
 
 export const navLinks = [
   { label: 'Home', href: '/' },
+  { label: 'In Practice', href: '/in-practice' },
   { label: 'Pricing', href: '/pricing' },
   { label: 'Blog', href: '/blog' },
   { label: 'About Us', href: '/team' },
@@ -593,6 +594,38 @@ export const designedForResearchersSection = {
     },
   ],
   closingStatement: 'If you\'re juggling complex software tutorials, overgrown spreadsheets, and ChatGPT exports, QInsights gives you a calmer, more defensible way forward.',
+  inPracticeBridge: {
+    eyebrow: 'In Practice',
+    title: 'See how teams use QInsights in practice.',
+    body: 'Explore real stories from academia, healthcare, consulting, and corporate research teams working under actual volume, rigor, and deadline pressure.',
+    action: {
+      label: 'Explore the stories',
+      href: '/in-practice',
+    },
+    items: [
+      {
+        sector: 'Academic',
+        title: 'Replace manual coding',
+        body: 'Help research teams regain control of overwhelming text and audio datasets.',
+        accent: '#2f6bda',
+        surface: '#eef4ff',
+      },
+      {
+        sector: 'Healthcare',
+        title: 'Find hidden nuance',
+        body: 'Interrogate sensitive qualitative data without losing full-context rigor.',
+        accent: '#1f8d88',
+        surface: '#edf9f7',
+      },
+      {
+        sector: 'Consulting',
+        title: 'Deliver insight faster',
+        body: 'Move from open-ended employee feedback to client-ready diagnosis quickly.',
+        accent: '#b27a2a',
+        surface: '#fff7ec',
+      },
+    ],
+  },
 }
 
 export const privacySecuritySection = {

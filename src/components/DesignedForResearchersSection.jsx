@@ -1,3 +1,5 @@
+import { InPracticePreviewSection } from './InPracticePreviewSection'
+
 export function DesignedForResearchersSection({ content }) {
   return (
     <section className="designed-for-researchers" aria-labelledby="designed-heading">
@@ -32,6 +34,8 @@ export function DesignedForResearchersSection({ content }) {
           {content.closingStatement}
         </p>
       </div>
+
+      {content.inPracticeBridge ? <InPracticePreviewSection content={content.inPracticeBridge} /> : null}
     </section>
   )
 }
