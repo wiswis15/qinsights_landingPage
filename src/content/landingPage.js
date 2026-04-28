@@ -45,6 +45,38 @@ export const heroCopy = {
   },
 }
 
+export const leadMagnetPopup = {
+  delayMs: 5000,
+  storageKey: 'qinsights-lead-magnet-dismissed',
+  eyebrow: 'Free QInsights guide',
+  heading: 'A calmer start to AI-assisted qualitative analysis.',
+  body: 'Get the QInsights guide and learn how to move from transcripts to defensible insights without losing control of your research process.',
+  fields: {
+    name: {
+      label: 'Name',
+      placeholder: 'Jane Smith',
+    },
+    email: {
+      label: 'Email',
+      placeholder: 'jane@organization.com',
+    },
+    country: {
+      label: 'Country',
+      placeholder: 'Your country',
+    },
+  },
+  submitLabel: 'Get the free guide',
+  submittingLabel: 'Sending...',
+  closeLabel: 'Close lead magnet popup',
+  successHeading: 'Your guide is ready.',
+  successMessage: 'Thank you. You can open the QInsights guide now.',
+  guideCtaLabel: 'Open the guide',
+  guideUrl: 'https://assets.cdn.filesafe.space/cSNXRLMHTDfp9SGs4bDp/media/69de58983d447256447d61c7.pdf',
+  validationMessage: 'Please review the highlighted fields and try again.',
+  errorMessage: 'We could not send your request right now. Please try again later.',
+  privacyNotice: 'By submitting this form, you agree that QInsights may process your details to provide the guide.',
+}
+
 export const teamHero = {
   title: 'Meet the Minds Behind QInsights',
   subtitle: 'Experts in Qualitative Research. Pioneers in AI.',
