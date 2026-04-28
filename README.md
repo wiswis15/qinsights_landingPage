@@ -19,6 +19,30 @@ The frontend form validates the required fields in `src/lib/contactRequest.js`, 
 
 The API route uses Nodemailer with SMTP credentials from server environment variables.
 
+### Local testing
+
+Copy `.env.example` to `.env`, then fill in the SMTP values.
+
+For local testing with the same recipient used in production, keep:
+
+```env
+SUPPORT_TEAM_EMAILS=partnership@qinsights.ai
+```
+
+Run the local API server in one terminal:
+
+```bash
+pnpm dev:api
+```
+
+Run the Vite app in another terminal:
+
+```bash
+pnpm dev
+```
+
+The contact form still posts to `/api/request-pricing`. During local development, Vite proxies `/api` requests to `http://localhost:3001`.
+
 ### Required server environment variables
 
 Configure these in the deployment environment that runs `api/request-pricing.js`:
