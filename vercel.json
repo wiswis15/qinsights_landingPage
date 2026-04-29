@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "qinsights.ai"
+        }
+      ],
+      "destination": "https://www.qinsights.ai/:path*",
+      "permanent": true
+    }
+  ]
+}
