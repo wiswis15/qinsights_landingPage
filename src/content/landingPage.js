@@ -46,7 +46,7 @@ export const heroCopy = {
 }
 
 export const leadMagnetPopup = {
-  delayMs: 5000,
+  delayMs: 8000,
   storageKey: 'qinsights-lead-magnet-dismissed',
   eyebrow: 'Free QInsights guide',
   heading: 'A calmer start to AI-assisted qualitative analysis.',
