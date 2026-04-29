@@ -160,8 +160,12 @@ export function LeadMagnetPopup({ content }) {
           <span aria-hidden="true">&times;</span>
         </button>
 
+        <div className="lead-magnet__media" aria-hidden="true">
+          <img className="lead-magnet__image" src={content.image.src} alt={content.image.alt} />
+        </div>
+
         {hasSubmitted ? (
-          <div className="lead-magnet__success">
+          <div className="lead-magnet__content lead-magnet__success">
             <p className="lead-magnet__eyebrow">{content.eyebrow}</p>
             <h2 className="lead-magnet__heading" id="lead-magnet-heading">
               {content.successHeading}
@@ -175,7 +179,7 @@ export function LeadMagnetPopup({ content }) {
             </a>
           </div>
         ) : (
-          <>
+          <div className="lead-magnet__content">
             <div className="lead-magnet__intro">
               <p className="lead-magnet__eyebrow">{content.eyebrow}</p>
               <h2 className="lead-magnet__heading" id="lead-magnet-heading">
@@ -281,7 +285,7 @@ export function LeadMagnetPopup({ content }) {
                 </p>
               )}
             </form>
-          </>
+          </div>
         )}
       </div>
     </div>

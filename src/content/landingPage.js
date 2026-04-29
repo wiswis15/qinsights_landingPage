@@ -51,6 +51,10 @@ export const leadMagnetPopup = {
   eyebrow: 'Free QInsights guide',
   heading: 'A calmer start to AI-assisted qualitative analysis.',
   body: 'Get the QInsights guide and learn how to move from transcripts to defensible insights without losing control of your research process.',
+  image: {
+    src: '/Q.webp',
+    alt: 'Promotional poster for The Q-Insights Research Guide e-book',
+  },
   fields: {
     name: {
       label: 'Name',
