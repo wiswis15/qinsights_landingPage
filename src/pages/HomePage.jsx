@@ -5,6 +5,7 @@ import { FaqSection } from '../components/FaqSection'
 import { FeatureSplitSection } from '../components/FeatureSplitSection'
 import { HowItWorksSection } from '../components/HowItWorksSection'
 import { Hero } from '../components/Hero'
+import { LeadMagnetPopup } from '../components/LeadMagnetPopup'
 import { LogoTicker } from '../components/LogoTicker'
 import { NewsletterSection } from '../components/NewsletterSection'
 import { PainPointsSection } from '../components/PainPointsSection'
@@ -22,6 +23,7 @@ import {
   featureSplitSection,
   heroCopy,
   howItWorksSection,
+  leadMagnetPopup,
   newsletterSection,
   onboardingSpotlightSection,
   painPointsSection,
@@ -54,6 +56,7 @@ export function HomePage() {
       <CallToActionSection content={callToActionSection} />
       <NewsletterSection content={newsletterSection} />
       <FaqSection content={faqSection} />
+      <LeadMagnetPopup content={leadMagnetPopup} />
     </>
   )
 }
