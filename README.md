@@ -10,6 +10,7 @@ pnpm dev
 ## Contact form email delivery
 
 The `/contact` form sends pricing/contact requests through the serverless endpoint at `api/request-pricing.js`.
+The timed homepage lead magnet popup sends guide requests through `api/lead-magnet.js`.
 
 The frontend form validates the required fields in `src/lib/contactRequest.js`, then posts the payload to:
 
@@ -42,6 +43,7 @@ pnpm dev
 ```
 
 The contact form still posts to `/api/request-pricing`. During local development, Vite proxies `/api` requests to `http://localhost:3001`.
+The lead magnet popup posts to `/api/lead-magnet` through the same local API server and Vite proxy.
 
 ### Required server environment variables
 
@@ -70,12 +72,19 @@ SUPPORT_TEAM_EMAILS=support@qinsights.ai,team@example.com
 
 ### Request payload
 
-The endpoint expects a JSON `POST` body with:
+The `/api/request-pricing` endpoint expects a JSON `POST` body with:
 
 - `name`
 - `email`
 - `organization`
 - `licensingNeeds`
+- `companyWebsite` honeypot field, which should stay empty
+
+The `/api/lead-magnet` endpoint expects a JSON `POST` body with:
+
+- `name`
+- `email`
+- `country`
 - `companyWebsite` honeypot field, which should stay empty
 
 ## Build

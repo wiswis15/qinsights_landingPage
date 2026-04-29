@@ -1,6 +1,7 @@
 import http from 'node:http'
 import process from 'node:process'
-import handler from '../api/request-pricing.js'
+import leadMagnetHandler from '../api/lead-magnet.js'
+import requestPricingHandler from '../api/request-pricing.js'
 
 try {
   process.loadEnvFile('.env')
@@ -9,6 +10,10 @@ try {
 }
 
 const port = Number(process.env.LOCAL_API_PORT || 3001)
+const routes = new Map([
+  ['/api/request-pricing', requestPricingHandler],
+  ['/api/lead-magnet', leadMagnetHandler],
+])
 
 function sendJson(res, statusCode, payload) {
   res.writeHead(statusCode, { 'Content-Type': 'application/json' })
@@ -48,13 +53,16 @@ function createResponseAdapter(res) {
 }
 
 const server = http.createServer(async (req, res) => {
-  if (!req.url?.startsWith('/api/request-pricing')) {
+  const route = [...routes.entries()].find(([path]) => req.url?.startsWith(path))
+
+  if (!route) {
     sendJson(res, 404, { error: 'Not found.' })
     return
   }
 
   try {
     req.body = await readJsonBody(req)
+    const [, handler] = route
     await handler(req, createResponseAdapter(res))
   } catch (error) {
     sendJson(res, 500, { error: error.message || 'Local API error.' })
@@ -62,5 +70,5 @@ const server = http.createServer(async (req, res) => {
 })
 
 server.listen(port, () => {
-  console.log(`Local contact API listening on http://localhost:${port}`)
+  console.log(`Local API listening on http://localhost:${port}`)
 })

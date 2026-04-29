@@ -75,7 +75,7 @@ export const leadMagnetPopup = {
   successHeading: 'Your guide is ready.',
   successMessage: 'Thank you. You can open the QInsights guide now.',
   guideCtaLabel: 'Open the guide',
-  guideUrl: 'https://assets.cdn.filesafe.space/cSNXRLMHTDfp9SGs4bDp/media/69de58983d447256447d61c7.pdf',
+  guideUrl: '/QInsights Conversational Analysis Guide.pdf',
   validationMessage: 'Please review the highlighted fields and try again.',
   errorMessage: 'We could not send your request right now. Please try again later.',
   privacyNotice: 'By submitting this form, you agree that QInsights may process your details to provide the guide.',
