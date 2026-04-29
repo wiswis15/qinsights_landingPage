@@ -1,7 +1,29 @@
 {
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ],
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "qinsights.ai"
+        }
+      ],
+      "destination": "https://www.qinsights.ai/",
+      "permanent": true
+    },
+    {
+      "source": "/:path+",
       "has": [
         {
           "type": "host",
