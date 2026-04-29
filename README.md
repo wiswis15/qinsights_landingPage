@@ -27,7 +27,7 @@ Copy `.env.example` to `.env`, then fill in the SMTP values.
 For local testing with the same recipient used in production, keep:
 
 ```env
-SUPPORT_TEAM_EMAILS=partnership@qinsights.ai
+VITE_SUPPORT_TEAM_EMAILS=partnership@qinsights.ai
 ```
 
 Run the local API server in one terminal:
@@ -56,8 +56,8 @@ Configure these in the deployment environment that runs `api/request-pricing.js`
 
 ### Optional server environment variables
 
-- `DEFAULT_FROM_EMAIL` (defaults to `support@qinsights.ai`)
-- `SUPPORT_TEAM_EMAILS` (comma-separated recipients, defaults to `support@qinsights.ai`)
+- `VITE_DEFAULT_FROM_EMAIL` (defaults to `support@qinsights.ai`)
+- `VITE_SUPPORT_TEAM_EMAILS` (comma-separated recipients, defaults to `support@qinsights.ai`)
 
 Example:
 
@@ -66,8 +66,8 @@ EMAIL_HOST=smtp.example.com
 EMAIL_PORT=587
 EMAIL_HOST_USER=smtp-user@example.com
 EMAIL_HOST_PASSWORD=your-smtp-password
-DEFAULT_FROM_EMAIL=support@qinsights.ai
-SUPPORT_TEAM_EMAILS=support@qinsights.ai,team@example.com
+VITE_DEFAULT_FROM_EMAIL=support@qinsights.ai
+VITE_SUPPORT_TEAM_EMAILS=support@qinsights.ai,team@example.com
 ```
 
 ### Request payload

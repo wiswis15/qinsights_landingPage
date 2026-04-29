@@ -36,8 +36,8 @@ export default async function handler(req, res) {
   const port = Number(process.env.EMAIL_PORT || 587)
   const user = process.env.EMAIL_HOST_USER
   const pass = process.env.EMAIL_HOST_PASSWORD
-  const from = process.env.DEFAULT_FROM_EMAIL || 'support@qinsights.ai'
-  const to = parseRecipients(process.env.SUPPORT_TEAM_EMAILS)
+  const from = process.env.VITE_DEFAULT_FROM_EMAIL || 'support@qinsights.ai'
+  const to = parseRecipients(process.env.VITE_SUPPORT_TEAM_EMAILS)
 
   if (!host || !user || !pass) {
     return res.status(500).json({ error: 'Email service is not configured.' })
