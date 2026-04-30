@@ -7,6 +7,15 @@ function isInternalLink(href) {
   return href.startsWith('/')
 }
 
+function NavLinkContent({ link }) {
+  return (
+    <span className="navbar__link-content">
+      <span>{link.label}</span>
+      {link.badge ? <span className="navbar__badge">{link.badge}</span> : null}
+    </span>
+  )
+}
+
 export function Navbar({ links, actions }) {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -40,11 +49,11 @@ export function Navbar({ links, actions }) {
                     to={link.href}
                     onClick={() => setIsOpen(false)}
                   >
-                    {link.label}
+                    <NavLinkContent link={link} />
                   </NavLink>
                 ) : (
                   <a className="navbar__link" href={link.href} onClick={() => setIsOpen(false)}>
-                    {link.label}
+                    <NavLinkContent link={link} />
                   </a>
                 )}
               </li>

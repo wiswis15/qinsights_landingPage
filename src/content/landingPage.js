@@ -19,6 +19,7 @@ export const navLinks = [
   { label: 'Blog', href: '/blog' },
   { label: 'About Us', href: '/team' },
   { label: 'Contact Us', href: '/contact' },
+  { label: 'New Tool', href: '/desktop-app', badge: 'New' },
 ]
 
 export const actions = {
