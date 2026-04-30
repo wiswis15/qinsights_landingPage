@@ -57,25 +57,12 @@ export function DesktopAppPage() {
           </p>
         </div>
 
-        <div className="desktop-app-hero__panel" aria-label="Local privacy preparation workflow">
-          <div className="desktop-app-device">
-            <div className="desktop-app-device__bar">
-              <span />
-              <span />
-              <span />
-            </div>
-            <div className="desktop-app-device__screen">
-              <div className="desktop-app-device__status">Local preparation</div>
-              <div className="desktop-app-device__file">
-                <span>Interview transcript.docx</span>
-                <strong>PII review</strong>
-              </div>
-              <div className="desktop-app-device__file desktop-app-device__file--safe">
-                <span>Prepared transcript.docx</span>
-                <strong>Ready for QInsights</strong>
-              </div>
-            </div>
-          </div>
+        <div className="desktop-app-hero__panel" aria-label="QInsights Anonymizer privacy workflow">
+          <img
+            className="desktop-app-hero__image"
+            src="/QPII.jpg"
+            alt="Privacy workflow showing document formats being protected before secure upload"
+          />
         </div>
       </section>
 
