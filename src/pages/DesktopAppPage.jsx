@@ -4,7 +4,7 @@ const desktopAppDownloadUrl =
 const workflowSteps = [
   {
     title: 'Download the Windows app',
-    body: 'Install QInsights Privacy Guard on the computer where your research files are stored.',
+    body: 'Install QInsights Anonymizer on the computer where your research files are stored.',
   },
   {
     title: 'Prepare sensitive files locally',
@@ -25,7 +25,7 @@ const safeguards = [
 export function DesktopAppPage() {
   function handleDownloadClick() {
     const confirmed = window.confirm(
-      'You are about to download the QInsights Privacy Guard desktop installer for Windows. This is a beta desktop app. Continue?'
+      'You are about to download the QInsights Anonymizer desktop installer for Windows. This is a beta desktop app. Continue?'
     )
 
     if (confirmed) {
@@ -39,7 +39,7 @@ export function DesktopAppPage() {
         <div className="desktop-app-hero__copy">
           <p className="desktop-app-hero__eyebrow">Desktop PII app</p>
           <h1 className="desktop-app-hero__title" id="desktop-app-title">
-            QInsights Privacy Guard
+            QInsights Anonymizer
           </h1>
           <p className="desktop-app-hero__body">
             Prepare sensitive qualitative research files locally before continuing your analysis in QInsights.
@@ -87,7 +87,7 @@ export function DesktopAppPage() {
           </h2>
         </div>
         <p className="desktop-app-section__body">
-          Researchers often work with participant names, locations, organizations, health details, and other identifying information. QInsights Privacy Guard gives teams a dedicated desktop step for preparing those files before upload and analysis.
+          Researchers often work with participant names, locations, organizations, health details, and other identifying information. QInsights Anonymizer gives teams a dedicated desktop step for preparing those files before upload and analysis.
         </p>
       </section>
 
