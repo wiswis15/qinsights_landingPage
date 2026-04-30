@@ -9,11 +9,13 @@ export function validateLeadMagnetPayload(payload) {
 
   const name = clean(payload.name)
   const email = clean(payload.email)
+  const organization = clean(payload.organization)
   const country = clean(payload.country)
 
   if (!name) errors.name = 'Name is required.'
   if (!email) errors.email = 'Email is required.'
   if (email && !EMAIL_PATTERN.test(email)) errors.email = 'Enter a valid email address.'
+  if (!organization) errors.organization = 'Organization is required.'
   if (!country) errors.country = 'Country is required.'
   if (payload.companyWebsite) errors.companyWebsite = 'Spam check failed.'
 

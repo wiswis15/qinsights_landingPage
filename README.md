@@ -106,7 +106,9 @@ The `/api/lead-magnet` endpoint expects a JSON `POST` body with:
 
 - `name`
 - `email`
+- `organization`
 - `country`
+- `phone` optional
 - `companyWebsite` honeypot field, which should stay empty
 
 ## Build
