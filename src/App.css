@@ -6420,7 +6420,7 @@
   border: 1px solid rgba(38, 97, 233, 0.1);
   border-radius: 8px;
   background: #ffffff;
-  box-shadow: 0 16px 34px rgba(16, 27, 61, 0.05);
+  box-shadow: none;
 }
 
 .desktop-app-workflow__number {
