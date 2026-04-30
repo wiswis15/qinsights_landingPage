@@ -3,7 +3,7 @@ const desktopAppDownloadUrl =
 
 const workflowSteps = [
   {
-    title: 'Download the Windows app',
+    title: 'Download the app',
     body: 'Install QInsights Anonymizer on the computer where your research files are stored.',
   },
   {
@@ -25,7 +25,7 @@ const safeguards = [
 export function DesktopAppPage() {
   function handleDownloadClick() {
     const confirmed = window.confirm(
-      'You are about to download the QInsights Anonymizer desktop installer for Windows. This is a beta desktop app. Continue?'
+      'You are about to download the QInsights Anonymizer desktop installer. This is a beta desktop app. Continue?'
     )
 
     if (confirmed) {
@@ -46,7 +46,7 @@ export function DesktopAppPage() {
           </p>
           <div className="desktop-app-hero__actions">
             <button className="button button--primary button--large" type="button" onClick={handleDownloadClick}>
-              Download for Windows
+              Download
             </button>
             <a className="button button--ghost button--large" href="https://app.qinsights.ai/login" target="_blank" rel="noreferrer">
               Open QInsights
@@ -113,7 +113,7 @@ export function DesktopAppPage() {
         <div>
           <p className="desktop-app-section__eyebrow">Beta download</p>
           <h2 className="desktop-app-download__title" id="desktop-app-download-title">
-            Download the Windows installer directly from the QInsights release asset.
+            Download the installer directly from the QInsights release asset.
           </h2>
           <ul className="desktop-app-download__list">
             {safeguards.map((item) => (
@@ -122,7 +122,7 @@ export function DesktopAppPage() {
           </ul>
         </div>
         <button className="button button--primary button--large desktop-app-download__button" type="button" onClick={handleDownloadClick}>
-          Download for Windows
+          Download
         </button>
       </section>
     </main>
