@@ -6244,6 +6244,257 @@
   font-weight: 700;
 }
 
+.desktop-app-page {
+  padding: 92px 0 120px;
+}
+
+.desktop-app-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.55fr) minmax(320px, 0.45fr);
+  align-items: center;
+  gap: 48px;
+}
+
+.desktop-app-hero__copy,
+.desktop-app-section__intro,
+.desktop-app-download > div {
+  min-width: 0;
+}
+
+.desktop-app-hero__eyebrow,
+.desktop-app-section__eyebrow {
+  margin: 0 0 14px;
+  color: #2661e9;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.desktop-app-hero__title {
+  margin: 0;
+  color: #111111;
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(48px, 7vw, 82px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+}
+
+.desktop-app-hero__body {
+  max-width: 620px;
+  margin: 28px 0 0;
+  color: #424f62;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.55;
+}
+
+.desktop-app-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.desktop-app-hero__note {
+  max-width: 560px;
+  margin: 20px 0 0;
+  color: #6a7586;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.desktop-app-hero__panel {
+  padding: 30px;
+  border: 1px solid rgba(38, 97, 233, 0.1);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at top left, rgba(75, 178, 186, 0.16), transparent 36%),
+    linear-gradient(180deg, #ffffff 0%, #eef6ff 100%);
+  box-shadow: 0 22px 48px rgba(16, 27, 61, 0.08);
+}
+
+.desktop-app-device {
+  overflow: hidden;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 18px 36px rgba(16, 27, 61, 0.08);
+}
+
+.desktop-app-device__bar {
+  display: flex;
+  gap: 7px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.07);
+  background: #f7f9fc;
+}
+
+.desktop-app-device__bar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #cfd7e5;
+}
+
+.desktop-app-device__screen {
+  display: grid;
+  gap: 14px;
+  padding: 24px;
+}
+
+.desktop-app-device__status {
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eaf3ff;
+  color: #2661e9;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.desktop-app-device__file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 76px;
+  padding: 18px;
+  border: 1px solid rgba(190, 112, 31, 0.18);
+  border-radius: 8px;
+  background: #fff8ee;
+  color: #29364a;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.desktop-app-device__file--safe {
+  border-color: rgba(38, 127, 119, 0.18);
+  background: #edf9f7;
+}
+
+.desktop-app-device__file span {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.desktop-app-device__file strong {
+  color: #2661e9;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.desktop-app-section,
+.desktop-app-workflow,
+.desktop-app-download {
+  margin-top: 104px;
+}
+
+.desktop-app-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.48fr) minmax(0, 0.52fr);
+  gap: 42px;
+  align-items: start;
+}
+
+.desktop-app-section__title,
+.desktop-app-download__title {
+  margin: 0;
+  color: #111111;
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.desktop-app-section__body,
+.desktop-app-workflow__step p,
+.desktop-app-download__list {
+  margin: 0;
+  color: #3f4c5e;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.65;
+}
+
+.desktop-app-workflow__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.desktop-app-workflow__step {
+  min-width: 0;
+  padding: 26px 24px;
+  border: 1px solid rgba(38, 97, 233, 0.1);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 16px 34px rgba(16, 27, 61, 0.05);
+}
+
+.desktop-app-workflow__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #2661e9;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.desktop-app-workflow__step h3 {
+  margin: 20px 0 12px;
+  color: #111111;
+  font-family: 'Source Serif 4', serif;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.desktop-app-workflow__step p {
+  font-size: 16px;
+}
+
+.desktop-app-download {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 34px;
+  align-items: center;
+  padding: 34px;
+  border: 1px solid rgba(38, 97, 233, 0.1);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f9fbff 0%, #eef6ff 100%);
+}
+
+.desktop-app-download__list {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+  padding-left: 22px;
+  font-size: 16px;
+}
+
+.desktop-app-download__button {
+  flex-shrink: 0;
+}
+
 @media (max-width: 809.98px) {
   .legal-page {
     padding-top: 140px;
@@ -6260,5 +6511,48 @@
 
   .legal-page__content h3 {
     font-size: 24px;
+  }
+
+  .desktop-app-page {
+    padding-top: 72px;
+    padding-bottom: 96px;
+  }
+
+  .desktop-app-hero,
+  .desktop-app-section,
+  .desktop-app-workflow__grid,
+  .desktop-app-download {
+    grid-template-columns: 1fr;
+  }
+
+  .desktop-app-hero {
+    gap: 34px;
+  }
+
+  .desktop-app-hero__body,
+  .desktop-app-section__body {
+    font-size: 17px;
+  }
+
+  .desktop-app-hero__actions .button,
+  .desktop-app-download__button {
+    width: 100%;
+  }
+
+  .desktop-app-hero__panel,
+  .desktop-app-download {
+    padding: 22px;
+  }
+
+  .desktop-app-device__file {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .desktop-app-section,
+  .desktop-app-workflow,
+  .desktop-app-download {
+    margin-top: 72px;
   }
 }
