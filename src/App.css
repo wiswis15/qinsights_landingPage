@@ -6459,7 +6459,7 @@
   padding: 34px;
   border: 1px solid rgba(38, 97, 233, 0.1);
   border-radius: 8px;
-  background: linear-gradient(180deg, #f9fbff 0%, #eef6ff 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 80%, #eef6ff 100%);
 }
 
 .desktop-app-download__list {
