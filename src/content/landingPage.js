@@ -65,6 +65,14 @@ export const leadMagnetPopup = {
       label: 'Email',
       placeholder: 'jane@organization.com',
     },
+    organization: {
+      label: 'Organization',
+      placeholder: 'University, company, or institution',
+    },
+    phone: {
+      label: 'Phone',
+      placeholder: 'Optional',
+    },
     country: {
       label: 'Country',
       placeholder: 'Your country',

@@ -1,4 +1,14 @@
 import nodemailer from 'nodemailer'
+import { syncLeadToStratto } from './lib/stratto.js'
+
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+const FIELD_LIMITS = {
+  name: 120,
+  email: 254,
+  organization: 160,
+  phone: 80,
+  country: 100,
+}
 
 function parseRecipients(value) {
   return (value || 'support@qinsights.ai')
@@ -16,20 +26,67 @@ function escapeHtml(value) {
     .replaceAll("'", '&#39;')
 }
 
+function clean(value) {
+  return typeof value === 'string' ? value.trim() : ''
+}
+
+function truncate(value, limit) {
+  return value.length > limit ? value.slice(0, limit) : value
+}
+
+function normalizeLeadMagnetPayload(payload) {
+  return {
+    name: truncate(clean(payload.name), FIELD_LIMITS.name),
+    email: truncate(clean(payload.email).toLowerCase(), FIELD_LIMITS.email),
+    organization: truncate(clean(payload.organization), FIELD_LIMITS.organization),
+    phone: truncate(clean(payload.phone), FIELD_LIMITS.phone),
+    country: truncate(clean(payload.country), FIELD_LIMITS.country),
+    companyWebsite: clean(payload.companyWebsite),
+  }
+}
+
+function validateLeadMagnetPayload(payload) {
+  if (!payload.name || !payload.email || !payload.organization || !payload.country) {
+    return 'All fields are required.'
+  }
+
+  if (!EMAIL_PATTERN.test(payload.email)) {
+    return 'Enter a valid email address.'
+  }
+
+  return ''
+}
+
+function buildStrattoPayload(payload) {
+  return {
+    email: payload.email,
+    full_name: payload.name,
+    phone: payload.phone || undefined,
+    company_name: payload.organization,
+    country: payload.country,
+    source: 'lead_magnet_popup',
+    registration_origin: 'landing_page_popup',
+    lead_magnet: 'QInsights Conversational Analysis Guide',
+    submitted_at: new Date().toISOString(),
+  }
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST')
     return res.status(405).json({ error: 'Method not allowed.' })
   }
 
-  const { name, email, country, companyWebsite } = req.body ?? {}
+  const payload = normalizeLeadMagnetPayload(req.body ?? {})
 
-  if (companyWebsite) {
+  if (payload.companyWebsite) {
     return res.status(200).json({ ok: true })
   }
 
-  if (!name || !email || !country) {
-    return res.status(400).json({ error: 'All fields are required.' })
+  const validationError = validateLeadMagnetPayload(payload)
+
+  if (validationError) {
+    return res.status(400).json({ error: validationError })
   }
 
   const host = process.env.EMAIL_HOST
@@ -50,21 +107,25 @@ export default async function handler(req, res) {
     auth: { user, pass },
   })
 
-  const subject = `QInsights guide request from ${name}`
-  const safeName = escapeHtml(name)
-  const safeEmail = escapeHtml(email)
-  const safeCountry = escapeHtml(country)
+  const subject = `QInsights guide request from ${payload.name}`
+  const safeName = escapeHtml(payload.name)
+  const safeEmail = escapeHtml(payload.email)
+  const safeOrganization = escapeHtml(payload.organization)
+  const safePhone = payload.phone ? escapeHtml(payload.phone) : ''
+  const safeCountry = escapeHtml(payload.country)
 
   try {
     await transporter.sendMail({
       from,
       to: to.join(', '),
-      replyTo: email,
+      replyTo: payload.email,
       subject,
       html: `
         <h2>New QInsights guide request</h2>
         <p><strong>Name:</strong> ${safeName}</p>
         <p><strong>Email:</strong> ${safeEmail}</p>
+        <p><strong>Organization:</strong> ${safeOrganization}</p>
+        ${safePhone ? `<p><strong>Phone:</strong> ${safePhone}</p>` : ''}
         <p><strong>Country:</strong> ${safeCountry}</p>
         <p><strong>Source:</strong> Timed homepage popup</p>
       `,
@@ -72,6 +133,8 @@ export default async function handler(req, res) {
   } catch (err) {
     return res.status(502).json({ error: `Email delivery failed: ${err.message}` })
   }
+
+  await syncLeadToStratto(buildStrattoPayload(payload))
 
   return res.status(200).json({ ok: true })
 }

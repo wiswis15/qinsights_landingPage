@@ -5,6 +5,8 @@ import { sendLeadMagnetRequest, validateLeadMagnetPayload } from '../lib/leadMag
 const initialFormState = {
   name: '',
   email: '',
+  organization: '',
+  phone: '',
   country: '',
   companyWebsite: '',
 }
@@ -234,6 +236,27 @@ export function LeadMagnetPopup({ content }) {
               </label>
 
               <label className="lead-magnet__field">
+                <span className="lead-magnet__label">{content.fields.organization.label}</span>
+                <input
+                  className="lead-magnet__input"
+                  type="text"
+                  name="organization"
+                  value={formData.organization}
+                  onChange={handleChange}
+                  autoComplete="organization"
+                  placeholder={content.fields.organization.placeholder}
+                  aria-invalid={Boolean(fieldErrors.organization)}
+                  aria-describedby={fieldErrors.organization ? 'lead-magnet-organization-error' : undefined}
+                  required
+                />
+                {fieldErrors.organization && (
+                  <span className="lead-magnet__error" id="lead-magnet-organization-error">
+                    {fieldErrors.organization}
+                  </span>
+                )}
+              </label>
+
+              <label className="lead-magnet__field">
                 <span className="lead-magnet__label">{content.fields.country.label}</span>
                 <input
                   className="lead-magnet__input"
@@ -252,6 +275,19 @@ export function LeadMagnetPopup({ content }) {
                     {fieldErrors.country}
                   </span>
                 )}
+              </label>
+
+              <label className="lead-magnet__field">
+                <span className="lead-magnet__label">{content.fields.phone.label}</span>
+                <input
+                  className="lead-magnet__input"
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  autoComplete="tel"
+                  placeholder={content.fields.phone.placeholder}
+                />
               </label>
 
               <div className="lead-magnet__honeypot" aria-hidden="true">
