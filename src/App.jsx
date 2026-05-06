@@ -2,7 +2,7 @@
 import { useEffect } from 'react'
 import { Footer } from './components/Footer'
 import { Navbar } from './components/Navbar'
-import { Outlet, Route, Routes, useLocation } from 'react-router-dom'
+import { Navigate, Outlet, Route, Routes, useLocation } from 'react-router-dom'
 import { actions, footerContent, navLinks } from './content/landingPage'
 import { HomePage } from './pages/HomePage'
 import { ContactPage } from './pages/ContactPage'
@@ -47,6 +47,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/in-practice" element={<InPracticePage />} />
+        <Route path="/in-practice/permata-me-user-review-analysis" element={<Navigate to="/permata-me-user-review-analysis" replace />} />
         <Route path="/in-practice/:slug" element={<UseCaseStoryPage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/contact" element={<ContactPage />} />
