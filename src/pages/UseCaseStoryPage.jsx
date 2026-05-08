@@ -17,6 +17,34 @@ function UseCaseStorySection({ title, paragraphs }) {
   )
 }
 
+function UseCaseStoryFigures({ figures = [], placement }) {
+  const matchingFigures = figures.filter((figure) => figure.placement === placement)
+
+  if (!matchingFigures.length) {
+    return null
+  }
+
+  return (
+    <div className="use-case-story__figures">
+      {matchingFigures.map((figure) => {
+        const figureClassName = [
+          'use-case-story__figure',
+          figure.variant ? `use-case-story__figure--${figure.variant}` : '',
+        ].filter(Boolean).join(' ')
+
+        return (
+          <figure className={figureClassName} key={figure.src}>
+            <div className="use-case-story__figure-frame">
+              <img className="use-case-story__figure-image" src={figure.src} alt={figure.alt} />
+            </div>
+            <figcaption className="use-case-story__figure-caption">{figure.caption}</figcaption>
+          </figure>
+        )
+      })}
+    </div>
+  )
+}
+
 export function UseCaseStoryPage() {
   const { slug = '' } = useParams()
   const story = getUseCaseBySlug(slug)
@@ -74,12 +102,16 @@ export function UseCaseStoryPage() {
           <div className="use-case-story__main blog-reveal blog-reveal--visible" style={{ animationDelay: '100ms' }}>
             <UseCaseStorySection title="The Challenge" paragraphs={story.challenge} />
 
+            <UseCaseStoryFigures figures={story.figures} placement="afterChallenge" />
+
             <blockquote className="use-case-story__feature-quote">
               <p>{story.storyQuotes[0].text}</p>
               <footer>{story.storyQuotes[0].attribution}</footer>
             </blockquote>
 
             <UseCaseStorySection title="The Solution" paragraphs={story.solution} />
+
+            <UseCaseStoryFigures figures={story.figures} placement="afterSolution" />
 
             {story.storyQuotes[1] ? (
               <blockquote className="use-case-story__feature-quote use-case-story__feature-quote--secondary">
@@ -89,6 +121,8 @@ export function UseCaseStoryPage() {
             ) : null}
 
             <UseCaseStorySection title="The Impact" paragraphs={story.impact} />
+
+            <UseCaseStoryFigures figures={story.figures} placement="afterImpactIntro" />
 
             <section className="use-case-story__closing" aria-labelledby="use-case-closing-title">
               <p className="use-case-story__closing-eyebrow">See It In Your Work</p>
