@@ -42,7 +42,13 @@ export function DesktopAppPage() {
             QInsights Anonymizer
           </h1>
           <p className="desktop-app-hero__body">
-            Prepare sensitive qualitative research files locally before continuing your analysis in QInsights.
+            <em>Anonymize transcripts before AI analysis</em>
+          </p>
+          <p className="desktop-app-hero__body">
+            The QInsights Anonymizer helps you remove or replace identifying information in interview transcripts and research notes before uploading them to QInsights.
+          </p>
+          <p className="desktop-app-hero__body">
+            It runs on your computer, so you can prepare your files locally before continuing your analysis in QInsights.
           </p>
           <div className="desktop-app-hero__actions">
             <button className="button button--primary button--large" type="button" onClick={handleDownloadClick}>
