@@ -4,15 +4,15 @@ const desktopAppDownloadUrl =
 const workflowSteps = [
   {
     title: 'Download the app',
-    body: 'Install QInsights Anonymizer on the computer where your research files are stored.',
+    body: 'Install the QInsights Anonymizer on the computer where your transcripts or research notes are stored.',
   },
   {
-    title: 'Prepare sensitive files locally',
-    body: 'Review transcripts, notes, and participant details before anything moves into your cloud workflow.',
+    title: 'Anonymize your files locally',
+    body: 'Open your transcript or notes in the Anonymizer, review the suggested replacements, and prepare the file before upload.',
   },
   {
     title: 'Continue in QInsights',
-    body: 'Upload prepared material into QInsights for analysis with a cleaner privacy posture.',
+    body: 'Upload the anonymized file into QInsights and continue with AI-assisted qualitative analysis.',
   },
 ]
 
@@ -85,14 +85,16 @@ export function DesktopAppPage() {
         <div className="desktop-app-section__intro">
           <p className="desktop-app-section__eyebrow">Workflow</p>
           <h2 className="desktop-app-section__title" id="desktop-app-workflow-title">
-            From raw files to prepared analysis material.
+            From raw transcripts to prepared analysis material
           </h2>
         </div>
         <div className="desktop-app-workflow__grid">
           {workflowSteps.map((step, index) => (
             <article className="desktop-app-workflow__step" key={step.title}>
               <span className="desktop-app-workflow__number">{index + 1}</span>
-              <h3>{step.title}</h3>
+              <h3>
+                {index + 1}. {step.title}
+              </h3>
               <p>{step.body}</p>
             </article>
           ))}
