@@ -50,25 +50,22 @@ export function DesktopAppPage() {
           <p className="desktop-app-hero__body">
             It runs on your computer, so you can prepare your files locally before continuing your analysis in QInsights.
           </p>
-          <div className="desktop-app-hero__actions">
-            <button className="button button--primary button--large" type="button" onClick={handleDownloadClick}>
-              Download
-            </button>
+          <p className="desktop-app-hero__note">
+            The Anonymizer is currently available as a public beta. To use it, you need a QInsights account. After installing the app on your computer, simply log in with your QInsights login details.
+          </p>
+          <div className="desktop-app-hero__actions desktop-app-hero__actions--copy">
             <a className="button button--ghost button--large" href="https://app.qinsights.ai/login" target="_blank" rel="noreferrer">
               Open QInsights
             </a>
           </div>
-          <p className="desktop-app-hero__note">
-            The Anonymizer is currently available as a public beta. To use it, you need a QInsights account. After installing the app on your computer, simply log in with your QInsights login details.
-          </p>
         </div>
 
-        <div className="desktop-app-hero__panel" aria-label="QInsights Anonymizer privacy workflow">
-          <img
-            className="desktop-app-hero__image"
-            src="/QPII.jpg"
-            alt="Privacy workflow showing document formats being protected before secure upload"
-          />
+        <div className="desktop-app-hero__panel" aria-label="QInsights Anonymizer actions">
+          <div className="desktop-app-hero__actions desktop-app-hero__actions--panel">
+            <button className="button button--primary button--large" type="button" onClick={handleDownloadClick}>
+              Download
+            </button>
+          </div>
         </div>
       </section>
 
