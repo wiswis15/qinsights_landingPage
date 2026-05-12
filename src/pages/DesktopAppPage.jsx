@@ -37,7 +37,7 @@ export function DesktopAppPage() {
     <main className="desktop-app-page">
       <section className="desktop-app-hero" aria-labelledby="desktop-app-title">
         <div className="desktop-app-hero__copy">
-          <p className="desktop-app-hero__eyebrow">Desktop PII app</p>
+          <p className="desktop-app-hero__eyebrow">Desktop App</p>
           <h1 className="desktop-app-hero__title" id="desktop-app-title">
             QInsights Anonymizer
           </h1>
