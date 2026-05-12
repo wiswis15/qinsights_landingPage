@@ -59,7 +59,7 @@ export function DesktopAppPage() {
             </a>
           </div>
           <p className="desktop-app-hero__note">
-            Public beta installer. Access to protected desktop workflows remains tied to your QInsights account.
+            The Anonymizer is currently available as a public beta. To use it, you need a QInsights account. After installing the app on your computer, simply log in with your QInsights login details.
           </p>
         </div>
 
