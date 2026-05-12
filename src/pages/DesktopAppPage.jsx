@@ -17,9 +17,10 @@ const workflowSteps = [
 ]
 
 const safeguards = [
-  'Designed for transcripts, notes, survey exports, and participant metadata that may contain PII.',
-  'Keeps the preparation step local before researchers continue with QInsights analysis.',
-  'Desktop entitlement is handled inside the installed app through the existing QInsights access flow.',
+  'The Anonymizer is designed for interview transcripts and research notes that may contain identifying information.',
+  'It helps you prepare your data locally before you continue your analysis in QInsights.',
+  'You can download the Anonymizer here or from within your QInsights account. After installation, log in with your existing QInsights login details.',
+  'The Anonymizer is currently a beta version. Feedback is welcome.',
 ]
 
 export function DesktopAppPage() {
@@ -103,9 +104,9 @@ export function DesktopAppPage() {
 
       <section className="desktop-app-download" aria-labelledby="desktop-app-download-title">
         <div>
-          <p className="desktop-app-section__eyebrow">Beta download</p>
+          <p className="desktop-app-section__eyebrow">Download the QInsights Anonymizer</p>
           <h2 className="desktop-app-download__title" id="desktop-app-download-title">
-            Download the installer directly from the QInsights release asset.
+            Download the QInsights Anonymizer
           </h2>
           <ul className="desktop-app-download__list">
             {safeguards.map((item) => (
