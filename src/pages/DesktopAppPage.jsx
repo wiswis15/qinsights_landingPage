@@ -74,13 +74,13 @@ export function DesktopAppPage() {
 
       <section className="desktop-app-section" aria-labelledby="desktop-app-problem-title">
         <div className="desktop-app-section__intro">
-          <p className="desktop-app-section__eyebrow">Business problem</p>
+          <p className="desktop-app-section__eyebrow">Why use the Anonymizer?</p>
           <h2 className="desktop-app-section__title" id="desktop-app-problem-title">
-            Sensitive research material needs a local preparation step.
+            Qualitative data often contains information that can make participants identifiable.
           </h2>
         </div>
         <p className="desktop-app-section__body">
-          Researchers often work with participant names, locations, organizations, health details, and other identifying information. QInsights Anonymizer gives teams a dedicated desktop step for preparing those files before upload and analysis.
+          This includes names, places, organizations, roles, dates, and other details that may reveal who someone is, especially in small samples or specific research settings. Before uploading transcripts to a cloud-based AI system, researchers need to ensure they have a legal basis for processing personal data. If this is not covered by consent or another legal basis, the data must be anonymized first. The QInsights Anonymizer gives you a practical way to do this before uploading your transcripts into QInsights.
         </p>
       </section>
 
