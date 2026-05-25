@@ -1,5 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/desktop-app",
+      "destination": "/anonymizer",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

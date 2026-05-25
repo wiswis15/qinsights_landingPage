@@ -19,7 +19,7 @@ export const navLinks = [
   { label: 'Blog', href: '/blog' },
   { label: 'About Us', href: '/team' },
   { label: 'Contact Us', href: '/contact' },
-  { label: 'New Tool', href: '/desktop-app', badge: 'New' },
+  { label: 'Anonymizer', href: '/anonymizer', badge: 'New' },
 ]
 
 export const actions = {

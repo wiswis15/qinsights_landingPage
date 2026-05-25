@@ -54,9 +54,9 @@ const staticRoutes = [
     description: 'Find customer information for QInsights users, including company, service, and subscription details.',
   },
   {
-    path: '/desktop-app',
-    title: 'QInsights Anonymizer | Desktop App',
-    description: 'Download the QInsights Anonymizer beta desktop app to prepare qualitative research files locally before AI analysis.',
+    path: '/anonymizer',
+    title: 'QInsights Anonymizer | Prepare Research Data Before AI Analysis',
+    description: 'Use the QInsights Anonymizer to remove identifying information from interview transcripts and research notes before AI-assisted qualitative analysis.',
   },
 ]
 
