@@ -19,7 +19,7 @@ export const navLinks = [
   { label: 'Blog', href: '/blog' },
   { label: 'About Us', href: '/team' },
   { label: 'Contact Us', href: '/contact' },
-  { label: 'New Tool', href: '/desktop-app', badge: 'New' },
+  { label: 'Anonymizer', href: '/anonymizer', badge: 'New' },
 ]
 
 export const actions = {
@@ -38,8 +38,9 @@ export const actions = {
 }
 
 export const heroCopy = {
-  title: 'Stop drowning in transcripts. Get defensible insights with AI-assisted control.',
-  body: 'Used by evaluators, market researchers, consultants and academic researchers.',
+  eyebrow: 'AI Qualitative Data Analysis Software',
+  title: 'Stop drowning in transcripts.',
+  body: 'Analyze interviews, focus groups, and open-ended survey responses with researcher-controlled AI, without losing analytical rigor.',
   demoVideo: {
     src: 'https://framerusercontent.com/assets/O0noLfORFsZg7rr4p4DmFe0fX3A.mp4',
     title: 'Q-Insights product demo',
@@ -360,8 +361,8 @@ export const painPointsSection = {
     alt: 'Blue circular illustration used to introduce the pain points section',
   },
   intro: {
-    title: "Qualitative analysis shouldn't feel like drowning.",
-    body: `Yet most researchers are stuck between heavy software, messy spreadsheets, and AI tools that spit out "themes" they can't defend.`,
+    title: "Qualitative data analysis shouldn't feel like drowning.",
+    body: `Yet most researchers are stuck between heavy software, messy spreadsheets, and AI tools that spit out "themes" from transcripts and open-ended responses that they can't defend.`,
   },
   items: [
     {
@@ -393,8 +394,8 @@ export const featureSplitSection = {
       src: 'https://framerusercontent.com/images/TnR6ZRNhHzqCHLVqnh52RgtyzT0.png?width=2560&height=2560',
       alt: 'Abstract data-inspired background illustration',
     },
-    title: 'QInsights is built for rigor, traceability, and control.',
-    body: 'Not "themes in minutes". Not black-box AI. Just a workflow that lets you produce qualitative insights you can explain \u2014 and stand behind.',
+    title: 'QInsights is built for thematic analysis with rigor, traceability, and control.',
+    body: 'Not "themes in minutes". Not black-box AI. Just a workflow that lets you analyze qualitative research data, produce insights you can explain, and stand behind them.',
   },
   items: [
     {
@@ -449,8 +450,8 @@ export const webinarHighlightSection = {
 export const howItWorksSection = {
   intro: {
     eyebrow: 'How It Works:',
-    title: 'Smarter Qualitative Research in 3 Steps',
-    titleMobile: 'Smarter Qualitative Research in',
+    title: 'Analyze Qualitative Research Data in 3 Steps',
+    titleMobile: 'Analyze Qualitative Research Data in',
     mobileHighlight: '3 Steps',
     qMarkOuter: {
       src: 'https://framerusercontent.com/images/fRZlNruMasf5O4EjBLzRuCaeaI.png?width=270&height=270',
@@ -469,7 +470,7 @@ export const howItWorksSection = {
     {
       number: '1',
       title: 'Upload your material',
-      body: 'Bring your transcripts, open-ended survey data, notes or audio files.',
+      body: 'Bring your interview transcripts, focus group notes, open-ended survey data, or audio files.',
       image: {
         src: 'https://framerusercontent.com/images/FLoXUdGokI7THiKH67ILVDxpUUs.png?width=1880&height=1812',
         alt: 'Step one preview showing data exploration',
@@ -634,8 +635,8 @@ export const onboardingSpotlightSection = {
 }
 
 export const designedForResearchersSection = {
-  heading: 'Designed for Researchers Under Real Pressure',
-  subtitle: 'Whether you\'re in academia, consulting, marketing, or evaluation, QInsights supports qualitative work where rigor and deadlines both matter.',
+  heading: 'Designed for Researchers Using AI Qualitative Analysis Software Under Real Pressure',
+  subtitle: 'Whether you\'re in academia, consulting, marketing, or evaluation, QInsights supports qualitative research where rigor and deadlines both matter.',
   useCases: [
     {
       heading: 'Academic researchers',
@@ -789,13 +790,13 @@ export const faqSection = {
         {
           type: 'paragraph',
           segments: [
-            { type: 'link', text: 'English Tutorials', href: 'https://youtube.com/playlist?list=PLSgHlhN1_M_N470aYDJeqxHYS8aR8ykPv&si=zoCsBgtHzS3tWv1t', external: true },
+            { type: 'link', text: 'QInsights YouTube Channel', href: 'https://www.youtube.com/@qinsights-ai-for-qualanalysis', external: true },
           ],
         },
         {
           type: 'paragraph',
           segments: [
-            { type: 'link', text: 'Spanish Tutorials', href: 'https://youtube.com/playlist?list=PLSgHlhN1_M_N470aYDJeqxHYS8aR8ykPv&si=zoCsBgtHzS3tWv1t', external: true },
+            { type: 'link', text: 'QInsights YouTube Channel', href: 'https://www.youtube.com/@qinsights-ai-for-qualanalysis', external: true },
           ],
         },
       ],
@@ -986,7 +987,7 @@ export const footerContent = {
     },
     {
       label: 'YouTube',
-      href: 'https://youtube.com/playlist?list=PLSgHlhN1_M_N470aYDJeqxHYS8aR8ykPv&si=zoCsBgtHzS3tWv1t',
+      href: 'https://www.youtube.com/@qinsights-ai-for-qualanalysis',
       icon: 'youtube',
     },
   ],
