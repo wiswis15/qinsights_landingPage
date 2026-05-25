@@ -219,6 +219,19 @@
   text-align: center;
 }
 
+.hero__eyebrow {
+  margin: 0 0 18px;
+  color: #2661e9;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: hero-rise 420ms ease-out forwards;
+}
+
 .hero__title {
   max-width: 930px;
   margin: 0;

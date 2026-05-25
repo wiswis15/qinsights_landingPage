@@ -12,6 +12,7 @@ export function Hero({ copy, cta }) {
       </div>
 
       <div className="hero__content">
+        {copy.eyebrow ? <p className="hero__eyebrow">{copy.eyebrow}</p> : null}
         <h1 className="hero__title">{copy.title}</h1>
         <p className="hero__body">{copy.body}</p>
 

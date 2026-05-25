@@ -5,12 +5,12 @@ export const siteUrl = 'https://qinsights.ai'
 export const defaultSocialImage = '/Q.webp'
 
 const defaultDescription =
-  'QInsights helps researchers analyze messy qualitative data with AI-assisted structure, traceable evidence, and researcher-controlled interpretation.'
+  'QInsights helps researchers analyze transcripts, focus groups, and survey responses with AI while keeping control of coding, themes, and evidence.'
 
 const staticRoutes = [
   {
     path: '/',
-    title: 'QInsights | Your Thinking Partner for Qualitative Research',
+    title: 'AI Qualitative Data Analysis Software | QInsights',
     description: defaultDescription,
   },
   {
@@ -107,4 +107,3 @@ export function getSeoRoute(pathname = '/') {
   const normalizedPath = normalizePath(pathname)
   return seoRoutes.find((route) => route.path === normalizedPath) || seoRoutes[0]
 }
-
