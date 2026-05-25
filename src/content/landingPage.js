@@ -790,13 +790,13 @@ export const faqSection = {
         {
           type: 'paragraph',
           segments: [
-            { type: 'link', text: 'English Tutorials', href: 'https://youtube.com/playlist?list=PLSgHlhN1_M_N470aYDJeqxHYS8aR8ykPv&si=zoCsBgtHzS3tWv1t', external: true },
+            { type: 'link', text: 'QInsights YouTube Channel', href: 'https://www.youtube.com/@qinsights-ai-for-qualanalysis', external: true },
           ],
         },
         {
           type: 'paragraph',
           segments: [
-            { type: 'link', text: 'Spanish Tutorials', href: 'https://youtube.com/playlist?list=PLSgHlhN1_M_N470aYDJeqxHYS8aR8ykPv&si=zoCsBgtHzS3tWv1t', external: true },
+            { type: 'link', text: 'QInsights YouTube Channel', href: 'https://www.youtube.com/@qinsights-ai-for-qualanalysis', external: true },
           ],
         },
       ],
@@ -987,7 +987,7 @@ export const footerContent = {
     },
     {
       label: 'YouTube',
-      href: 'https://youtube.com/playlist?list=PLSgHlhN1_M_N470aYDJeqxHYS8aR8ykPv&si=zoCsBgtHzS3tWv1t',
+      href: 'https://www.youtube.com/@qinsights-ai-for-qualanalysis',
       icon: 'youtube',
     },
   ],
