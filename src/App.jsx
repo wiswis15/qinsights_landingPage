@@ -54,7 +54,8 @@ export default function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
-        <Route path="/customer-information" element={<CustomerInformationPage />} />
+        <Route path="/company-information" element={<CustomerInformationPage />} />
+        <Route path="/customer-information" element={<Navigate to="/company-information" replace />} />
         <Route path="/anonymizer" element={<DesktopAppPage />} />
         <Route path="/desktop-app" element={<Navigate to="/anonymizer" replace />} />
         <Route path="/:slug" element={<BlogArticlePage />} />
