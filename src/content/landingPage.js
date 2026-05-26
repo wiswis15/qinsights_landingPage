@@ -1005,7 +1005,7 @@ export const footerContent = {
   metaLinks: [
     { label: 'Privacy policy', href: '/privacy' },
     { label: 'Terms & conditions', href: '/terms' },
-    { label: 'Customer information', href: '/customer-information' },
+    { label: 'Company information', href: '/company-information' },
   ],
 }
 

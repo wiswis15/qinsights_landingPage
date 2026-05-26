@@ -13,9 +13,9 @@ export const termsPageContent = {
 }
 
 export const customerInformationPageContent = {
-  title: 'Customer information',
+  title: 'Company information',
   bodyHtml: `
-<h2><strong>Company</strong></h2><p><strong>QInsights B.V.</strong></p><p><strong>Directors: </strong>Dr. Susanne Friese &amp; Wissem Golli</p><p>The Netherlands</p><p></p><p><strong>Chamber of Commerce number:</strong> 95337822</p><p><strong>VAT number: </strong>NL867092142B01</p><p></p><p><strong>Email: </strong><a href="mailto:contact@qinsights.ai"><strong>contact@qinsights.ai</strong></a></p><p><strong>Call: +31(0) 6 39205531</strong></p><p></p><p>Do you have a complaint? If you believe your data is not properly secured or there are indications of misuse, please contact us. This also applies to questions or complaints regarding the processing of your personal data by QInsights B.V. For other languages, see the EU consumer safety and consumer rights page. If we are unable to reach an agreement, you have the right, under privacy legislation, to file a complaint with the Dutch Data Protection Authority.</p><h2></h2>
+<h2><strong>Company</strong></h2><p><strong>QInsights B.V.</strong></p><p><strong>Directors: </strong>Dr. Susanne Friese &amp; Wissem Golli</p><p>Bierstraat 123C<br>3011 XA Rotterdam<br>Netherlands</p><p></p><p><strong>Chamber of Commerce number:</strong> 95337822</p><p><strong>VAT number: </strong>NL867092142B01</p><p></p><p><strong>Email: </strong><a href="mailto:contact@qinsights.ai"><strong>contact@qinsights.ai</strong></a></p><p><strong>Call: +31(0) 6 39205531</strong></p><p></p><p>Do you have a complaint? If you believe your data is not properly secured or there are indications of misuse, please contact us. This also applies to questions or complaints regarding the processing of your personal data by QInsights B.V. For other languages, see the EU consumer safety and consumer rights page. If we are unable to reach an agreement, you have the right, under privacy legislation, to file a complaint with the Dutch Data Protection Authority.</p><h2></h2>
   `,
 }
 
