@@ -39,6 +39,11 @@ const staticRoutes = [
     description: 'Read articles on AI qualitative research, interview analysis, open-ended survey analysis, traceability, research ethics, and practical workflows.',
   },
   {
+    path: '/webinars',
+    title: 'QInsights Webinars | AI Qualitative Data Analysis',
+    description: 'Join QInsights webinars on AI-assisted qualitative data analysis, live demos, research workflows, and replay sessions with Dr. Susanne Friese.',
+  },
+  {
     path: '/privacy',
     title: 'Privacy Policy | QInsights',
     description: 'Read how QInsights handles data protection, privacy, security, user rights, and responsible processing of qualitative research data.',

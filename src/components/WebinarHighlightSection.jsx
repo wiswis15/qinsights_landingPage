@@ -1,4 +1,19 @@
+import { Link } from 'react-router-dom'
+
+function isInternalLink(href) {
+  return href.startsWith('/')
+}
+
 export function WebinarHighlightSection({ content }) {
+  const ctaContent = (
+    <>
+      {content.cta.label}
+      <span className="button__arrow" aria-hidden="true">
+        -&gt;
+      </span>
+    </>
+  )
+
   return (
     <section className="webinar-highlight" aria-labelledby="webinar-highlight-title">
       <div className="webinar-highlight__copy">
@@ -12,17 +27,20 @@ export function WebinarHighlightSection({ content }) {
         <p className="webinar-highlight__body">{content.body}</p>
 
         <div className="webinar-highlight__actions">
-          <a
-            className="button button--primary button--large"
-            href={content.cta.href}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {content.cta.label}
-            <span className="button__arrow" aria-hidden="true">
-              →
-            </span>
-          </a>
+          {isInternalLink(content.cta.href) ? (
+            <Link className="button button--primary button--large" to={content.cta.href}>
+              {ctaContent}
+            </Link>
+          ) : (
+            <a
+              className="button button--primary button--large"
+              href={content.cta.href}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {ctaContent}
+            </a>
+          )}
         </div>
       </div>
 
