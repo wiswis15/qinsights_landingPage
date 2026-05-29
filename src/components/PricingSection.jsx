@@ -1,10 +1,40 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export function PricingSection({ content }) {
   const [activeCycle, setActiveCycle] = useState(content.cycles[0].id); // Default to 6mo
+  const [isTokenHelpOpen, setIsTokenHelpOpen] = useState(false);
+  const closeButtonRef = useRef(null);
   const currencySymbol = content.currencySymbol ?? '$';
   const periodSuffix = content.periodSuffix ?? '/ mo';
   const visiblePlans = content.plans.filter((plan) => plan.prices?.[activeCycle] != null);
+  const tokenHelp = content.tokenHelp;
+
+  useEffect(() => {
+    if (!isTokenHelpOpen) return undefined;
+
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    window.setTimeout(() => closeButtonRef.current?.focus(), 0);
+
+    function handleKeyDown(event) {
+      if (event.key === 'Escape') {
+        setIsTokenHelpOpen(false);
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [isTokenHelpOpen]);
+
+  function handleTokenModalBackdropClick(event) {
+    if (event.target === event.currentTarget) {
+      setIsTokenHelpOpen(false);
+    }
+  }
 
   return (
     <section className="pricing-section" aria-labelledby="pricing-heading">
@@ -100,7 +130,72 @@ export function PricingSection({ content }) {
             )
           })}
         </div>
+
+        {content.allowanceNote?.length ? (
+          <div className="pricing-section__allowance-note">
+            {content.allowanceNote.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+
+            {tokenHelp ? (
+              <button
+                className="pricing-section__token-trigger"
+                type="button"
+                onClick={() => setIsTokenHelpOpen(true)}
+              >
+                {tokenHelp.triggerLabel}
+              </button>
+            ) : null}
+          </div>
+        ) : null}
       </div>
+
+      {isTokenHelpOpen && tokenHelp ? (
+        <div className="token-help-modal" onMouseDown={handleTokenModalBackdropClick}>
+          <div
+            className="token-help-modal__dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="token-help-heading"
+            aria-describedby="token-help-description"
+          >
+            <button
+              className="token-help-modal__close"
+              type="button"
+              onClick={() => setIsTokenHelpOpen(false)}
+              aria-label={tokenHelp.closeLabel}
+              ref={closeButtonRef}
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <p className="token-help-modal__eyebrow">{tokenHelp.eyebrow}</p>
+            <h2 className="token-help-modal__heading" id="token-help-heading">
+              {tokenHelp.heading}
+            </h2>
+            <p className="token-help-modal__body" id="token-help-description">
+              {tokenHelp.body}
+            </p>
+
+            <div className="token-help-modal__packages" aria-labelledby="token-packages-heading">
+              <h3 className="token-help-modal__packages-heading" id="token-packages-heading">
+                {tokenHelp.packagesHeading}
+              </h3>
+
+              <div className="token-help-modal__package-grid">
+                {tokenHelp.packages.map((tokenPackage) => (
+                  <div className="token-help-modal__package" key={tokenPackage.amount}>
+                    <span className="token-help-modal__amount">{tokenPackage.amount}</span>
+                    <span className="token-help-modal__price">{tokenPackage.price}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <p className="token-help-modal__footer">{tokenHelp.footer}</p>
+          </div>
+        </div>
+      ) : null}
     </section>
   )
 }

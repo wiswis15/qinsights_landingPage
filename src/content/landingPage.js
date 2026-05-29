@@ -264,7 +264,24 @@ export const pricingSection = {
       buttonLabel: 'Start your Free Trial',
       buttonHref: 'https://app.qinsights.ai/signup'
     }
-  ]
+  ],
+  allowanceNote: [
+    'All licences include an annual analysis allowance based on typical usage patterns within each sector. For most users, the included tokens are sufficient for the full licence period.'
+  ],
+  tokenHelp: {
+    triggerLabel: 'Questions about tokens?',
+    closeLabel: 'Close token information',
+    eyebrow: 'Token allowance',
+    heading: 'Need more analysis capacity?',
+    body: 'Educational licences are designed for one to two substantial research projects per year. Non-profit licences support several evaluation, participatory research, or grant-funded projects. Business licences include a larger allowance for continuous project work in professional research, consulting, or internal insight teams.',
+    packagesHeading: 'Extra token packages',
+    packages: [
+      { amount: '10M', price: '€50' },
+      { amount: '25M', price: '€110' },
+      { amount: '50M', price: '€200' }
+    ],
+    footer: 'You can add extra tokens at any time if your work requires more capacity.'
+  }
 }
 
 export const teamStorySection = {

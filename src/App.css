@@ -4166,6 +4166,227 @@
   transform: none !important;
 }
 
+.pricing-section__allowance-note {
+  max-width: 920px;
+  margin: 40px auto 0;
+  color: #334155;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.pricing-section__allowance-note p {
+  margin: 0;
+}
+
+.pricing-section__allowance-note p + p {
+  margin-top: 16px;
+}
+
+.pricing-section__token-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 42px;
+  margin-top: 18px;
+  padding: 0 18px;
+  border: 1px solid rgba(38, 97, 233, 0.24);
+  border-radius: 0;
+  background: #ffffff;
+  color: #1d4ed8;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pricing-section__token-trigger::before {
+  content: "!";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #1d4ed8;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.pricing-section__token-trigger:hover,
+.pricing-section__token-trigger:focus-visible {
+  border-color: rgba(38, 97, 233, 0.48);
+  background: #f8fbff;
+  outline: none;
+}
+
+.token-help-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(17, 17, 17, 0.28);
+  backdrop-filter: blur(6px);
+  animation: lead-magnet-fade-in 180ms ease-out both;
+}
+
+.token-help-modal__dialog {
+  position: relative;
+  width: min(100%, 620px);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  padding: 42px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 28px 80px rgba(8, 14, 34, 0.18), 0 10px 34px rgba(38, 97, 233, 0.1);
+  animation: lead-magnet-rise-in 220ms ease-out both;
+}
+
+.token-help-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #4f4f4f;
+  cursor: pointer;
+}
+
+.token-help-modal__close span {
+  display: block;
+  font-size: 24px;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.token-help-modal__close:hover,
+.token-help-modal__close:focus-visible {
+  border-color: rgba(38, 97, 233, 0.35);
+  color: #111111;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(38, 97, 233, 0.1);
+}
+
+.token-help-modal__eyebrow {
+  margin: 0 44px 10px 0;
+  color: #2661e9;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.token-help-modal__heading {
+  margin: 0 44px 14px 0;
+  color: #111111;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.12;
+}
+
+.token-help-modal__body,
+.token-help-modal__footer {
+  margin: 0;
+  color: #334155;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.token-help-modal__packages {
+  margin: 28px 0;
+  padding-top: 24px;
+  border-top: 1px solid #eaf2ff;
+}
+
+.token-help-modal__packages-heading {
+  margin: 0 0 14px;
+  color: #111111;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.token-help-modal__package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.token-help-modal__package {
+  padding: 18px;
+  border: 1px solid #dbeafe;
+  background: #f8fbff;
+}
+
+.token-help-modal__amount,
+.token-help-modal__price {
+  display: block;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.token-help-modal__amount {
+  color: #111111;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.token-help-modal__price {
+  margin-top: 8px;
+  color: #1d4ed8;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 809.98px) {
+  .pricing-section__allowance-note {
+    margin-top: 32px;
+    font-size: 15px;
+  }
+
+  .pricing-section__token-trigger {
+    width: 100%;
+  }
+
+  .token-help-modal {
+    align-items: flex-end;
+    padding: 12px;
+  }
+
+  .token-help-modal__dialog {
+    width: 100%;
+    max-height: calc(100vh - 24px);
+    padding: 34px 22px 24px;
+  }
+
+  .token-help-modal__heading {
+    font-size: 26px;
+  }
+
+  .token-help-modal__package-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* --- Larger Scale Plans Section --- */
 .larger-scale-plans {
   padding: 80px 24px;
