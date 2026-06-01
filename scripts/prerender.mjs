@@ -94,7 +94,10 @@ async function writePage(route) {
 function renderSitemap(routes) {
   const urls = routes
     .filter((route) => route.prerender)
-    .map((route) => `  <url>\n    <loc>${escapeHtml(route.canonical)}</loc>\n  </url>`)
+    .map((route) => {
+      const lastModified = escapeHtml(route.lastModified)
+      return `  <url>\n    <loc>${escapeHtml(route.canonical)}</loc>\n    <lastmod>${lastModified}</lastmod>\n  </url>`
+    })
     .join('\n')
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`
