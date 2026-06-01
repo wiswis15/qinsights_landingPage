@@ -151,8 +151,8 @@ function createArticle(route) {
     datePublished: article.datePublished,
     dateModified: article.dateModified || article.datePublished,
     author: {
-      '@type': article.author === 'QInsights' ? 'Organization' : 'Person',
-      name: article.author || 'QInsights',
+      '@type': 'Person',
+      name: article.author || 'Dr Susanne Friese',
     },
     publisher: reference(organizationId),
     mainEntityOfPage: reference(`${route.canonical}#webpage`),

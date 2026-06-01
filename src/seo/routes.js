@@ -142,7 +142,7 @@ const blogRoutes = blogArticles.map((article) => createRoute({
     image: article.coverImage || defaultSocialImage,
     datePublished: article.publishedAt,
     dateModified: article.updatedAt || article.modifiedAt || article.publishedAt,
-    author: article.author || 'QInsights',
+    author: article.author || 'Dr Susanne Friese',
   },
 }))
 
