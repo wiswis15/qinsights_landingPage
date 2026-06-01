@@ -12,29 +12,41 @@ export function BlogArticlePage() {
   }
 
   const Content = article.Content
+  const author = article.author || 'Dr Susanne Friese'
+  const publishedLabel = formatBlogDate(article.publishedAt)
+  const updatedAt = article.updatedAt || article.modifiedAt
+  const updatedLabel = updatedAt ? formatBlogDate(updatedAt) : null
 
   return (
     <article className="blog-article-page">
       <div className="blog-article-page__inner">
         <header className="blog-article-page__header blog-reveal blog-reveal--visible">
           <div className="blog-article-page__intro">
-            <Link className="blog-article-page__back-link" to="/blog" aria-label="Back to blog list">
-              <span className="blog-article-page__back-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" role="presentation">
-                  <path
-                    d="M15.75 5.25 9 12l6.75 6.75"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.75"
-                  />
-                </svg>
-              </span>
-              <span className="blog-article-page__back-text">Blog</span>
-            </Link>
+            <nav className="blog-article-page__breadcrumbs" aria-label="Breadcrumb">
+              <ol>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+                <li aria-current="page">{article.title}</li>
+              </ol>
+            </nav>
+
             <h1 className="blog-article-page__title">{article.title}</h1>
-            <p className="blog-article-page__date">{formatBlogDate(article.publishedAt)}</p>
+
+            <div className="blog-article-page__meta" aria-label="Article information">
+              <span>By {author}</span>
+              <span aria-hidden="true">·</span>
+              <time dateTime={article.publishedAt}>Published {publishedLabel}</time>
+              {updatedLabel ? (
+                <>
+                  <span aria-hidden="true">·</span>
+                  <time dateTime={updatedAt}>Updated {updatedLabel}</time>
+                </>
+              ) : null}
+            </div>
           </div>
 
           <Figure
