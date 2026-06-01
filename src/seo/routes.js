@@ -65,6 +65,9 @@ const staticRoutes = [
     path: '/webinars',
     title: 'QInsights Webinars | AI Qualitative Data Analysis',
     description: 'Join QInsights webinars on AI-assisted qualitative data analysis, live demos, research workflows, and replay sessions with Dr. Susanne Friese.',
+    lastModified: defaultLastModified,
+    schemaType: 'CollectionPage',
+    breadcrumb: ['Home', 'Webinars'],
   },
   {
     path: '/privacy',

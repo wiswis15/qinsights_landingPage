@@ -52,7 +52,7 @@ function createOrganization() {
     name: 'QInsights',
     legalName: 'QInsights B.V.',
     url: siteUrl,
-    logo: `${siteUrl}/Q.webp`,
+    logo: `${siteUrl}/q.png`,
     description: defaultDescription,
     email: 'contact@qinsights.ai',
     telephone: '+31639205531',

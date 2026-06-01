@@ -1009,6 +1009,7 @@ export const footerContent = {
         { label: 'About Us', href: '/team' },
         { label: 'Contact Us', href: '/contact' },
         { label: 'Blog', href: '/blog' },
+        { label: 'Webinars', href: '/webinars' },
       ],
     },
     {
