@@ -3336,7 +3336,7 @@
 
 .site-footer__top {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(180px, 0.7fr) minmax(240px, 0.9fr);
+  grid-template-columns: minmax(0, 1.1fr) minmax(360px, 1.2fr) minmax(240px, 0.9fr);
   gap: 40px;
   align-items: start;
   padding-bottom: 120px;
@@ -3378,6 +3378,12 @@
   gap: 28px;
   opacity: 0;
   animation: webinar-slide-in 620ms 100ms ease-out forwards;
+}
+
+.site-footer__navigation {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 40px;
 }
 
 .site-footer__heading {
@@ -3640,8 +3646,9 @@
     gap: 20px;
   }
 
-  .site-footer__column--pages {
-    display: none;
+  .site-footer__navigation {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
 
   .site-footer__links {
