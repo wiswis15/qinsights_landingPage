@@ -16,6 +16,7 @@ import { CustomerInformationPage } from './pages/CustomerInformationPage'
 import { InPracticePage } from './pages/InPracticePage'
 import { UseCaseStoryPage } from './pages/UseCaseStoryPage'
 import { DesktopAppPage } from './pages/DesktopAppPage'
+import { WebinarsPage } from './pages/WebinarsPage'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -28,11 +29,14 @@ function ScrollToTop() {
 }
 
 function SiteLayout() {
+  const { pathname } = useLocation()
+  const isWebinarsPage = pathname === '/webinars'
+
   return (
-    <div className="page-shell">
-      <div className="page-frame">
+    <div className={`page-shell${isWebinarsPage ? ' page-shell--webinars' : ''}`}>
+      <div className={`page-frame${isWebinarsPage ? ' page-frame--webinars' : ''}`}>
         <ScrollToTop />
-        <Navbar links={navLinks} actions={actions} />
+        {isWebinarsPage ? null : <Navbar links={navLinks} actions={actions} />}
         <Outlet />
         <Footer content={footerContent} />
       </div>
@@ -52,6 +56,7 @@ export default function App() {
         <Route path="/team" element={<TeamPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/webinars" element={<WebinarsPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/company-information" element={<CustomerInformationPage />} />
