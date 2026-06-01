@@ -4,7 +4,7 @@ import { useCases } from '../content/useCases'
 export const siteUrl = 'https://qinsights.ai'
 export const defaultSocialImage = '/Q.webp'
 
-const defaultDescription =
+export const defaultDescription =
   'QInsights is AI qualitative research software for analyzing interviews, focus groups, open-ended survey responses, and unstructured data with traceable evidence and researcher control.'
 
 const staticRoutes = [
@@ -12,51 +12,74 @@ const staticRoutes = [
     path: '/',
     title: 'QInsights | AI Qualitative Research Software',
     description: defaultDescription,
+    schemaType: 'WebPage',
+    breadcrumb: ['Home'],
+    includeSoftware: true,
+    includeFaq: true,
   },
   {
     path: '/pricing',
     title: 'QInsights Pricing | AI Qualitative Analysis Software',
     description: 'Compare QInsights licensing options for research teams, consultants, non-profits, institutions, and businesses using AI for qualitative data analysis.',
+    schemaType: 'WebPage',
+    breadcrumb: ['Home', 'Pricing'],
+    includeSoftware: true,
   },
   {
     path: '/contact',
     title: 'Contact QInsights | Book a Demo',
     description: 'Contact QInsights to discuss demos, pricing, licensing, and AI-assisted qualitative analysis workflows for your research data.',
+    schemaType: 'ContactPage',
+    breadcrumb: ['Home', 'Contact'],
   },
   {
     path: '/team',
     title: 'QInsights Team | Qualitative Research and AI Experts',
     description: 'Meet the QInsights team building evidence-linked AI software for qualitative researchers, evaluators, consultants, and organizations.',
+    schemaType: 'AboutPage',
+    breadcrumb: ['Home', 'Team'],
   },
   {
     path: '/in-practice',
     title: 'QInsights in Practice | AI Analysis for Interviews and Survey Responses',
     description: 'See how teams use QInsights for AI analysis of interviews, focus groups, open-ended survey responses, and unstructured research data.',
+    schemaType: 'CollectionPage',
+    breadcrumb: ['Home', 'In Practice'],
   },
   {
     path: '/blog',
     title: 'QInsights Blog | AI and Qualitative Research',
     description: 'Read articles on AI qualitative research, interview analysis, open-ended survey analysis, traceability, research ethics, and practical workflows.',
+    schemaType: 'CollectionPage',
+    breadcrumb: ['Home', 'Blog'],
   },
   {
     path: '/privacy',
     title: 'Privacy Policy | QInsights',
     description: 'Read how QInsights handles data protection, privacy, security, user rights, and responsible processing of qualitative research data.',
+    schemaType: 'WebPage',
+    breadcrumb: ['Home', 'Privacy Policy'],
   },
   {
     path: '/terms',
     title: 'Terms and Conditions | QInsights',
     description: 'Read the QInsights terms and conditions covering subscriptions, services, payments, liability, and use of the QInsights platform.',
+    schemaType: 'WebPage',
+    breadcrumb: ['Home', 'Terms and Conditions'],
   },
   {
     path: '/company-information',
     title: 'Company Information | QInsights',
     description: 'Find official QInsights company information, including registered address, VAT number, and Dutch Chamber of Commerce number.',
+    schemaType: 'AboutPage',
+    breadcrumb: ['Home', 'Company Information'],
   },
   {
     path: '/anonymizer',
     title: 'QInsights | Anonymize your data off-line before AI analysis',
     description: 'Download the QInsights Anonymizer beta desktop app to prepare qualitative research files locally before AI-supported analysis.',
+    schemaType: 'WebPage',
+    breadcrumb: ['Home', 'Anonymizer'],
   },
 ]
 
@@ -93,12 +116,24 @@ const blogRoutes = blogArticles.map((article) => createRoute({
   title: `${article.title} | QInsights`,
   description: article.description || article.summary || `Read ${article.title} from QInsights on AI-assisted qualitative research and analysis workflows.`,
   image: article.coverImage || defaultSocialImage,
+  schemaType: 'Article',
+  breadcrumb: ['Home', 'Blog', article.title],
+  article: {
+    headline: article.title,
+    description: article.description || article.summary || `Read ${article.title} from QInsights on AI-assisted qualitative research and analysis workflows.`,
+    image: article.coverImage || defaultSocialImage,
+    datePublished: article.publishedAt,
+    dateModified: article.updatedAt || article.modifiedAt || article.publishedAt,
+    author: article.author || 'QInsights',
+  },
 }))
 
 const useCaseRoutes = useCases.map((useCase) => createRoute({
   path: `/in-practice/${useCase.slug}`,
   title: `${useCase.headline} | QInsights in Practice`,
   description: useCase.summary || useCase.intro,
+  schemaType: 'WebPage',
+  breadcrumb: ['Home', 'In Practice', useCase.headline],
 }))
 
 export const seoRoutes = [...staticRoutes.map(createRoute), ...useCaseRoutes, ...blogRoutes]
