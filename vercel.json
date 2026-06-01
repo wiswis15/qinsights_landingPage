@@ -1,21 +1,67 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": false,
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.qinsights.ai"
+        }
+      ],
+      "destination": "https://qinsights.ai/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/features/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/features",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/conversational-analysis/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/conversational-analysis",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tired-of-ai-tools-that-overpromise-discover-qinsights/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tired-of-ai-tools-that-overpromise-discover-qinsights",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/customer-information/",
+      "destination": "/company-information",
+      "permanent": true
+    },
     {
       "source": "/customer-information",
       "destination": "/company-information",
       "permanent": true
     },
     {
+      "source": "/desktop-app/",
+      "destination": "/anonymizer",
+      "permanent": true
+    },
+    {
       "source": "/desktop-app",
       "destination": "/anonymizer",
       "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ]
 }
