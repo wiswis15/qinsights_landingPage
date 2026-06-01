@@ -38,7 +38,30 @@ function isInternalLink(href) {
   return href.startsWith('/')
 }
 
+function FooterLink({ link, className = 'site-footer__link' }) {
+  if (isInternalLink(link.href)) {
+    return (
+      <Link className={className} to={link.href}>
+        {link.label}
+      </Link>
+    )
+  }
+
+  return (
+    <a className={className} href={link.href}>
+      {link.label}
+    </a>
+  )
+}
+
 export function Footer({ content }) {
+  const linkGroups = content.linkGroups || [
+    {
+      heading: content.pagesHeading,
+      links: content.pages,
+    },
+  ]
+
   return (
     <footer className="site-footer">
       <div className="site-footer__top">
@@ -53,23 +76,19 @@ export function Footer({ content }) {
           <p className="site-footer__tagline">{content.brand.tagline}</p>
         </div>
 
-        <nav className="site-footer__column site-footer__column--pages" aria-label="Footer pages">
-          <h2 className="site-footer__heading">{content.pagesHeading}</h2>
-          <ul className="site-footer__links">
-            {content.pages.map((page) => (
-              <li key={`${page.label}-${page.href}`}>
-                {isInternalLink(page.href) ? (
-                  <Link className="site-footer__link" to={page.href}>
-                    {page.label}
-                  </Link>
-                ) : (
-                  <a className="site-footer__link" href={page.href}>
-                    {page.label}
-                  </a>
-                )}
-              </li>
-            ))}
-          </ul>
+        <nav className="site-footer__navigation" aria-label="Footer navigation">
+          {linkGroups.map((group) => (
+            <div className="site-footer__column" key={group.heading}>
+              <h2 className="site-footer__heading">{group.heading}</h2>
+              <ul className="site-footer__links">
+                {group.links.map((link) => (
+                  <li key={`${link.label}-${link.href}`}>
+                    <FooterLink link={link} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </nav>
 
         <div className="site-footer__column site-footer__column--contact">
@@ -109,15 +128,7 @@ export function Footer({ content }) {
         <ul className="site-footer__meta-links">
           {content.metaLinks.map((link) => (
             <li key={`${link.label}-${link.href}`}>
-              {isInternalLink(link.href) ? (
-                <Link className="site-footer__meta-link" to={link.href}>
-                  {link.label}
-                </Link>
-              ) : (
-                <a className="site-footer__meta-link" href={link.href}>
-                  {link.label}
-                </a>
-              )}
+              <FooterLink className="site-footer__meta-link" link={link} />
             </li>
           ))}
         </ul>

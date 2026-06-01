@@ -990,10 +990,35 @@ export const footerContent = {
   pagesHeading: 'Pages',
   pages: [
     { label: 'Home', href: '/' },
+    { label: 'In Practice', href: '/in-practice' },
     { label: 'Pricing', href: '/pricing' },
+    { label: 'Anonymizer', href: '/anonymizer' },
     { label: 'About Us', href: '/team' },
     { label: 'Contact Us', href: '/contact' },
     { label: 'Blog', href: '/blog' },
+  ],
+  linkGroups: [
+    {
+      heading: 'Pages',
+      links: [
+        { label: 'Home', href: '/' },
+        { label: 'In Practice', href: '/in-practice' },
+        { label: 'Pricing', href: '/pricing' },
+        { label: 'Anonymizer', href: '/anonymizer' },
+        { label: 'About Us', href: '/team' },
+        { label: 'Contact Us', href: '/contact' },
+        { label: 'Blog', href: '/blog' },
+      ],
+    },
+    {
+      heading: 'Case Studies',
+      links: [
+        { label: 'Academic Research', href: '/in-practice/academic-replacing-manual-coding' },
+        { label: 'Healthcare Research', href: '/in-practice/healthcare-hidden-gems-deep-reflection' },
+        { label: 'Consulting Insights', href: '/in-practice/consulting-sharper-client-insights' },
+        { label: 'Corporate Research', href: '/in-practice/corporate-no-two-patients-speak-the-same-language' },
+      ],
+    },
   ],
   contactHeading: 'Find us on',
   socialLinks: [
