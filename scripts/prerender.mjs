@@ -9,7 +9,7 @@ const serverDir = path.join(distDir, 'server')
 const serverEntry = path.join(serverDir, 'entry-server.js')
 const templatePath = path.join(distDir, 'index.html')
 
-const { render, seoRoutes } = await import(pathToFileURL(serverEntry).href)
+const { getStructuredData, render, seoRoutes } = await import(pathToFileURL(serverEntry).href)
 const template = await fs.readFile(templatePath, 'utf8')
 
 function escapeHtml(value) {
@@ -42,7 +42,21 @@ function renderSeoHead(route) {
     `<meta name="twitter:title" content="${title}" />`,
     `<meta name="twitter:description" content="${description}" />`,
     `<meta name="twitter:image" content="${image}" />`,
+    renderStructuredData(route),
   ].join('\n  ')
+}
+
+function escapeJsonForHtml(value) {
+  return JSON.stringify(value, null, 2)
+    .replaceAll('<', '\\u003c')
+    .replaceAll('>', '\\u003e')
+    .replaceAll('&', '\\u0026')
+    .replaceAll('\u2028', '\\u2028')
+    .replaceAll('\u2029', '\\u2029')
+}
+
+function renderStructuredData(route) {
+  return `<script type="application/ld+json">\n${escapeJsonForHtml(getStructuredData(route))}\n  </script>`
 }
 
 function replaceSeoHead(html, route) {
