@@ -7,11 +7,14 @@ export const defaultSocialImage = '/Q.webp'
 export const defaultDescription =
   'QInsights is AI qualitative research software for analyzing interviews, focus groups, open-ended survey responses, and unstructured data with traceable evidence and researcher control.'
 
+const defaultLastModified = '2026-06-01'
+
 const staticRoutes = [
   {
     path: '/',
     title: 'QInsights | AI Qualitative Research Software',
     description: defaultDescription,
+    lastModified: defaultLastModified,
     schemaType: 'WebPage',
     breadcrumb: ['Home'],
     includeSoftware: true,
@@ -21,6 +24,7 @@ const staticRoutes = [
     path: '/pricing',
     title: 'QInsights Pricing | AI Qualitative Analysis Software',
     description: 'Compare QInsights licensing options for research teams, consultants, non-profits, institutions, and businesses using AI for qualitative data analysis.',
+    lastModified: defaultLastModified,
     schemaType: 'WebPage',
     breadcrumb: ['Home', 'Pricing'],
     includeSoftware: true,
@@ -29,6 +33,7 @@ const staticRoutes = [
     path: '/contact',
     title: 'Contact QInsights | Book a Demo',
     description: 'Contact QInsights to discuss demos, pricing, licensing, and AI-assisted qualitative analysis workflows for your research data.',
+    lastModified: defaultLastModified,
     schemaType: 'ContactPage',
     breadcrumb: ['Home', 'Contact'],
   },
@@ -36,6 +41,7 @@ const staticRoutes = [
     path: '/team',
     title: 'QInsights Team | Qualitative Research and AI Experts',
     description: 'Meet the QInsights team building evidence-linked AI software for qualitative researchers, evaluators, consultants, and organizations.',
+    lastModified: defaultLastModified,
     schemaType: 'AboutPage',
     breadcrumb: ['Home', 'Team'],
   },
@@ -43,6 +49,7 @@ const staticRoutes = [
     path: '/in-practice',
     title: 'QInsights in Practice | AI Analysis for Interviews and Survey Responses',
     description: 'See how teams use QInsights for AI analysis of interviews, focus groups, open-ended survey responses, and unstructured research data.',
+    lastModified: defaultLastModified,
     schemaType: 'CollectionPage',
     breadcrumb: ['Home', 'In Practice'],
   },
@@ -50,6 +57,7 @@ const staticRoutes = [
     path: '/blog',
     title: 'QInsights Blog | AI and Qualitative Research',
     description: 'Read articles on AI qualitative research, interview analysis, open-ended survey analysis, traceability, research ethics, and practical workflows.',
+    lastModified: defaultLastModified,
     schemaType: 'CollectionPage',
     breadcrumb: ['Home', 'Blog'],
   },
@@ -57,6 +65,7 @@ const staticRoutes = [
     path: '/privacy',
     title: 'Privacy Policy | QInsights',
     description: 'Read how QInsights handles data protection, privacy, security, user rights, and responsible processing of qualitative research data.',
+    lastModified: defaultLastModified,
     schemaType: 'WebPage',
     breadcrumb: ['Home', 'Privacy Policy'],
   },
@@ -64,6 +73,7 @@ const staticRoutes = [
     path: '/terms',
     title: 'Terms and Conditions | QInsights',
     description: 'Read the QInsights terms and conditions covering subscriptions, services, payments, liability, and use of the QInsights platform.',
+    lastModified: defaultLastModified,
     schemaType: 'WebPage',
     breadcrumb: ['Home', 'Terms and Conditions'],
   },
@@ -71,6 +81,7 @@ const staticRoutes = [
     path: '/company-information',
     title: 'Company Information | QInsights',
     description: 'Find official QInsights company information, including registered address, VAT number, and Dutch Chamber of Commerce number.',
+    lastModified: defaultLastModified,
     schemaType: 'AboutPage',
     breadcrumb: ['Home', 'Company Information'],
   },
@@ -78,6 +89,7 @@ const staticRoutes = [
     path: '/anonymizer',
     title: 'QInsights | Anonymize your data off-line before AI analysis',
     description: 'Download the QInsights Anonymizer beta desktop app to prepare qualitative research files locally before AI-supported analysis.',
+    lastModified: defaultLastModified,
     schemaType: 'WebPage',
     breadcrumb: ['Home', 'Anonymizer'],
   },
@@ -116,6 +128,7 @@ const blogRoutes = blogArticles.map((article) => createRoute({
   title: `${article.title} | QInsights`,
   description: article.description || article.summary || `Read ${article.title} from QInsights on AI-assisted qualitative research and analysis workflows.`,
   image: article.coverImage || defaultSocialImage,
+  lastModified: article.updatedAt || article.modifiedAt || article.publishedAt,
   schemaType: 'Article',
   breadcrumb: ['Home', 'Blog', article.title],
   article: {
@@ -132,6 +145,7 @@ const useCaseRoutes = useCases.map((useCase) => createRoute({
   path: `/in-practice/${useCase.slug}`,
   title: `${useCase.headline} | QInsights in Practice`,
   description: useCase.summary || useCase.intro,
+  lastModified: defaultLastModified,
   schemaType: 'WebPage',
   breadcrumb: ['Home', 'In Practice', useCase.headline],
 }))
