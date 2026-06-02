@@ -38,9 +38,10 @@ export const actions = {
 }
 
 export const heroCopy = {
-  eyebrow: 'AI Qualitative Data Analysis Software',
-  title: 'Stop drowning in transcripts.',
-  body: 'Analyze interviews, focus groups, and open-ended survey responses with researcher-controlled AI, without losing analytical rigor.',
+  title: 'AI Qualitative Data Analysis Software',
+  subtitle: 'Your thinking partner for analysing interviews, reports, and open-ended responses.',
+  body: 'Explore, compare, challenge, and synthesise findings while staying connected to the evidence.',
+  audienceLine: 'Used by evaluation researchers, consultants, academics, UX researchers, and insight teams.',
   demoVideo: {
     src: 'https://framerusercontent.com/assets/O0noLfORFsZg7rr4p4DmFe0fX3A.mp4',
     title: 'Q-Insights product demo',
@@ -365,7 +366,7 @@ export const productProof = {
     src: 'https://framerusercontent.com/images/E3g07IGU9BA2wx8ArJpk21aVm8.png?width=1344&height=389',
     alt: 'Q-Insights interface preview displayed on a desktop screen',
   },
-  statement: 'QInsights is a qualitative analysis workspace for overloaded researchers who need traceable, transparent insights — not black-box AI guesses. AI helps with the volume. You stay in charge of the thinking.',
+  statement: 'Used by evaluation researchers, consultants, academics, UX researchers, and insight teams',
   cta: {
     label: 'Book a Demo',
     href: 'https://api.crm.stratto.ai/widget/booking/DIGE5EnzD9Wepr4uOEou',
