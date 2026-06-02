@@ -1,7 +1,5 @@
 import { DemoVideo } from './DemoVideo'
 
-const metrics = ['AI-Powered Qualitative Analysis', 'Traceable Workflows', 'Researcher-Controlled Output']
-
 export function Hero({ copy, cta }) {
   return (
     <main className="hero">
@@ -14,6 +12,7 @@ export function Hero({ copy, cta }) {
       <div className="hero__content">
         {copy.eyebrow ? <p className="hero__eyebrow">{copy.eyebrow}</p> : null}
         <h1 className="hero__title">{copy.title}</h1>
+        {copy.subtitle ? <h2 className="hero__subtitle">{copy.subtitle}</h2> : null}
         <p className="hero__body">{copy.body}</p>
 
         <div className="hero__actions">
@@ -25,11 +24,7 @@ export function Hero({ copy, cta }) {
 
         <DemoVideo className="hero__demo" src={copy.demoVideo.src} title={copy.demoVideo.title} />
 
-        <ul className="hero__meta" aria-label="Product qualities">
-          {metrics.map((metric) => (
-            <li key={metric}>{metric}</li>
-          ))}
-        </ul>
+        {copy.audienceLine ? <p className="hero__audience">{copy.audienceLine}</p> : null}
       </div>
     </main>
   )
