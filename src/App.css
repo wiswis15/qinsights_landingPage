@@ -7565,18 +7565,22 @@
 
 .webinars-hero__title {
   display: grid;
-  gap: 2px;
+  gap: 4px;
   color: #071733;
   font-family: Urbanist, sans-serif;
   font-size: clamp(58px, 5.1vw, 92px);
   font-weight: 800;
-  line-height: 1.04;
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
 .webinars-hero__title span {
   display: block;
-  padding-bottom: 0.06em;
+  padding-bottom: 0.08em;
+}
+
+.webinars-hero__title span:last-child {
+  padding-bottom: 0.12em;
 }
 
 .webinars-hero__title-accent {
