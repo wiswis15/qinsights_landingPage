@@ -3972,10 +3972,8 @@
 }
 
 .pricing-card {
-  background:
-    linear-gradient(#ffffff, #ffffff) padding-box,
-    linear-gradient(135deg, #ffffff 0%, #eaf2ff 52%, #cfe1ff 100%) border-box;
-  border: 2px solid transparent;
+  background: #ffffff;
+  border: 2px solid #2661e9;
   border-radius: 0;
   padding: 40px;
   display: flex;
@@ -3987,7 +3985,7 @@
 .pricing-card:hover {
   transform: none;
   box-shadow: none;
-  border-color: transparent;
+  border-color: #2661e9;
 }
 
 .pricing-card__header {
@@ -4124,7 +4122,7 @@
 .pricing-card:hover {
   transform: none;
   box-shadow: none;
-  border-color: transparent;
+  border-color: #2661e9;
 }
 
 .pricing-card__amount {
