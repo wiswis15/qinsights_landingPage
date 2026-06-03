@@ -33,7 +33,7 @@ export const actions = {
   },
   cta: {
     label: 'Try it for free',
-    href: 'https://qinsights.vercel.app/register',
+    href: 'https://app.qinsights.ai/register',
   },
 }
 
@@ -746,7 +746,7 @@ export const callToActionSection = {
     },
     {
       label: 'Start Free',
-      href: 'https://qinsights.vercel.app/register',
+      href: 'https://app.qinsights.ai/register',
       variant: 'primary',
     },
   ],
