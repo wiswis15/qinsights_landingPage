@@ -220,10 +220,10 @@
 }
 
 .hero__eyebrow {
-  margin: 0 0 18px;
+  margin: 0 0 22px;
   color: #2661e9;
   font-family: Inter, sans-serif;
-  font-size: 14px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0;
@@ -233,14 +233,15 @@
 }
 
 .hero__title {
-  max-width: 930px;
+  max-width: 1180px;
   margin: 0;
   color: #111111;
   font-family: 'Source Serif 4', serif;
-  font-size: 80px;
+  font-size: 48px;
   font-weight: 500;
   line-height: 1.02;
   letter-spacing: -0.03em;
+  white-space: nowrap;
   text-wrap: balance;
   animation: hero-fade 420ms ease-out both;
 }
@@ -260,11 +261,11 @@
 }
 
 .hero__body {
-  max-width: 830px;
-  margin: 18px auto 0;
+  max-width: 920px;
+  margin: 24px auto 0;
   color: #4f4f4f;
   font-family: 'Source Serif 4', serif;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.4;
   letter-spacing: -0.01em;
   text-wrap: pretty;
@@ -1922,7 +1923,7 @@
   }
 
   .hero__title {
-    font-size: 64px;
+    font-size: 42px;
   }
 
   .logo-ticker__group {
@@ -2163,8 +2164,9 @@
   }
 
   .hero__title {
-    font-size: 48px;
+    font-size: 36px;
     line-height: 1.06;
+    white-space: normal;
   }
 
   .hero__subtitle {
@@ -2174,7 +2176,7 @@
 
   .hero__body {
     margin-top: 16px;
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .hero__actions {
@@ -7565,17 +7567,22 @@
 
 .webinars-hero__title {
   display: grid;
-  gap: 0;
+  gap: 4px;
   color: #071733;
   font-family: Urbanist, sans-serif;
   font-size: clamp(58px, 5.1vw, 92px);
   font-weight: 800;
-  line-height: 0.96;
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
 .webinars-hero__title span {
   display: block;
+  padding-bottom: 0.08em;
+}
+
+.webinars-hero__title span:last-child {
+  padding-bottom: 0.12em;
 }
 
 .webinars-hero__title-accent {
@@ -7671,7 +7678,7 @@
 
   .webinars-hero__title {
     font-size: clamp(42px, 12vw, 64px);
-    line-height: 0.98;
+    line-height: 1.06;
   }
 
   .webinars-hero__body,

@@ -33,13 +33,13 @@ export const actions = {
   },
   cta: {
     label: 'Try it for free',
-    href: 'https://qinsights.vercel.app/register',
+    href: 'https://app.qinsights.ai/register',
   },
 }
 
 export const heroCopy = {
-  title: 'AI Qualitative Data Analysis Software',
-  subtitle: 'Your thinking partner for analysing interviews, reports, and open-ended responses.',
+  eyebrow: 'AI Qualitative Data Analysis Software',
+  title: 'Your thinking partner for analysing interviews, reports, and open-ended responses.',
   body: 'Explore, compare, challenge, and synthesise findings while staying connected to the evidence.',
   audienceLine: 'Used by evaluation researchers, consultants, academics, UX researchers, and insight teams.',
   demoVideo: {
@@ -746,7 +746,7 @@ export const callToActionSection = {
     },
     {
       label: 'Start Free',
-      href: 'https://qinsights.vercel.app/register',
+      href: 'https://app.qinsights.ai/register',
       variant: 'primary',
     },
   ],
