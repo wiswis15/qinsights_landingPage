@@ -3809,8 +3809,66 @@
 }
 
 /* --- PRICING SECTION --- */
+.pricing-logo-strip {
+  padding: 8px 0 24px;
+}
+
+.pricing-logo-strip__viewport {
+  overflow: hidden;
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: 10px 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
+}
+
+.pricing-logo-strip__track {
+  display: flex;
+  width: max-content;
+  animation: pricing-logo-picker-scroll 28s linear infinite;
+}
+
+.pricing-logo-strip__viewport:hover .pricing-logo-strip__track {
+  animation-play-state: paused;
+}
+
+.pricing-logo-strip__group {
+  display: flex;
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+  padding-right: clamp(28px, 5vw, 72px);
+  flex-shrink: 0;
+}
+
+.pricing-logo-strip__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(var(--logo-width), 150px);
+  flex-shrink: 0;
+}
+
+.pricing-logo-strip__image {
+  display: block;
+  width: 100%;
+  max-height: 54px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.44;
+}
+
+@keyframes pricing-logo-picker-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .pricing-section {
-  padding: 64px 0 96px;
+  padding: 40px 0 96px;
 }
 
 .pricing-section__header {
@@ -4360,6 +4418,33 @@
 }
 
 @media (max-width: 809.98px) {
+  .pricing-logo-strip {
+    padding: 0 0 12px;
+  }
+
+  .pricing-logo-strip__viewport {
+    padding: 8px 0;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  }
+
+  .pricing-logo-strip__track {
+    animation-duration: 24s;
+  }
+
+  .pricing-logo-strip__group {
+    gap: 22px 34px;
+    padding-right: 34px;
+  }
+
+  .pricing-logo-strip__item {
+    width: min(var(--logo-width), 132px);
+  }
+
+  .pricing-logo-strip__image {
+    max-height: 46px;
+  }
+
   .pricing-section__allowance-note {
     margin-top: 32px;
     font-size: 15px;
