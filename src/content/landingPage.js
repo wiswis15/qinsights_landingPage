@@ -38,8 +38,8 @@ export const actions = {
 }
 
 export const heroCopy = {
-  eyebrow: 'AI Qualitative Data Analysis Software',
-  title: 'Your thinking partner for analysing interviews, reports, and open-ended responses.',
+  title: 'AI Qualitative Data Analysis Software',
+  subtitle: 'Your thinking partner for analysing interviews, reports, and open-ended responses.',
   body: 'Explore, compare, challenge, and synthesise findings while staying connected to the evidence.',
   audienceLine: 'Used by evaluation researchers, consultants, academics, UX researchers, and insight teams.',
   demoVideo: {
