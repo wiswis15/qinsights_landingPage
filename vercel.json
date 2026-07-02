@@ -58,12 +58,22 @@
     },
     {
       "source": "/customer-information/",
-      "destination": "/company-information",
+      "destination": "/compliance",
       "permanent": true
     },
     {
       "source": "/customer-information",
-      "destination": "/company-information",
+      "destination": "/compliance",
+      "permanent": true
+    },
+    {
+      "source": "/company-information/",
+      "destination": "/compliance",
+      "permanent": true
+    },
+    {
+      "source": "/company-information",
+      "destination": "/compliance",
       "permanent": true
     },
     {

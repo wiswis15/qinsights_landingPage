@@ -59,8 +59,9 @@ export default function App() {
         <Route path="/webinars" element={<WebinarsPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
-        <Route path="/company-information" element={<CustomerInformationPage />} />
-        <Route path="/customer-information" element={<Navigate to="/company-information" replace />} />
+        <Route path="/compliance" element={<CustomerInformationPage />} />
+        <Route path="/company-information" element={<Navigate to="/compliance" replace />} />
+        <Route path="/customer-information" element={<Navigate to="/compliance" replace />} />
         <Route path="/anonymizer" element={<DesktopAppPage />} />
         <Route path="/desktop-app" element={<Navigate to="/anonymizer" replace />} />
         <Route path="/:slug" element={<BlogArticlePage />} />
