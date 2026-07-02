@@ -811,12 +811,6 @@ export const faqSection = {
             { type: 'link', text: 'QInsights YouTube Channel', href: 'https://www.youtube.com/@qinsights-ai-for-qualanalysis', external: true },
           ],
         },
-        {
-          type: 'paragraph',
-          segments: [
-            { type: 'link', text: 'QInsights YouTube Channel', href: 'https://www.youtube.com/@qinsights-ai-for-qualanalysis', external: true },
-          ],
-        },
       ],
     },
     {
