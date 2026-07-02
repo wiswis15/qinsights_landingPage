@@ -86,12 +86,12 @@ const staticRoutes = [
     breadcrumb: ['Home', 'Terms and Conditions'],
   },
   {
-    path: '/company-information',
-    title: 'Company Information | QInsights',
-    description: 'Find official QInsights company information, including registered address, VAT number, and Dutch Chamber of Commerce number.',
-    lastModified: defaultLastModified,
+    path: '/compliance',
+    title: 'Compliance | QInsights',
+    description: 'Review QInsights security, privacy, vendor management, and sub-processor information for compliant qualitative research workflows.',
+    lastModified: '2026-06-01',
     schemaType: 'AboutPage',
-    breadcrumb: ['Home', 'Company Information'],
+    breadcrumb: ['Home', 'Compliance'],
   },
   {
     path: '/anonymizer',

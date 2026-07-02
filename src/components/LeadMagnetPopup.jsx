@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { sendLeadMagnetRequest, validateLeadMagnetPayload } from '../lib/leadMagnetRequest'
 
 const initialFormState = {
-  name: '',
+  firstName: '',
+  lastName: '',
   email: '',
   organization: '',
   phone: '',
@@ -194,22 +195,43 @@ export function LeadMagnetPopup({ content }) {
 
             <form className="lead-magnet__form" onSubmit={handleSubmit} noValidate>
               <label className="lead-magnet__field">
-                <span className="lead-magnet__label">{content.fields.name.label}</span>
+                <span className="lead-magnet__label">{content.fields.firstName.label}</span>
                 <input
                   className="lead-magnet__input"
                   type="text"
-                  name="name"
-                  value={formData.name}
+                  name="firstName"
+                  value={formData.firstName}
                   onChange={handleChange}
-                  autoComplete="name"
-                  placeholder={content.fields.name.placeholder}
-                  aria-invalid={Boolean(fieldErrors.name)}
-                  aria-describedby={fieldErrors.name ? 'lead-magnet-name-error' : undefined}
+                  autoComplete="given-name"
+                  placeholder={content.fields.firstName.placeholder}
+                  aria-invalid={Boolean(fieldErrors.firstName)}
+                  aria-describedby={fieldErrors.firstName ? 'lead-magnet-first-name-error' : undefined}
                   required
                 />
-                {fieldErrors.name && (
-                  <span className="lead-magnet__error" id="lead-magnet-name-error">
-                    {fieldErrors.name}
+                {fieldErrors.firstName && (
+                  <span className="lead-magnet__error" id="lead-magnet-first-name-error">
+                    {fieldErrors.firstName}
+                  </span>
+                )}
+              </label>
+
+              <label className="lead-magnet__field">
+                <span className="lead-magnet__label">{content.fields.lastName.label}</span>
+                <input
+                  className="lead-magnet__input"
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  autoComplete="family-name"
+                  placeholder={content.fields.lastName.placeholder}
+                  aria-invalid={Boolean(fieldErrors.lastName)}
+                  aria-describedby={fieldErrors.lastName ? 'lead-magnet-last-name-error' : undefined}
+                  required
+                />
+                {fieldErrors.lastName && (
+                  <span className="lead-magnet__error" id="lead-magnet-last-name-error">
+                    {fieldErrors.lastName}
                   </span>
                 )}
               </label>

@@ -5041,7 +5041,9 @@
 .lead-magnet__media {
   min-width: 0;
   min-height: 100%;
-  background: #f7f9ff;
+  padding: 18px 0 12px 22px;
+  background: #ffffff;
+  box-sizing: border-box;
 }
 
 .lead-magnet__image {
@@ -5049,8 +5051,8 @@
   width: 100%;
   height: 100%;
   min-height: min(780px, calc(100vh - 48px));
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: center center;
 }
 
 .lead-magnet__content {
@@ -5058,7 +5060,7 @@
   min-height: min(780px, calc(100vh - 48px));
   max-height: min(840px, calc(100vh - 48px));
   overflow-y: auto;
-  padding: 50px 52px 42px;
+  padding: 44px 52px 24px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 251, 255, 0.98) 100%);
 }
@@ -5110,27 +5112,37 @@
 
 .lead-magnet__form {
   display: grid;
-  gap: 12px;
-  margin-top: 22px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 14px;
+  row-gap: 9px;
+  margin-top: 16px;
+}
+
+.lead-magnet__field:nth-of-type(3),
+.lead-magnet__field:nth-of-type(4),
+.lead-magnet__submit,
+.lead-magnet__privacy,
+.lead-magnet__status {
+  grid-column: 1 / -1;
 }
 
 .lead-magnet__field {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
 }
 
 .lead-magnet__label {
   color: #111111;
   font-family: 'Source Serif 4', serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.3;
 }
 
 .lead-magnet__input {
   width: 100%;
-  min-height: 44px;
+  min-height: 42px;
   padding: 0 15px;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
@@ -5173,8 +5185,8 @@
 .lead-magnet__submit,
 .lead-magnet__guide-link {
   width: 100%;
-  min-height: 50px;
-  margin-top: 4px;
+  min-height: 48px;
+  margin-top: 5px;
   font-size: 16px;
 }
 
@@ -5184,10 +5196,10 @@
 }
 
 .lead-magnet__privacy {
-  margin: 0;
+  margin: 4px 0 0;
   color: #6d6d6d;
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 .lead-magnet__privacy a {
@@ -5284,6 +5296,7 @@
   .lead-magnet__media {
     height: clamp(220px, 40vh, 360px);
     min-height: 0;
+    padding: 14px 14px 10px;
   }
 
   .lead-magnet__image {
@@ -5318,8 +5331,17 @@
   }
 
   .lead-magnet__form {
+    grid-template-columns: 1fr;
     gap: 14px;
     margin-top: 24px;
+  }
+
+  .lead-magnet__field:nth-of-type(3),
+  .lead-magnet__field:nth-of-type(4),
+  .lead-magnet__submit,
+  .lead-magnet__privacy,
+  .lead-magnet__status {
+    grid-column: auto;
   }
 
   .lead-magnet__guide-link {

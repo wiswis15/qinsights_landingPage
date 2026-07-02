@@ -59,9 +59,13 @@ export const leadMagnetPopup = {
     alt: 'Promotional poster for The Q-Insights Research Guide e-book',
   },
   fields: {
-    name: {
-      label: 'Name',
-      placeholder: 'Jane Smith',
+    firstName: {
+      label: 'First name',
+      placeholder: 'Jane',
+    },
+    lastName: {
+      label: 'Last name',
+      placeholder: 'Smith',
     },
     email: {
       label: 'Email',
@@ -811,12 +815,6 @@ export const faqSection = {
             { type: 'link', text: 'QInsights YouTube Channel', href: 'https://www.youtube.com/@qinsights-ai-for-qualanalysis', external: true },
           ],
         },
-        {
-          type: 'paragraph',
-          segments: [
-            { type: 'link', text: 'QInsights YouTube Channel', href: 'https://www.youtube.com/@qinsights-ai-for-qualanalysis', external: true },
-          ],
-        },
       ],
     },
     {
@@ -1050,7 +1048,7 @@ export const footerContent = {
   metaLinks: [
     { label: 'Privacy policy', href: '/privacy' },
     { label: 'Terms & conditions', href: '/terms' },
-    { label: 'Company information', href: '/company-information' },
+    { label: 'Compliance', href: '/compliance' },
   ],
 }
 
