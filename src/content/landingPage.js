@@ -59,9 +59,13 @@ export const leadMagnetPopup = {
     alt: 'Promotional poster for The Q-Insights Research Guide e-book',
   },
   fields: {
-    name: {
-      label: 'Name',
-      placeholder: 'Jane Smith',
+    firstName: {
+      label: 'First name',
+      placeholder: 'Jane',
+    },
+    lastName: {
+      label: 'Last name',
+      placeholder: 'Smith',
     },
     email: {
       label: 'Email',

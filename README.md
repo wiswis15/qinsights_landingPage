@@ -104,7 +104,8 @@ The endpoint also keeps the hidden honeypot check and adds a lightweight in-memo
 
 The `/api/lead-magnet` endpoint expects a JSON `POST` body with:
 
-- `name`
+- `firstName`
+- `lastName`
 - `email`
 - `organization`
 - `country`

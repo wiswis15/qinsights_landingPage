@@ -7,12 +7,14 @@ function clean(value) {
 export function validateLeadMagnetPayload(payload) {
   const errors = {}
 
-  const name = clean(payload.name)
+  const firstName = clean(payload.firstName)
+  const lastName = clean(payload.lastName)
   const email = clean(payload.email)
   const organization = clean(payload.organization)
   const country = clean(payload.country)
 
-  if (!name) errors.name = 'Name is required.'
+  if (!firstName) errors.firstName = 'First name is required.'
+  if (!lastName) errors.lastName = 'Last name is required.'
   if (!email) errors.email = 'Email is required.'
   if (email && !EMAIL_PATTERN.test(email)) errors.email = 'Enter a valid email address.'
   if (!organization) errors.organization = 'Organization is required.'
