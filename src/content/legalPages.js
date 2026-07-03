@@ -184,7 +184,7 @@ export const customerInformationPageContent = {
 <p>Third-party vendors are a particular consideration when evaluating AI tools. This is because a vast majority of AI application providers rely in some way or another on privately hosted "Foundational Models".</p>
 
 <h2>What do we do at QInsights?</h2>
-<p><strong>Equivalent Provisions:</strong> All third-party providers we work with are bound by equivalent provisions to those in our own Data Processing Addendum (DPA) and Privacy Policy. This includes OpenAI who are contractually restricted from using any data they come into contact with for the improvement of their product and services.</p>
+<p><strong>Equivalent Provisions:</strong> All third-party providers we work with are bound by equivalent provisions to those in our own Data Processing Addendum (DPA) and Privacy Policy.</p>
 <p><strong>Data Minimization:</strong> All systems are engineered to provide limited access to data strictly defined by their function. Data is only shared with each service where required.</p>
 <p><strong>Vendor Management:</strong> All third parties are vetted to ensure compliance with our standards when being considered.</p>
 
