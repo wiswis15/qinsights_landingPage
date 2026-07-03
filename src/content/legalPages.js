@@ -184,14 +184,14 @@ export const customerInformationPageContent = {
 <p>Third-party vendors are a particular consideration when evaluating AI tools. This is because a vast majority of AI application providers rely in some way or another on privately hosted "Foundational Models".</p>
 
 <h2>What do we do at QInsights?</h2>
-<p><strong>Equivalent Provisions:</strong> All third-party providers we work with are bound by equivalent provisions to those in our own Data Processing Addendum (DPA) and Privacy Policy. This includes OpenAI who are contractually restricted from using any data they come into contact with for the improvement of their product and services.</p>
+<p><strong>Equivalent Provisions:</strong> All third-party providers we work with are bound by equivalent provisions to those in our own Data Processing Addendum (DPA) and Privacy Policy.</p>
 <p><strong>Data Minimization:</strong> All systems are engineered to provide limited access to data strictly defined by their function. Data is only shared with each service where required.</p>
 <p><strong>Vendor Management:</strong> All third parties are vetted to ensure compliance with our standards when being considered.</p>
 
 <h2>Sub-Processors</h2>
 
 <h3>Hetzner Online GmbH</h3>
-<p><strong>Service:</strong> Cloud provider</p>
+<p>Cloud provider</p>
 <p><strong>Address:</strong> Industriestr. 25, 91710 Gunzenhausen, Germany</p>
 <p><strong>Location of Data Processing:</strong> Germany</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> Not required</p>
@@ -202,11 +202,11 @@ export const customerInformationPageContent = {
 <p><strong>Data Security Measures:</strong> <a href="https://www.hetzner.com/legal/privacy-policy/" target="_blank" rel="noopener">https://www.hetzner.com/legal/privacy-policy/</a></p>
 
 <h3>Google Cloud EMEA Limited</h3>
-<p><strong>Service:</strong> Infrastructure</p>
+<p>Cloud provider</p>
 <p><strong>Address:</strong> 70 Sir John Rogerson's Quay, Dublin 2, Ireland.</p>
 <p><strong>Location Data Processing:</strong> Netherlands</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> Not required</p>
-<p><strong>Subject of Processing:</strong> Hosting the infrastructure</p>
+<p><strong>Subject of Processing:</strong> Infrastructure &amp; Data Storage</p>
 <p><strong>Type of Processing:</strong> Storing the data required for service provision</p>
 <p><strong>Duration of Processing:</strong> Customer-provided data will be deleted promptly once processing is no longer required.</p>
 <p><strong>Terms of Use:</strong> <a href="https://cloud.google.com/terms" target="_blank" rel="noopener">cloud.google.com/terms</a></p>
@@ -214,7 +214,7 @@ export const customerInformationPageContent = {
 <p><strong>Notes:</strong> Google does not use your data for training its AI. See <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance" target="_blank" rel="noopener">cloud.google.com/vertex-ai/generative-ai/docs/data-governance</a> for details on how Google processes and governs customer data.</p>
 
 <h3>Microsoft Ireland Operations Limited</h3>
-<p><strong>Service:</strong> Providing Microsoft Azure and Azure OpenAI Service</p>
+<p>Azure OpenAI Service</p>
 <p><strong>Address:</strong> One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Ireland</p>
 <p><strong>Location of Personal Data Processing:</strong> Sweden and France</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> Not required.</p>
@@ -225,7 +225,7 @@ export const customerInformationPageContent = {
 <p><strong>Notes:</strong> Customer prompts, completions, embeddings and uploaded data are not made available to OpenAI and are not used to train Microsoft or third-party foundation models without the customer's permission or instruction.</p>
 
 <h3>AssemblyAI, Inc.</h3>
-<p><strong>Service:</strong> Transcription service for converting audio and video to text</p>
+<p>Transcription service for converting audio and video to text</p>
 <p><strong>EU Member Representative:</strong> VeraSafe Ireland Ltd., Unit 3D North Point House, North Point Business Park, New Mallow Road, Cork T23AT2P, Ireland</p>
 <p><strong>Data Processing:</strong> AssemblyAI's European servers (Slam-1 and Lemur)</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> AssemblyAI's Data Processing Addendum incorporates appropriate transfer safeguards, including the European Commission's Standard Contractual Clauses where applicable.</p>
@@ -237,7 +237,7 @@ export const customerInformationPageContent = {
 <p><strong>Notes:</strong> Files submitted are not used for model training.</p>
 
 <h3>Paddle.com Market Limited</h3>
-<p><strong>Service:</strong> Payment processing service, merchant of record</p>
+<p>Payment processing service, merchant of record</p>
 <p><strong>Address:</strong> Judd House, 18-29 Mora Street, London EC1V 8BT, United Kingdom</p>
 <p><strong>Location of Personal Data Processing:</strong> United Kingdom and other locations used by Paddle and its payment partners</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> The United Kingdom is covered by an adequacy decision of the European Commission. Where Paddle transfers Personal Data to other countries, Paddle applies the transfer mechanisms described in its privacy notice and contractual documentation.</p>
@@ -249,7 +249,7 @@ export const customerInformationPageContent = {
 <p><strong>Notes:</strong> Paddle does not have access to Customer Content uploaded to QInsights.</p>
 
 <h3>Stratto.ai</h3>
-<p><strong>Service:</strong> Customer relationship management and sales administration</p>
+<p>Customer relationship management and sales administration</p>
 <p><strong>Address:</strong> 530 Rue des Fauvettes, Longueuil, Quebec J4G 2K6, Canada</p>
 <p><strong>Location of Personal Data Processing:</strong> Canada</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> Canada is recognised by the European Commission as providing an adequate level of data protection for commercial organisations subject to the Personal Information Protection and Electronic Documents Act (PIPEDA).</p>
@@ -258,6 +258,18 @@ export const customerInformationPageContent = {
 <p><strong>Duration of Processing:</strong> Personal Data is retained for the duration of the business relationship and thereafter in accordance with QInsights' retention requirements and Stratto.ai's contractual deletion provisions.</p>
 <p><strong>Privacy Policy:</strong> <a href="https://stratto.ai/en/privacy-policy" target="_blank" rel="noopener">https://stratto.ai/en/privacy-policy</a></p>
 <p><strong>Notes:</strong> Stratto.ai is used for customer relationship management and sales administration. It does not receive Customer Content uploaded to QInsights, including research documents, transcripts, audio or video files, prompts or analytical outputs.</p>
+
+<h3>One.com Group AB</h3>
+<p>Website hosting and website administration</p>
+<p><strong>Address:</strong> Carlsgatan 3, 211 20 Malm&ouml;, Sweden</p>
+<p><strong>Location of Personal Data Processing:</strong> European Union</p>
+<p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> Not required.</p>
+<p><strong>Subject of Processing:</strong> Hosting and technical operation of the public QInsights website, domain-related services and associated website infrastructure.</p>
+<p><strong>Type of Processing:</strong> Storage and processing of website content and technical website-access data, including IP addresses, browser and device information, access times, server logs and information submitted through website forms.</p>
+<p><strong>Duration of Processing:</strong> Personal Data is processed for the duration of the hosting agreement and retained in accordance with One.com's contractual retention, backup and deletion provisions. Following termination, data is deleted or returned in accordance with the One.com Data Processing Agreement.</p>
+<p><strong>Data Security Measures:</strong> <a href="https://www.one.com/en-gb/legal/privacy/" target="_blank" rel="noopener">https://www.one.com/en-gb/legal/privacy/</a> and <a href="https://www.one.com/en-gb/legal/dpa/" target="_blank" rel="noopener">https://www.one.com/en-gb/legal/dpa/</a></p>
+<p><strong>Terms of Use:</strong> <a href="https://www.one.com/en-gb/legal/terms/" target="_blank" rel="noopener">https://www.one.com/en-gb/legal/terms/</a></p>
+<p><strong>Notes:</strong> One.com hosts the public QInsights website. It does not have access to Customer Content uploaded to the QInsights application, including research documents, transcripts, audio or video files, prompts or analytical outputs.</p>
 
   `,
 }
