@@ -202,11 +202,11 @@ export const customerInformationPageContent = {
 <p><strong>Data Security Measures:</strong> <a href="https://www.hetzner.com/legal/privacy-policy/" target="_blank" rel="noopener">https://www.hetzner.com/legal/privacy-policy/</a></p>
 
 <h3>Google Cloud EMEA Limited</h3>
-<p><strong>Service:</strong> Infrastructure</p>
+<p>Cloud provider</p>
 <p><strong>Address:</strong> 70 Sir John Rogerson's Quay, Dublin 2, Ireland.</p>
 <p><strong>Location Data Processing:</strong> Netherlands</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> Not required</p>
-<p><strong>Subject of Processing:</strong> Hosting the infrastructure</p>
+<p><strong>Subject of Processing:</strong> Infrastructure &amp; Data Storage</p>
 <p><strong>Type of Processing:</strong> Storing the data required for service provision</p>
 <p><strong>Duration of Processing:</strong> Customer-provided data will be deleted promptly once processing is no longer required.</p>
 <p><strong>Terms of Use:</strong> <a href="https://cloud.google.com/terms" target="_blank" rel="noopener">cloud.google.com/terms</a></p>
