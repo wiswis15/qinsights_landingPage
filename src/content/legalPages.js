@@ -259,6 +259,18 @@ export const customerInformationPageContent = {
 <p><strong>Privacy Policy:</strong> <a href="https://stratto.ai/en/privacy-policy" target="_blank" rel="noopener">https://stratto.ai/en/privacy-policy</a></p>
 <p><strong>Notes:</strong> Stratto.ai is used for customer relationship management and sales administration. It does not receive Customer Content uploaded to QInsights, including research documents, transcripts, audio or video files, prompts or analytical outputs.</p>
 
+<h3>One.com Group AB</h3>
+<p>Website hosting and website administration</p>
+<p><strong>Address:</strong> Carlsgatan 3, 211 20 Malm&ouml;, Sweden</p>
+<p><strong>Location of Personal Data Processing:</strong> European Union</p>
+<p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> Not required.</p>
+<p><strong>Subject of Processing:</strong> Hosting and technical operation of the public QInsights website, domain-related services and associated website infrastructure.</p>
+<p><strong>Type of Processing:</strong> Storage and processing of website content and technical website-access data, including IP addresses, browser and device information, access times, server logs and information submitted through website forms.</p>
+<p><strong>Duration of Processing:</strong> Personal Data is processed for the duration of the hosting agreement and retained in accordance with One.com's contractual retention, backup and deletion provisions. Following termination, data is deleted or returned in accordance with the One.com Data Processing Agreement.</p>
+<p><strong>Data Security Measures:</strong> <a href="https://www.one.com/en-gb/legal/privacy/" target="_blank" rel="noopener">https://www.one.com/en-gb/legal/privacy/</a> and <a href="https://www.one.com/en-gb/legal/dpa/" target="_blank" rel="noopener">https://www.one.com/en-gb/legal/dpa/</a></p>
+<p><strong>Terms of Use:</strong> <a href="https://www.one.com/en-gb/legal/terms/" target="_blank" rel="noopener">https://www.one.com/en-gb/legal/terms/</a></p>
+<p><strong>Notes:</strong> One.com hosts the public QInsights website. It does not have access to Customer Content uploaded to the QInsights application, including research documents, transcripts, audio or video files, prompts or analytical outputs.</p>
+
   `,
 }
 
