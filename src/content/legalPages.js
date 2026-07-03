@@ -225,7 +225,7 @@ export const customerInformationPageContent = {
 <p><strong>Notes:</strong> Customer prompts, completions, embeddings and uploaded data are not made available to OpenAI and are not used to train Microsoft or third-party foundation models without the customer's permission or instruction.</p>
 
 <h3>AssemblyAI, Inc.</h3>
-<p><strong>Service:</strong> Transcription service for converting audio and video to text</p>
+<p>Transcription service for converting audio and video to text</p>
 <p><strong>EU Member Representative:</strong> VeraSafe Ireland Ltd., Unit 3D North Point House, North Point Business Park, New Mallow Road, Cork T23AT2P, Ireland</p>
 <p><strong>Data Processing:</strong> AssemblyAI's European servers (Slam-1 and Lemur)</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> AssemblyAI's Data Processing Addendum incorporates appropriate transfer safeguards, including the European Commission's Standard Contractual Clauses where applicable.</p>
@@ -237,7 +237,7 @@ export const customerInformationPageContent = {
 <p><strong>Notes:</strong> Files submitted are not used for model training.</p>
 
 <h3>Paddle.com Market Limited</h3>
-<p><strong>Service:</strong> Payment processing service, merchant of record</p>
+<p>Payment processing service, merchant of record</p>
 <p><strong>Address:</strong> Judd House, 18-29 Mora Street, London EC1V 8BT, United Kingdom</p>
 <p><strong>Location of Personal Data Processing:</strong> United Kingdom and other locations used by Paddle and its payment partners</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> The United Kingdom is covered by an adequacy decision of the European Commission. Where Paddle transfers Personal Data to other countries, Paddle applies the transfer mechanisms described in its privacy notice and contractual documentation.</p>
@@ -249,7 +249,7 @@ export const customerInformationPageContent = {
 <p><strong>Notes:</strong> Paddle does not have access to Customer Content uploaded to QInsights.</p>
 
 <h3>Stratto.ai</h3>
-<p><strong>Service:</strong> Customer relationship management and sales administration</p>
+<p>Customer relationship management and sales administration</p>
 <p><strong>Address:</strong> 530 Rue des Fauvettes, Longueuil, Quebec J4G 2K6, Canada</p>
 <p><strong>Location of Personal Data Processing:</strong> Canada</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> Canada is recognised by the European Commission as providing an adequate level of data protection for commercial organisations subject to the Personal Information Protection and Electronic Documents Act (PIPEDA).</p>
