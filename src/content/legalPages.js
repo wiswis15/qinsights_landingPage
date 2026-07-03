@@ -214,7 +214,7 @@ export const customerInformationPageContent = {
 <p><strong>Notes:</strong> Google does not use your data for training its AI. See <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance" target="_blank" rel="noopener">cloud.google.com/vertex-ai/generative-ai/docs/data-governance</a> for details on how Google processes and governs customer data.</p>
 
 <h3>Microsoft Ireland Operations Limited</h3>
-<p><strong>Service:</strong> Providing Microsoft Azure and Azure OpenAI Service</p>
+<p><strong>Service:</strong>Azure OpenAI Service</p>
 <p><strong>Address:</strong> One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Ireland</p>
 <p><strong>Location of Personal Data Processing:</strong> Sweden and France</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> Not required.</p>
