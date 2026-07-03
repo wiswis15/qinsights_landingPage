@@ -191,7 +191,7 @@ export const customerInformationPageContent = {
 <h2>Sub-Processors</h2>
 
 <h3>Hetzner Online GmbH</h3>
-<p><strong>Service:</strong> Cloud provider</p>
+<p>Cloud provider</p>
 <p><strong>Address:</strong> Industriestr. 25, 91710 Gunzenhausen, Germany</p>
 <p><strong>Location of Data Processing:</strong> Germany</p>
 <p><strong>Data Protection Guarantees for Processing Outside the EEA:</strong> Not required</p>
