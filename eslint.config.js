@@ -36,7 +36,7 @@ export default defineConfig([
     },
   },
   {
-    files: ['src/components/blog/mdxComponents.jsx'],
+    files: ['src/components/blog/mdxComponents.jsx', 'src/components/docs/docsMdxComponents.jsx'],
     rules: {
       'react-refresh/only-export-components': 'off',
     },

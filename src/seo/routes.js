@@ -1,5 +1,6 @@
 import { blogArticles } from '../content/blog'
 import { useCases } from '../content/useCases'
+import { docsPages } from '../content/docs'
 
 export const siteUrl = 'https://qinsights.ai'
 export const defaultSocialImage = '/Q.webp'
@@ -158,7 +159,16 @@ const useCaseRoutes = useCases.map((useCase) => createRoute({
   breadcrumb: ['Home', 'In Practice', useCase.headline],
 }))
 
-export const seoRoutes = [...staticRoutes.map(createRoute), ...useCaseRoutes, ...blogRoutes]
+const docsRoutes = docsPages.map((doc) => createRoute({
+  path: `/docs/${doc.slug}`,
+  title: `${doc.title} | QInsights Docs`,
+  description: doc.description || `${doc.title} — QInsights documentation.`,
+  lastModified: doc.updated || defaultLastModified,
+  schemaType: 'WebPage',
+  breadcrumb: ['Home', 'Docs', doc.title],
+}))
+
+export const seoRoutes = [...staticRoutes.map(createRoute), ...useCaseRoutes, ...blogRoutes, ...docsRoutes]
 
 export function getSeoRoute(pathname = '/') {
   const normalizedPath = normalizePath(pathname)

@@ -17,6 +17,8 @@ import { InPracticePage } from './pages/InPracticePage'
 import { UseCaseStoryPage } from './pages/UseCaseStoryPage'
 import { DesktopAppPage } from './pages/DesktopAppPage'
 import { WebinarsPage } from './pages/WebinarsPage'
+import { DocsArticlePage } from './pages/DocsArticlePage'
+import { defaultDocSlug } from './content/docs'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -57,6 +59,8 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/webinars" element={<WebinarsPage />} />
+        <Route path="/docs" element={<Navigate to={`/docs/${defaultDocSlug}`} replace />} />
+        <Route path="/docs/:slug" element={<DocsArticlePage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/compliance" element={<CustomerInformationPage />} />
