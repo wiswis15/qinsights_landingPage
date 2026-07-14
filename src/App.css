@@ -7935,6 +7935,25 @@
   max-height: calc(100vh - 64px);
   overflow-y: auto;
   padding-right: 6px;
+  scrollbar-color: #8fbeff transparent;
+  scrollbar-width: thin;
+}
+
+.docs-sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.docs-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.docs-sidebar::-webkit-scrollbar-thumb {
+  background-color: #8fbeff;
+  border-radius: 999px;
+}
+
+.docs-sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #7eaff2;
 }
 
 .docs-sidebar__overlay {
