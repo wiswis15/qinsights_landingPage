@@ -1,0 +1,82 @@
+---
+title: "Prompting Strategies"
+navTitle: "Prompting Strategies"
+description: "Novice, inductive, deductive, and abductive approaches to working with Q - and when to query all your data versus a subset."
+group: "Working with Q"
+order: 1
+slug: prompting-strategies
+---
+
+How you ask questions shapes what Q can find for you. This page walks through several approaches for structuring an analysis through conversation, from a novice-friendly starting point to more deliberate inductive, deductive, and abductive strategies.
+
+## New to qualitative analysis?
+
+Ask Q directly: *"I am new to qualitative analysis, can you suggest some initial questions to explore my data?"* If you didn't add your research questions to the project description during setup, include them in your prompt so Q can tailor its suggestions. **Recommendation:** if you're just starting out, use [Guided Conversational Analysis](/docs/guided-analysis) - it structures this process for you.
+
+As you work with Q, you'll develop a feel for which questions yield meaningful insight, and framing your own queries will start to feel intuitive.
+
+## Inductive approach: from descriptive to conceptual
+
+Start with the data itself and let patterns emerge, moving gradually from description to more abstract concepts and relationships.
+
+1. **Start small.** Select a focused subset - say, five interviews - so you can learn what each respondent said about your topic before scaling up.
+2. **Ask descriptive questions**, such as *"What benefits and challenges have been mentioned?"* You don't need to add "as mentioned by the respondents" - Q's answers are derived directly from your uploaded data, so there's no risk of it fabricating findings ("hallucinating"). If a question is unrelated to your dataset, Q falls back on its general training knowledge instead.
+
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image" src="/docs/79.png" alt="Asking a descriptive question and receiving an answer grounded in the uploaded documents." />
+  <figcaption className="docs-article__figcaption">Asking a descriptive question and receiving an answer grounded in the uploaded documents.</figcaption>
+</figure>
+
+3. **Identify similarities and differences** across participants, optionally using [profile variables](/docs/data-context) such as gender, age, or education - for Word/PDF data, activate these as filters first; for Excel data, reference them directly in your prompt.
+4. **Group and label** similar responses under higher-order categories (for example, grouping benefits into "Professional Development" or "Emotional Well-Being").
+5. **Relate and contextualize** - once you have concepts and sub-concepts, explore how they connect (*"How does attitude X influence user behaviour?"*), including across different documents.
+
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image" src="/docs/80.png" alt="Asking how one concept relates to another across different documents." />
+  <figcaption className="docs-article__figcaption">Asking how one concept relates to another across different documents.</figcaption>
+</figure>
+
+Inductive analysis surfaces new patterns and relationships that can later inform a broader, more structured deductive pass.
+
+## Deductive approach: from conceptual to descriptive
+
+Start with existing concepts or hypotheses and examine whether and how they appear in the data.
+
+1. **Define starting concepts or hypotheses.** Ask and validate - *"Do all respondents mention this specific concept?"*, or provide a framework directly: *"Here are seven leadership styles [define them]. Which of them are described by the respondents?"*
+
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image" src="/docs/81.png" alt="Providing a framework of leadership styles and asking which ones appear in the interviews." />
+  <figcaption className="docs-article__figcaption">Providing a framework of leadership styles and asking which ones appear in the interviews.</figcaption>
+</figure>
+
+2. **Drill down** into specific examples to understand and explain your findings.
+3. **Group-level analysis** - use profile variables as filters, or ask directly (*"Is leadership style related to different age groups?"*).
+
+Deductive analysis lets you test predefined ideas within your data while staying flexible enough to refine or expand them based on evidence.
+
+## Abductive analysis: when you find the unexpected
+
+Abductive reasoning blends inductive and deductive thinking to generate the most plausible explanation for a surprising or puzzling observation - the approach Charles Sanders Peirce described as forming a reasonable hypothesis to make sense of something unexpected. It's particularly useful when a finding doesn't fit your assumptions, when you want to bridge data and theory, or when you need a flexible, iterative way to understand something complex.
+
+1. **Ask exploratory questions** to probe the observation - *"Why might respondents with similar experiences express contrasting emotions?"*
+2. **Generate hypotheses** with Q - plausible explanations grounded in the data and your own domain knowledge.
+3. **Iterate and refine**, moving between data and emerging hypotheses with follow-up questions that confirm, sharpen, or challenge them.
+4. **Validate with data** - check whether an explanation holds across other subsets or respondent groups.
+
+For a fuller walkthrough - including why this feels a lot like detective work - see [Abductive Analysis: If You Find the Unexpected](/abductive-analysis-finding-the-unexpected) on the QInsights blog.
+
+## Querying all data vs. subsets
+
+Asking a question across a large dataset (say, 30 interviews) tends to produce broad, generalized answers. This isn't a quirk - it's how large language models handle scale:
+
+- **Summarization bias** - the model is optimized to distil large volumes of information into concise responses, blending points together.
+- **Complexity dilution** - with more data, the model prioritizes comprehensiveness over depth, so nuances can be overshadowed by dominant themes.
+- **Pattern obfuscation** - heavy synthesis can mask the diversity of individual data points, making distinct patterns harder to see.
+
+Narrowing to a **targeted subset** that matches specific sample criteria produces more relevant, detailed answers: patterns become more apparent, and responses can explore nuance rather than generalize across everything at once.
+
+Use [profile variables and filters](/docs/filters) - demographics, document type, collection date - to build subsets aligned with your research questions, and work dialogically: ask broad questions first to get a sense of the data, then follow up with narrower, targeted ones as your understanding sharpens.
+
+## Next steps
+
+See [Analytic Questions and Templates](/docs/analytic-questions) for ready-to-adapt prompt patterns - follow-ups, comparison tables, relational and causal questions, and validating your own synthesis.

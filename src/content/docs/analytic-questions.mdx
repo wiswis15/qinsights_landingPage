@@ -1,0 +1,82 @@
+---
+title: "Analytic Questions and Templates"
+navTitle: "Analytic Questions"
+description: "Ready-to-adapt prompt templates for follow-ups, comparison tables, relational questions, and validating your synthesis."
+group: "Working with Q"
+order: 2
+slug: analytic-questions
+---
+
+The templates below are starting points - adapt the bracketed placeholders to your own topics, respondents, and research questions.
+
+> **Start descriptive, then go analytic.** Don't open an analysis with relational or comparative questions. Explore the data with descriptive questions first to understand what's happening, then build on those findings with the analytic question types further down this page.
+
+## Follow-up questions
+
+Use these to deepen your understanding of a topic or surface nuance already in the data:
+
+- *I would like to explore more about [Topic X]. Please provide more detailed insights on: [specific question or area].*
+- *Extract a quote that supports [Topic X].*
+- *Give me an example quote from [Respondent Name(s)] that supports [Topic X].*
+- *What are the differences between the respondents?*
+- *Let's focus on the similarities now. Which respondents expressed similar perspectives on [Topic X]?*
+- *How do respondents' views on [Topic X] evolve over the course of the interview?*
+- *Can you identify underlying motivations or reasons behind respondents' views on [Topic X]?*
+- *How do respondents' emotions or tone change when discussing [Topic X], and what does this suggest?*
+- *Are there any contradictions or tensions between different responses?*
+
+## Creating overview tables
+
+Request a table to visualize variations and commonalities across responses:
+
+- *Create a table with respondent names in the columns and [perspectives/experiences/opinions on Topic X] in the rows.*
+- *In the cells, indicate with an X if [Topic X] was mentioned.*
+- *In the cells, include a supporting quote if [Topic X] is applicable to the respondent.*
+- *In the cells, [specify what you want - themes, keywords, sentiment].*
+
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image" src="/docs/83.png" alt="An overview table comparing respondents across several aspects of a topic." />
+  <figcaption className="docs-article__figcaption">An overview table comparing respondents across several aspects of a topic.</figcaption>
+</figure>
+
+## Analytic question types
+
+| Type | Focus | Example |
+| --- | --- | --- |
+| **Relational** | Connections between elements | *What are the relationships between participant attitudes and their stated values?* |
+| **Comparative** | Similarities and differences | *How do participants from different groups perceive Topic X?* |
+| **Correlative** | Associations | *Is there a link between years of experience and leadership style?* |
+| **Pattern-seeking** | Recurring patterns | *What patterns emerge in respondents' views on Topic X across demographics?* |
+| **Causal** | Causes and effects | *What factors seem to influence respondents' attitudes toward Z?* |
+| **Conceptual linkage** | Thematic relationships | *I've noticed a relationship between [Aspect A] and [Aspect B]. Verify if this exists across the dataset and describe how it's expressed.* |
+| **Dependency** | Hierarchies or dependencies | *Which respondents' perspectives shift based on specific variables (age, gender, education)?* |
+
+## Validating your synthesis
+
+Once you've written up a synthesis, open a new chat, paste it in, and ask Q to check it:
+
+> *Here is my synthesis on [Topic]. Please check the accuracy of the data, review the flow of reasoning, and ensure that nothing important is missing. Correct any spelling errors, improve sentence structure, and include a quote from each respondent if not already provided.*
+
+Save the result under an informative name in the [Analysis Archive](/docs/analysis-archive) - it can serve as a building block for your final report.
+
+## Relating findings to theory
+
+If you're working with an established theory, confirm Q knows it before relying on it:
+
+> *Are you familiar with [Theory X]? If so, provide a detailed description, including its key concepts.*
+
+If Q isn't familiar with it, supply the context yourself:
+
+> *Here is a brief description of [Theory X] and its important concepts: [insert description]. Based on this theory, how can it help explain [specific findings or relationships]?*
+
+## Letting Q identify relationships
+
+You can give Q more initiative by asking it to identify relationships across themes or patterns you and Q have already discussed - a useful way to surface connections you hadn't noticed, as long as you reflect critically on what comes back (results may echo patterns from the model's training data, not only your dataset).
+
+To keep the conversation grounded, first summarize the themes and patterns already established, then ask:
+
+> *What relationships or connections can you identify between the different themes or patterns in the data? How do these relate to the overall research question [define research question]?*
+
+## Next steps
+
+Ready to put these into practice? Revisit [Conversational Analysis](/docs/conversational-analysis) or [Guided Conversational Analysis](/docs/guided-analysis), or see [Filters](/docs/filters) for building the subsets these prompts often reference.
