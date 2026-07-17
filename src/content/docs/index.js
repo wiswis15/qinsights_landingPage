@@ -1,8 +1,9 @@
 const docModules = import.meta.glob('./*.mdx', { eager: true })
 
 export const DOCS_GROUP_ORDER = [
-  'Getting Started',
+  'Introduction',
   'Supported File Types',
+  'Getting Started',
   'Analysis',
   'Analysis Archive',
   'Working with Q',
