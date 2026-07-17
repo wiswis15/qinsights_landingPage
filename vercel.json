@@ -85,16 +85,6 @@
       "source": "/desktop-app",
       "destination": "/anonymizer",
       "permanent": true
-    },
-    {
-      "source": "/docs/",
-      "destination": "/docs/introduction",
-      "permanent": false
-    },
-    {
-      "source": "/docs",
-      "destination": "/docs/introduction",
-      "permanent": false
     }
   ]
 }
