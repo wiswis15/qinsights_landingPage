@@ -12,7 +12,7 @@ Excel files are well suited to short-to-medium text entries organized row by row
 - **Formats:** `.xlsx` (recommended), `.csv`
 - **Recommended size:** up to about 1,000 cases per file. Slightly larger files may work depending on response length and complexity, but very large datasets should be split.
 
-## Preparing your spreadsheet
+## Preparing Your Spreadsheet
 
 - Remove all header and footer information.
 - The file should contain **only one sheet**.
@@ -27,7 +27,7 @@ Column headers can include case IDs, names, variable names, like counts for soci
 
 **Tip:** shorten long open-ended questions used as column headers to save space on screen - for example, use *"What qualities, abilities or skills do we need to develop?"* instead of the full multi-sentence survey question. You can paste the full-length question into the project description if you want Q to have that context.
 
-## Uploading an Excel file
+## Uploading an Excel File
 
 Click **Upload New File**, select your spreadsheet, and click **Proceed**. QInsights then asks you to classify each column:
 
@@ -43,7 +43,7 @@ Click **Continue Processing** once you've classified every column you need.
 
 **Tip:** classify case IDs (or other identifiers) as text to be analyzed rather than as a variable - this lets you reference case IDs directly in a chat answer when you ask for quotes.
 
-## Reviewing imported data context
+## Reviewing Imported Data Context
 
 After processing, open **Data Context → Values → Respondents** to see how spreadsheet variables were imported, one row per case.
 
@@ -52,10 +52,10 @@ After processing, open **Data Context → Values → Respondents** to see how sp
   <figcaption className="docs-article__figcaption">Example data context imported from an Excel file's variable columns.</figcaption>
 </figure>
 
-## Keep survey data in its own project
+## Keep Survey Data in Its Own Project
 
 Excel data is processed differently from Word, PDF, audio, or video files and can't be combined with them in a single analysis. Keeping spreadsheet-based data in a dedicated project also keeps Data Context manageable - a file with many columns can otherwise make it complex quickly.
 
-## Selecting columns at analysis time
+## Selecting Columns at Analysis Time
 
 When you run an analysis, QInsights asks again which columns to include, since it rarely makes sense to analyze every open-ended question together. See [Filters](/docs/filters#spreadsheet-specific-selection) for that step, and [Sentiment Analysis](/docs/sentiment-analysis) for spreadsheet-specific analysis guidance.

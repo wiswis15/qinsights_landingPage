@@ -11,7 +11,7 @@ QInsights offers sentiment analysis for **semi-structured data in Excel format**
 
 Traditional sentiment analysis sorts feedback into positive, neutral, or negative. With generative AI, it becomes more dynamic: you define **custom dimensions** that fit your data - "satisfied" vs. "dissatisfied," "rational" vs. "emotional" - and can narrow the scope to a specific topic and refine results interactively through follow-up questions.
 
-## How it works
+## How It Works
 
 ### 1. Select your data
 
@@ -47,14 +47,14 @@ Export the detailed, case-by-case evaluation as an Excel file for further review
 - *"List all dimensions with their percentage distribution."*
 - *"Check all rational reasons for similarity, group similar reasons under a category with a name and description, and provide example quotes."*
 
-## Best practices
+## Best Practices
 
 - **Focus on one column at a time.** If your dataset has separate questions for "benefits" and "challenges," analyze them separately to avoid conflicting results.
 - **Keep prompts simple.** Prefer straightforward dimensions ("rational vs. emotional regarding product design") over stacked, multi-layered instructions ("group responses by similarity, then analyze for rational vs. emotional reasons"). Overly complex prompts tend to produce pie charts with dozens of thin, hard-to-read slices - simplify the prompt if that happens.
 - **Tailor dimensions to your data.** Examples: *happy, frustrated* for customer feedback; *supportive, critical, neutral* for policy responses; *disappointed, neutral, excited* for product feedback.
 - **Reuse an established framework.** If you're working with a predefined set of dimensions and their definitions, add them (with descriptions) to the project description - Q will take those definitions into account whenever you reference the dimensions in analysis.
 
-## Sentiment analysis for Word or PDF documents
+## Sentiment Analysis for Word or PDF Documents
 
 Use a prompt like the one below in [Conversational Analysis](/docs/conversational-analysis) to run an equivalent sentiment analysis on interview, focus group, or report text. Refine it to fit your needs.
 
@@ -68,6 +68,6 @@ Use a prompt like the one below in [Conversational Analysis](/docs/conversationa
 >
 > **Output format:** a per-document analysis (title, sentiment balance, representative quotes, brief summary) followed by a cross-document summary (overall balance, overarching themes, conflicting or surprising findings).
 
-## Next steps
+## Next Steps
 
 For deeper exploration of specific respondent groups, continue in a follow-up chat, or see [Filters](/docs/filters) to narrow the dataset before running the analysis.
