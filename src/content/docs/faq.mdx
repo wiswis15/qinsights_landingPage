@@ -2,32 +2,12 @@
 title: "Frequently Asked Questions"
 navTitle: "FAQ"
 description: "Troubleshooting steps for common issues, plus answers to questions that come up often."
-group: "FAQ"
-order: 1
+group: "Help and Resources"
+order: 2
 slug: faq
 ---
 
-## Troubleshooting
-
-### An analysis or import is stuck at 0%
-
-Refresh the page using the reload button next to your browser's address bar.
-
-### I got an error message during analysis or import
-
-This is often a brief internet connection interruption rather than an app issue. Wait a few seconds and try again. If the error persists, it may be a bug - please [contact support](#support) so it can be investigated.
-
-### No preview appears after uploading a document
-
-The upload likely failed because the connection to the server was interrupted. Delete the document and upload it again. Avoid continuing to work with a document that has no summary preview, since this can lead to errors later - see [Uploading Files](/docs/uploading-files#if-a-summary-doesnt-appear).
-
-### Q (the AI assistant) refuses to answer
-
-This usually means your question triggered a language-model guardrail, which is outside QInsights' control. Rephrasing the question resolves this in most cases.
-
-### I keep seeing repeated error messages
-
-If errors persist across several actions, the system may no longer be responding correctly. Log out and log back in.
+Having trouble with an import, an analysis, or an unexpected error? See [Troubleshooting and Support](/docs/troubleshooting-and-support) for step-by-step fixes to the most common issues. The questions below cover things that come up often but aren't strictly troubleshooting.
 
 ## General Questions
 
@@ -41,10 +21,10 @@ QInsights automatically logs you out after 30 minutes of inactivity, for securit
 Yes - the [Data Anonymizer Tool](/docs/data-anonymizer) runs locally on your device and can mask or replace up to 27 categories of personal and sensitive information before anything reaches QInsights.
 
 **Why does my analysis feel too general when I query a large dataset?**
-Large language models tend to summarize broadly across large volumes of data, which can dilute nuance. Try narrowing your query to a smaller, targeted subset using [filters](/docs/filters) - see [Prompting Strategies](/docs/prompting-strategies#querying-all-data-vs-subsets) for why this helps and how to do it well.
+Large language models tend to summarize broadly across large volumes of data, which can dilute nuance. Try narrowing your query to a smaller, targeted subset using [filters](/docs/analyzing-data#selecting-documents-or-respondent-characteristics-via-filters) - see [Prompting Strategies](/docs/prompting-strategies#querying-all-data-vs-subsets) for why this helps and how to do it well.
 
 **Can I combine Excel survey data with Word or PDF transcripts in one project?**
-No - spreadsheet data is processed differently and can't be combined with Word, PDF, audio, or video files in a single analysis. Keep survey data in its own project; see [Excel and Survey Data](/docs/excel-survey-data).
+No - spreadsheet data is processed differently and can't be combined with Word, PDF, audio, or video files in a single analysis. Keep survey data in its own project; see [Project View - Keep Survey Data in Its Own Project](/docs/project-view#keep-survey-data-in-its-own-project).
 
 **Why does Q sometimes answer in the wrong language?**
 Unprompted analyses (Summary, Theme Analysis) follow the language of your source document; prompted analyses (Conversational Analysis and similar) follow the language of your prompt. If the response comes back in the wrong language, just ask a follow-up such as *"Please write the answer in German."* See [Introduction - Language support](/docs/introduction#language-support).

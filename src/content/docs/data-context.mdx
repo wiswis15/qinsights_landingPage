@@ -2,8 +2,8 @@
 title: "Data Context"
 navTitle: "Data Context"
 description: "Assign speaker roles and define respondent or document characteristics so Q interprets your data correctly."
-group: "Getting Started"
-order: 6
+group: "Data Context and Filters"
+order: 1
 slug: data-context
 ---
 
@@ -35,7 +35,18 @@ To assign roles: review the listed speakers for each document, use the dropdown 
 
 ## Create Profiles
 
-A profile is a characteristic you can attach to a speaker or a document, so it's available for later filtering, comparison, and subgroup analysis. Each profile has one of three data types:
+A profile is a characteristic you can attach to a speaker or a document, so it's available for later filtering, comparison, and subgroup analysis. To create one, open the **Profiles** tab, click **Add Characteristic**, name it, choose its type, and set **Applies to** - **Speaker** or **Document**. Click **Save**.
+
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image" src="/docs/39.png" alt="Defining a new characteristic and choosing whether it applies to a speaker or a document." />
+  <figcaption className="docs-article__figcaption">Defining a new characteristic and choosing whether it applies to a speaker or a document.</figcaption>
+</figure>
+
+> Create only the profiles that are relevant for comparison or filtering later. Too many unnecessary fields make setup more complex without improving the analysis.
+
+## Profile Data Types
+
+Each profile has one of three data types:
 
 | Type | Use for |
 | --- | --- |
@@ -46,15 +57,6 @@ A profile is a characteristic you can attach to a speaker or a document, so it's
 **Document profile examples:** source, document type, year, country, organisation, department, project phase.
 
 **Speaker profile examples:** age, gender, role, profession, affiliation, stakeholder group, level of experience.
-
-To create a profile: open the **Profiles** tab, click **Add Characteristic**, name it, choose its type, and set **Applies to** - **Speaker** or **Document**. Click **Save**.
-
-<figure className="docs-article__figure">
-  <img className="docs-article__inline-image" src="/docs/39.png" alt="Defining a new characteristic and choosing whether it applies to a speaker or a document." />
-  <figcaption className="docs-article__figcaption">Defining a new characteristic and choosing whether it applies to a speaker or a document.</figcaption>
-</figure>
-
-> Create only the profiles that are relevant for comparison or filtering later. Too many unnecessary fields make setup more complex without improving the analysis.
 
 ## Add Values
 
@@ -69,7 +71,7 @@ Open the **Values** tab and switch between **Documents** and **Respondents** vie
 
 Profile data gives Q important context about your documents and respondents - it's taken into account during analysis **even when no filter is set**. You can ask directly about differences by gender, role, department, or any other profile characteristic in your data context.
 
-Filters aren't required to analyze group differences; their purpose is to create **subsets** of the data and reduce the scope of analysis when that's helpful. Working with a focused subset - one respondent group, one department, one document type - often produces more nuanced answers than querying the full dataset at once. See [Filters](/docs/filters) for how to apply them, and [Prompting Strategies](/docs/prompting-strategies) for guidance on when to query all data versus a subset.
+Filters aren't required to analyze group differences; their purpose is to create **subsets** of the data and reduce the scope of analysis when that's helpful. Working with a focused subset - one respondent group, one department, one document type - often produces more nuanced answers than querying the full dataset at once. See [Analysing Data](/docs/analyzing-data#selecting-documents-or-respondent-characteristics-via-filters) for how to apply them, and [Prompting Strategies](/docs/prompting-strategies) for guidance on when to query all data versus a subset.
 
 How each analysis mode uses profile data:
 
@@ -79,4 +81,4 @@ How each analysis mode uses profile data:
 
 ## Next Steps
 
-Continue to [Filters](/docs/filters) to learn how to select documents and respondent subsets before running an analysis.
+Continue to [Analysing Data](/docs/analyzing-data) to learn how to select documents and respondent subsets before running an analysis.

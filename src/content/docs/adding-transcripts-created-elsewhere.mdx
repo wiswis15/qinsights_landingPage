@@ -1,0 +1,37 @@
+---
+title: "Adding Transcripts Created Elsewhere"
+navTitle: "Uploading Transcripts"
+description: "Upload an interview or focus group transcript prepared outside QInsights and assign speaker roles."
+group: "Project Setup"
+order: 4
+slug: adding-transcripts-created-elsewhere
+---
+
+When adding a transcript prepared elsewhere, select the **Detect Speakers** option. See [Preparing Documents for Analysis - Transcripts Created Elsewhere](/docs/preparing-transcripts-created-elsewhere) for how these documents need to be formatted so QInsights can recognize speakers reliably.
+
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image" src="/docs/29.png" alt="Selecting Detect Speakers when uploading a transcript prepared elsewhere." />
+  <figcaption className="docs-article__figcaption">Selecting Detect Speakers when uploading a transcript prepared elsewhere.</figcaption>
+</figure>
+
+Then click **Proceed**, and select the file.
+
+Processing takes a few minutes - this isn't a simple upload. At this stage, QInsights is preparing the document for optimal analysis with AI.
+
+Once processing finishes, the **Data Context** panel opens automatically. Here you assign a role to each detected speaker, so QInsights knows how to treat their contributions during analysis.
+
+> **Note:** if the transcript contains generic names like Speaker A, Speaker B, and so on, you may first need to open the document preview to see which speaker is the interviewer and which is the respondent. You can edit roles at any time.
+
+Three roles are available:
+
+- **Respondent** - the speaker's text is treated as primary data and is available for quoting, theming, and counting.
+- **Interviewer / Moderator** - the speaker's text is retained as contextual background but is not analyzed as data.
+- **Exclude** - the speaker's contributions are removed from analysis entirely.
+
+Once you've assigned roles, click **Save Roles**. You can then close the panel, or continue to the **Profiles** tab to enter characteristics for your respondents - see [Data Context](/docs/data-context#create-profiles).
+
+Because a transcript prepared elsewhere has no audio or video attached in QInsights, it doesn't go through the timestamped editing view described in [Transcribing Audio or Video Files](/docs/transcribing-audio-or-video-files#checking-and-editing-transcripts) - that step only applies to files QInsights transcribed itself. If you need to correct the text of a transcript prepared elsewhere, edit the source file and re-upload it.
+
+## Next Steps
+
+Continue to [Data Context](/docs/data-context) to finish assigning roles and characteristics, or see [Adding Reports, Notes, etc. in Word or PDF Format](/docs/adding-reports-word-or-pdf) for non-transcript documents.

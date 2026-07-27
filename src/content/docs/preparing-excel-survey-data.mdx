@@ -1,0 +1,37 @@
+---
+title: "Preparing Documents for Analysis: Excel Files / Survey Data"
+navTitle: "Excel & Survey Data"
+description: "How to structure a spreadsheet before you upload it, so QInsights can analyze it correctly."
+group: "Preparing Your Documents"
+order: 3
+slug: preparing-excel-survey-data
+---
+
+Excel files are well suited to analyzing short-to-medium-length text entries organized row by row. This includes classic open-ended survey responses, but also many other types of qualitative feedback such as social media comments, customer reviews, evaluation comments, app or game feedback, and similar text-based responses.
+
+In general, we recommend working with files of up to about 1,000 cases per Excel file. Slightly larger files may still work, depending on the length and complexity of the responses, but very large datasets should be split into smaller files.
+
+## Prepare Your Excel File as Follows
+
+- Remove all header and footer information.
+- The Excel file should contain **only one sheet**.
+- Each row should represent one case, response, or unit of analysis.
+
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image" src="/docs/14.png" alt="Required input structure - one sheet, one row per case." />
+  <figcaption className="docs-article__figcaption">Required input structure - one sheet, one row per case.</figcaption>
+</figure>
+
+Column headers may include case IDs, names, variable names, numbers of likes for social media data, titles of open-ended questions, columns containing customer reviews, or other text data you want to analyze. QInsights reads these columns automatically and adds them to the [Data Context](/docs/data-context), where they can be used for filtering, comparison, and subgroup analysis.
+
+> **Tip:** we recommend shortening long open-ended questions used as column headers, to save space on your screen. Do not include the full question text in the header if it is very long.
+>
+> **Example:**
+> Full question: *"What qualities, abilities or skills do we need to develop to build a sustainable future for people and planet? Please add three suggested qualities/abilities/skills below. You may suggest more later. Only give one or a few words here, more space to explain these suggestions will follow."*
+> Shortened version: *"What qualities, abilities or skills do we need to develop?"*
+>
+> You can include the full-length questions in QInsights' project description, if you think it's relevant for Q to have that information.
+
+## Next Steps
+
+Once your Excel file is structured this way, continue to [Project Creation](/docs/creating-a-project), then [Adding an Excel File](/docs/adding-an-excel-file) to upload it and classify its columns.

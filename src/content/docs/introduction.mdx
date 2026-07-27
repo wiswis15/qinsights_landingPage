@@ -2,7 +2,7 @@
 title: "Introduction to QInsights"
 navTitle: "Introduction"
 description: "What QInsights is, the principles behind it, and how this documentation is organized."
-group: "Introduction"
+group: "Getting Started"
 order: 1
 slug: introduction
 ---
@@ -37,30 +37,29 @@ Whether you're working on academic research, evaluation studies, market research
 | PDF | `.pdf` | Articles, reports, transcripts |
 | Spreadsheets | `.xlsx`, `.csv` | `.xlsx` recommended |
 
-See [Supported File Types](/docs/audio-recordings) for format-specific guidance, including how to prepare transcripts and Excel files so QInsights can analyze them accurately.
+See [Supported Document Formats](/docs/supported-document-formats) for the full list, and [Preparing Documents for Analysis](/docs/preparing-audio-and-video-recordings) for how to prepare transcripts and Excel files so QInsights can analyze them accurately.
 
 ## Language Support
 
-QInsights recognizes the language of your source text automatically and works with most commonly used languages supported by the underlying AI model.
+QInsights recognizes the language of your source text automatically and works with most commonly used languages supported by the underlying AI model. For a more detailed explanation of how that works, see [Supported Language](/docs/supported-language).
 
-- **Unprompted analyses** (Summary, Theme Analysis) are generated in the language of the source document - a Spanish document produces Spanish themes, an English document produces an English summary, and so on.
-- **Prompted analyses** (Conversational Analysis and similar) respond in the language of your prompt. If your source text is in English but you ask a question in German, QInsights answers in German while still analyzing the English material.
+- **Unprompted analyses** (Summary, Theme Analysis) are generally generated in the language of the source document.
+- **Prompted analyses** (Conversational Analysis and similar) usually follow the language of your prompt.
 - If an answer comes back in the wrong language, simply ask a follow-up such as *"Please write the answer in German."*
-
-<figure className="docs-article__figure">
-  <img className="docs-article__inline-image" src="/docs/1.png" alt="Security settings, including Multi-Factor Authentication (MFA)." />
-  <figcaption className="docs-article__figcaption">Security settings, including Multi-Factor Authentication (MFA).</figcaption>
-</figure>
 
 Use the project description to give Q context about your project, data, and research focus - not for unrelated instructions like personal reminders, which can confuse later summaries. See [Creating a Project](/docs/creating-a-project) for details.
 
 ## How This Documentation Is Organized
 
-- **Supported File Types** - format-specific preparation guidance for audio, video, Word, PDF, Excel, and transcripts
-- **Getting Started** - security basics, the Anonymizer tool, creating a project, uploading files, and configuring data context and filters
-- **Analysis** - how each of the five analysis modes works: Theme, Conversational, Guided Conversational, Grid, and Sentiment Analysis
-- **Analysis Archive** - reviewing, organizing, and continuing past analyses
-- **Working with Q** - prompting strategies and analytic question templates for getting the most out of your AI assistant
-- **Account & Team** - settings, billing, and collaborating with teammates
+This guide follows the order you'll actually work through a project in QInsights - get oriented, prepare your material, set up a project, configure context, then analyze. Steps that look similar but sit at different points in that workflow are still covered as separate pages, since what you do is different even when the topic (for example, transcripts) is the same - only the top-level grouping below has been simplified:
 
-Next: read about [data security and privacy](/docs/security-and-privacy), or jump straight to [creating your first project](/docs/creating-a-project).
+- **Getting Started** - what QInsights is, supported formats and languages, data security, and the Anonymizer tool
+- **Preparing Your Documents** - how to format audio/video, transcripts, and Excel files *before* you upload them
+- **Project Setup** - creating a project, uploading each file type, and reviewing the project view once files are in
+- **Data Context and Filters** - speaker roles, respondent and document profiles, and selecting documents or subsets for analysis
+- **Analysis** - an overview of the five analysis options, the Analysis Archive, and a dedicated page for each mode: Theme, Conversational, Guided Conversational, Grid, and Sentiment Analysis
+- **Working with Q** - prompting strategies and analytic question templates for getting more out of your AI assistant
+- **Account and Team** - collaborating with colleagues, and managing your profile, billing, and team licence
+- **Help and Resources** - common issues, support routes, and further reading
+
+Next: read about [data security and privacy](/docs/security-and-privacy), or jump straight to [preparing your documents](/docs/preparing-audio-and-video-recordings).

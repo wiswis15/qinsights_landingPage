@@ -1,14 +1,20 @@
 const docModules = import.meta.glob('./*.mdx', { eager: true })
 
+// The sidebar is organized around the user journey (orient -> prepare ->
+// set up a project -> configure -> analyze -> get help), not around the
+// chapter breaks of the source Word/PDF guide. Individual pages still cover
+// distinct steps that look similar but aren't (e.g. formatting a transcript
+// before upload vs. uploading it) - only the grouping/labeling here has been
+// consolidated for a cleaner sidebar; page order and content are unchanged.
 export const DOCS_GROUP_ORDER = [
-  'Introduction',
-  'Supported File Types',
   'Getting Started',
+  'Preparing Your Documents',
+  'Project Setup',
+  'Data Context and Filters',
   'Analysis',
-  'Analysis Archive',
   'Working with Q',
-  'Account & Team',
-  'FAQ',
+  'Account and Team',
+  'Help and Resources',
 ]
 
 function normalizeDoc(module) {
