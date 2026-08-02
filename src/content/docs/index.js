@@ -10,7 +10,7 @@ export const DOCS_GROUP_ORDER = [
   'Getting Started',
   'Preparing Your Documents',
   'Project Setup',
-  'Data Context and Filters',
+  'Data Context and Analysis',
   'Analysis',
   'Working with Q',
   'Account and Team',

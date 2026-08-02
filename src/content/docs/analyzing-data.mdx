@@ -1,8 +1,8 @@
 ---
 title: "Analysing Data"
-navTitle: "Selecting Documents & Filters"
+navTitle: "Analysing Data"
 description: "Select documents for an analysis, handle spreadsheet-specific column selection, and filter by document or respondent characteristics."
-group: "Data Context and Filters"
+group: "Data Context and Analysis"
 order: 2
 slug: analyzing-data
 ---
@@ -11,6 +11,11 @@ slug: analyzing-data
 
 Before you can start an analysis, you need to select the documents that should be included. The **Analyse** button becomes active only after at least one document has been selected.
 
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image" src="/docs/41.png" alt="Selecting documents for analysis" />
+  <figcaption className="docs-article__figcaption">Selecting documents for analysis</figcaption>
+</figure>
+
 - Click the checkbox in the upper-left corner of a document card to include it - a check mark confirms it's selected.
 - Click **Select All** to include every document currently displayed in the project view.
 
@@ -18,7 +23,7 @@ Another way to define the set of documents for analysis is by using **Filter**, 
 
 Use manual selection when you want to choose a few specific files directly. Use filters when you want to include documents based on shared characteristics, such as document type, profile data, or another defined subset.
 
-## Specifics When Analysing Spreadsheet Data
+## Specifics when Analysing Spreadsheets Data
 
 When you select an Excel file for analysis, QInsights asks you to select which columns should be included in the analysis. This step is necessary because it often doesn't make sense to analyze all columns together - for example, all answers to different open-ended questions at once.
 
@@ -31,7 +36,7 @@ You'll see the available data columns for the selected Excel file. Use the check
 
 After making your selection, click **Select** to continue with the analysis.
 
-## Selecting Documents or Respondent Characteristics via Filters
+## Selecting Documents or Respondent Characteristics Via Filters
 
 > This option requires that you've already created profiles - see [Data Context](/docs/data-context#create-profiles).
 
@@ -39,6 +44,12 @@ To set one or more profile characteristics as a filter:
 
 1. Navigate to the **Filter** button on the right-hand side of the screen.
 2. Select either **Document Filter** or **Respondent Filter**.
+
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image docs-article__inline-image--compact" src="/docs/43.png" alt="Set filters" />
+  <figcaption className="docs-article__figcaption">Set filters</figcaption>
+</figure>
+
 3. A window opens listing the available profile characteristics. You can select values across multiple characteristics at once (for example, Gender: *male* and Marital status: *single*) - each selection activates automatically.
 4. Click **Apply**.
 
@@ -51,6 +62,10 @@ All documents that pass the filter remain in subsequent analyses; everything els
 
 When setting a characteristic of type **text**, all values you've entered are shown as options. For **text or Boolean** characteristics, the options are True or False. For a characteristic of type **number**, you can choose: **is**, **different**, **less than**, **greater than**, or **from-to**.
 
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image docs-article__inline-image--compact" src="/docs/45.png" alt="Options when selecting a numeric value as filtes" />
+  <figcaption className="docs-article__figcaption">Options when selecting a numeric value as filtes</figcaption>
+</figure>
 ### Display of Active Filters
 
 The filter you've applied is displayed at the top of the document list in your project, and in any analysis you now run. The number of filters applied is shown in the **Active Filters** tab.
@@ -60,10 +75,19 @@ The filter you've applied is displayed at the top of the document list in your p
   <figcaption className="docs-article__figcaption">Active filter chips displayed above the filtered document list.</figcaption>
 </figure>
 
+A further example is:
+
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image" src="/docs/47.png" alt="Example filter setting (1 document filter)" />
+  <figcaption className="docs-article__figcaption">Example filter setting (1 document filter)</figcaption>
+</figure>
+
 ### Removing a Filter
-
 To remove a filter, click the **Filters** tab, select **Document** or **Speaker Filter**, click **Remove all filters**, and click **Apply**.
-
+<figure className="docs-article__figure">
+  <img className="docs-article__inline-image" src="/docs/48.png" alt="Remove filters" />
+  <figcaption className="docs-article__figcaption">Remove filters</figcaption>
+</figure>
 ## Next Steps
 
 With documents selected and any filters in place, move on to [The Five Analysis Options - An Overview](/docs/choosing-an-analysis-type) to choose how you want to analyze your data. See also [Prompting Strategies - Querying All Data vs. Subsets](/docs/prompting-strategies#querying-all-data-vs-subsets) for guidance on when a targeted subset produces better results than querying everything at once.

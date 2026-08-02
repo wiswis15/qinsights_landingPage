@@ -15,19 +15,21 @@ Ask Q directly: *"I am new to qualitative analysis, can you suggest some initial
 
 As you work with Q, you'll develop a feel for which questions yield meaningful insight, and framing your own queries will start to feel intuitive.
 
+Depending on the amount of data you have, you may want to start with a meaningful subset of your data (4-6 interviews), as suggested below for an inductive approach. When you ask a question across a large dataset, such as 30 interviews, the AI is likely to generate an answer that is broad or generalized. This is explained in more detail in [Querying All Data vs. Subsets](#querying-all-data-vs-subsets) below.
+
 ## Inductive Approach: From Descriptive to Conceptual
 
 Start with the data itself and let patterns emerge, moving gradually from description to more abstract concepts and relationships.
 
 1. **Start small.** Select a focused subset - say, five interviews - so you can learn what each respondent said about your topic before scaling up.
-2. **Ask descriptive questions**, such as *"What benefits and challenges have been mentioned?"* You don't need to add "as mentioned by the respondents" - Q's answers are derived directly from your uploaded data, so there's no risk of it fabricating findings ("hallucinating"). If a question is unrelated to your dataset, Q falls back on its general training knowledge instead.
+2. **Ask descriptive questions**, such as *"What benefits and challenges have been mentioned?"* You don't need to add "as mentioned by the respondents" - Q's answers are derived directly from your uploaded data, so there's no risk of it fabricating findings ("hallucinating").
 
 <figure className="docs-article__figure">
   <img className="docs-article__inline-image" src="/docs/79.png" alt="Asking a descriptive question and receiving an answer grounded in the uploaded documents." />
   <figcaption className="docs-article__figcaption">Asking a descriptive question and receiving an answer grounded in the uploaded documents.</figcaption>
 </figure>
 
-3. **Identify similarities and differences** across participants, optionally using [profile variables](/docs/data-context) such as gender, age, or education - for Word/PDF data, activate these as filters first; for Excel data, reference them directly in your prompt.
+3. **Identify similarities and differences** across participants, optionally using [profile variables](/docs/data-context) such as gender, age, or education - you can make reference to those variables directly in your prompt.
 4. **Group and label** similar responses under higher-order categories (for example, grouping benefits into "Professional Development" or "Emotional Well-Being").
 5. **Relate and contextualize** - once you have concepts and sub-concepts, explore how they connect (*"How does attitude X influence user behaviour?"*), including across different documents.
 

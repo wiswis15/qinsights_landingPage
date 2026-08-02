@@ -8160,6 +8160,11 @@
   border-radius: 18px;
 }
 
+.docs-article__inline-image--compact {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
 .docs-article__figure {
   margin: 28px 0;
 }
@@ -8227,6 +8232,11 @@
   border-bottom: 1px solid rgba(17, 17, 17, 0.08);
   text-align: left;
   vertical-align: top;
+}
+
+.docs-article__th:first-child,
+.docs-article__td:first-child {
+  white-space: nowrap;
 }
 
 .docs-article__th {
