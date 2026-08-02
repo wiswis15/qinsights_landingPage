@@ -17,6 +17,7 @@ export default defineConfig({
     react(),
   ],
   server: {
+   allowedHosts: true,
     proxy: {
       '/api': {
         target: process.env.LOCAL_API_URL || 'http://localhost:3001',
