@@ -8165,8 +8165,28 @@
   margin: 0 auto;
 }
 
+.docs-article__inline-image--icon {
+  max-width: 64px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.docs-article__inline-image--icon-inline {
+  display: inline-block;
+  width: 28px;
+  max-width: 28px;
+  height: auto;
+  margin: 0 0 -6px 10px;
+  vertical-align: middle;
+  border-radius: 8px;
+}
+
 .docs-article__figure {
   margin: 28px 0;
+}
+
+.docs-article__figure--center {
+  text-align: center;
 }
 
 .docs-article__figcaption {
